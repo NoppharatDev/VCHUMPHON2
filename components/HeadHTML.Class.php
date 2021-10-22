@@ -29,6 +29,7 @@ class HeadHTML extends Database {
         $this->addScript("<script src=\"//cdn.jsdelivr.net/npm/sweetalert2@11\"></script>");
         $this->addScript("<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>");
         $this->addScript("<script src=\"//{$_SERVER['HTTP_HOST']}/assets/js/script.js\"></script>");
+        $this->addScript("<script src=\"//{$_SERVER['HTTP_HOST']}/lazysizes.min.js\"></script>");
         $this->titleHTML = "<title>{$this->titleText}</title>";
         $this->headHTML =   "<head>\n{$this->metaHTML}\n{$this->linkHTML}\n{$this->scriptHTML}\n{$this->titleHTML}\n</head>\n";
         return $this->headHTML;

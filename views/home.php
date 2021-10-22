@@ -35,31 +35,31 @@
                     </ul>
                     <div class="carousel-inner br-30s">
                         <div class="carousel-item active">
-                            <img src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ1-02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ1-02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ1-03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ1-03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ1-04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ1-04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ021-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ021-02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ021-03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ021-04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img src="../image/slide/ขั้นตอนการคัดกาแฟ021-05.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-05.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -76,7 +76,7 @@
 </div>
 
 <div class="pt-5 text-center" style="background-color: #FFF;">
-    <img src="../image/vlogo.png" width="350px">
+    <img class="lazyload" data-src="../image/vlogo.png" width="350px">
 </div>
 
 <!-- แนะนำสินค้า -->
@@ -89,7 +89,7 @@
                     <div class="card border-0 shadow-sm br-20">
                         <div class="card-body p-2">
                             <div class="card-img">
-                                <img src="img_view/prod/46/0.3" width="100%" alt="กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 250 กรัม)">
+                                <img class="lazyload" data-src="img_view/prod/46/0.3" width="100%" alt="กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 250 กรัม)">
                             </div>
                             <div class="card-title text-center" style="font-weight: 600;">
                                 <!-- -->
@@ -109,7 +109,7 @@
                     <div class="card border-0 shadow-sm br-20">
                         <div class="card-body p-2">
                             <div class="card-img">
-                                <img src="img_view/prod/45/0.3" width="100%" alt="กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 500 กรัม)">
+                                <img class="lazyload" data-src="img_view/prod/45/0.3" width="100%" alt="กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 500 กรัม)">
                             </div>
                             <div class="card-title text-center" style="font-weight: 600;">
                                 <!-- -->
@@ -145,7 +145,7 @@
                     controls
                     autoplay
                 >
-                    <source src="assets/video/1.mp4" type="video/mp4">
+                    <source data-src="assets/video/1.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -185,11 +185,12 @@
         <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
             <div class="col-lg-5 mb-5">
                 <img
+                    class="lazyload"
                     class="br-15 shadow"
                     data-aos="fade-down-right"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
-                    src="../image/เขาร้อยยอด.png"
+                    data-src="../image/เขาร้อยยอด.png"
                     width="100%"
                 >
             </div>
@@ -217,11 +218,12 @@
             </div>
             <div class="col-lg-5 mb-5">
                 <img
+                    class="lazyload"
                     class="br-15 shadow"
                     data-aos="fade-up-left"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
-                    src="../image/ถ้ำศิลางู.png"
+                    data-src="../image/ถ้ำศิลางู.png"
                     width="100%"
                 >
             </div>
@@ -257,11 +259,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <img
+                                    class="lazyload"
                                     class="shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="../image/ถ้ำศิลางู.png"
+                                    data-src="../image/ถ้ำศิลางู.png"
                                     width="100%"
                                 >
                             </div>
@@ -319,21 +322,23 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
+                        class="lazyload"
                         class="br-15 shadow"
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/เขาตาหมื่นนี1.png"
+                        data-src="../image/เขาตาหมื่นนี1.png"
                         width="100%"
                     >
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
+                        class="lazyload"
                         class="br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/เขาตาหมื่นนี.png"
+                        data-src="../image/เขาตาหมื่นนี.png"
                         width="100%"
                     >
                 </div>
@@ -383,11 +388,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <img
+                                    class="lazyload"
                                     class="shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="../image/เขาตาหมื่นนี.png"
+                                    data-src="../image/เขาตาหมื่นนี.png"
                                     width="100%"
                                 >
                             </div>
@@ -442,11 +448,12 @@
             <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
                 <div class="col-lg-5 mb-5">
                     <img
+                        class="lazyload"
                         class="br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/สวนสมเด็จพระศรีนครินทร์.png"
+                        data-src="../image/สวนสมเด็จพระศรีนครินทร์.png"
                         width="100%"
                     >
                 </div>
@@ -478,7 +485,7 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/วัดถ้ำเขาเงิน.png"
+                        data-src="../image/วัดถ้ำเขาเงิน.png"
                         width="100%"
                     >
                 </div>
@@ -515,11 +522,12 @@
                             </div>
                             <div class="col-lg-5">
                                 <img
+                                    class="lazyload"
                                     class="shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="../image/เขาตาหมื่นนี.png"
+                                    data-src="../image/เขาตาหมื่นนี.png"
                                     width="100%"
                                 >
                             </div>
@@ -549,21 +557,23 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
+                        class="lazyload"
                         class="br-15 shadow"
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/จุดชมวิวแหลมหัวโม่ง.png"
+                        data-src="../image/จุดชมวิวแหลมหัวโม่ง.png"
                         width="100%"
                     >
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
+                        class="lazyload"
                         class="br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/ชายทะเลปากหาด.png"
+                        data-src="../image/ชายทะเลปากหาด.png"
                         width="100%"
                     >
                 </div>
@@ -591,21 +601,23 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
+                        class="lazyload"
                         class="br-15 shadow"
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/สะพานพนังตัก.png"
+                        data-src="../image/สะพานพนังตัก.png"
                         width="100%"
                     >
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
+                        class="lazyload"
                         class="br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="../image/สวนสมเด็จพระศรีนครินทร์.png"
+                        data-src="../image/สวนสมเด็จพระศรีนครินทร์.png"
                         width="100%"
                     >
                 </div>
@@ -653,11 +665,12 @@
                             </div>
                             <div class="col-lg-5">
                                 <img
+                                    class="lazyload"
                                     class="shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="../image/จุดชมวิวแหลมหัวโม่ง.png"
+                                    data-src="../image/จุดชมวิวแหลมหัวโม่ง.png"
                                     width="100%"
                                 >
                             </div>
@@ -681,7 +694,7 @@
                             <b>เขาร้อยยอดและผาตาอู๊ด</b>
                         </h5>
                         <div class="card-img-pkg">
-                            <img src="img_view/pkg/33/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%">
                         </div>
                         <h1 class="card-title pricing-card-title">150 <small class="text-muted">/ คน</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -704,7 +717,7 @@
                             <b>แหลมคอกวาง-เขาหัวโม่ง</b>
                         </h5>
                         <div class="card-img-pkg">
-                            <img src="img_view/pkg/31/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%">
                         </div>
                         <h1 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -727,7 +740,7 @@
                             <b>เขาถ้ำศิลางู</b>
                         </h5>
                         <div class="card-img-pkg">
-                            <img src="img_view/pkg/32/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%">
                         </div>
                         <h1 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -753,11 +766,11 @@
 <!-- สนับสนุนโดย -->
 <!-- <div class="pt-5 pb-5 text-center" style="background-color: #FFF;">
     <h3 class="text-premium mb-5" style="font-weight: 800;">สนับสนุนโดย</h3>
-    <img src="../image/utk.png" class="mr-5" width="160px">
-    <img src="../image/ททท.png" class="mr-5" width="160px">
-    <img src="../image/วช.jpg" class="mr-5" width="80px">
-    <img src="../image/ถ้ำสิงห์.jpg" class="mr-5" width="230px">
-    <img src="../image/ลุงเหนอ.jpg" class="mr-5" width="160px">
+    <img data-src="../image/utk.png" class="mr-5" width="160px">
+    <img data-src="../image/ททท.png" class="mr-5" width="160px">
+    <img data-src="../image/วช.jpg" class="mr-5" width="80px">
+    <img data-src="../image/ถ้ำสิงห์.jpg" class="mr-5" width="230px">
+    <img data-src="../image/ลุงเหนอ.jpg" class="mr-5" width="160px">
 </div> -->
 
 <!-- ประชาสัมพันธ์ -->
@@ -771,7 +784,7 @@
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img src="img_view/pkg/32/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>14 ก.ย. 2564
@@ -786,7 +799,7 @@
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img src="img_view/pkg/31/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>10 พ.ค. 2564
@@ -801,7 +814,7 @@
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img src="img_view/pkg/33/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>25 มี.ค. 2564
