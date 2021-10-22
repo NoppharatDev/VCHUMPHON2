@@ -11,8 +11,8 @@ class Images extends Database {
         if($gdImage) {
             $width = imagesx(imagecreatefromstring($blobImage));
             $height = imagesy(imagecreatefromstring($blobImage));
-            $toWidth = $width*$this->size;
-            $toHeight = $height*$this->size;
+            $toWidth = $width * $this->size;
+            $toHeight = $height * $this->size;
             list($width, $height) = getimagesizefromstring($blobImage);
             $gdRender = imagecreatetruecolor($toWidth, $toHeight);
             $colorBgAlpha = imagecolorallocatealpha($gdRender, 0, 0, 0, 127);
@@ -42,7 +42,16 @@ class Images extends Database {
         if($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             $img = $row['prod_img'];
-            echo $this->resize($img);
+            /*$size = mb_strlen($img, '8bit');
+            for($i = 102400; $i < $size; $i++) {
+                //echo "ขนาดเดิม : {$size} <br>";
+                $img = $this->resize($img);
+                $size = mb_strlen($img, '8bit');
+                //echo "ขนาดใหม่ : {$size} <br><br>";
+            }
+            echo $img;*/
+            $img = $this->resize($img);
+            echo $img;
         }
         $conn->close();
     }
@@ -58,7 +67,16 @@ class Images extends Database {
         if($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             $img = $row['pkg_img'];
-            echo $this->resize($img);
+            /*$size = mb_strlen($img, '8bit');
+            for($i = 102400; $i < $size; $i++) {
+                //echo "ขนาดเดิม : {$size} <br>";
+                $img = $this->resize($img);
+                $size = mb_strlen($img, '8bit');
+                //echo "ขนาดใหม่ : {$size} <br><br>";
+            }
+            echo $img;*/
+            $img = $this->resize($img);
+            echo $img;
         }
         $conn->close();
     }

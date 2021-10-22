@@ -76,7 +76,7 @@
 </div>
 
 <div class="pt-5 text-center" style="background-color: #FFF;">
-    <img src="image/vlogo.png" width="350px">
+    <img src="../image/vlogo.png" width="350px">
 </div>
 
 <!-- แนะนำสินค้า -->
@@ -189,7 +189,7 @@
                     data-aos="fade-down-right"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
-                    src="image/เขาร้อยยอด.png"
+                    src="../image/เขาร้อยยอด.png"
                     width="100%"
                 >
             </div>
@@ -221,7 +221,7 @@
                     data-aos="fade-up-left"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
-                    src="image/ถ้ำศิลางู.png"
+                    src="../image/ถ้ำศิลางู.png"
                     width="100%"
                 >
             </div>
@@ -261,7 +261,7 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="image/ถ้ำศิลางู.png"
+                                    src="../image/ถ้ำศิลางู.png"
                                     width="100%"
                                 >
                             </div>
@@ -323,7 +323,7 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/เขาตาหมื่นนี1.png"
+                        src="../image/เขาตาหมื่นนี1.png"
                         width="100%"
                     >
                 </div>
@@ -333,7 +333,7 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/เขาตาหมื่นนี.png"
+                        src="../image/เขาตาหมื่นนี.png"
                         width="100%"
                     >
                 </div>
@@ -387,7 +387,7 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="image/เขาตาหมื่นนี.png"
+                                    src="../image/เขาตาหมื่นนี.png"
                                     width="100%"
                                 >
                             </div>
@@ -446,7 +446,7 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/สวนสมเด็จพระศรีนครินทร์.png"
+                        src="../image/สวนสมเด็จพระศรีนครินทร์.png"
                         width="100%"
                     >
                 </div>
@@ -478,7 +478,7 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/วัดถ้ำเขาเงิน.png"
+                        src="../image/วัดถ้ำเขาเงิน.png"
                         width="100%"
                     >
                 </div>
@@ -519,7 +519,7 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="image/เขาตาหมื่นนี.png"
+                                    src="../image/เขาตาหมื่นนี.png"
                                     width="100%"
                                 >
                             </div>
@@ -553,7 +553,7 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/จุดชมวิวแหลมหัวโม่ง.png"
+                        src="../image/จุดชมวิวแหลมหัวโม่ง.png"
                         width="100%"
                     >
                 </div>
@@ -563,7 +563,7 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/ชายทะเลปากหาด.png"
+                        src="../image/ชายทะเลปากหาด.png"
                         width="100%"
                     >
                 </div>
@@ -595,7 +595,7 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/สะพานพนังตัก.png"
+                        src="../image/สะพานพนังตัก.png"
                         width="100%"
                     >
                 </div>
@@ -605,7 +605,7 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        src="image/สวนสมเด็จพระศรีนครินทร์.png"
+                        src="../image/สวนสมเด็จพระศรีนครินทร์.png"
                         width="100%"
                     >
                 </div>
@@ -657,7 +657,7 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    src="image/จุดชมวิวแหลมหัวโม่ง.png"
+                                    src="../image/จุดชมวิวแหลมหัวโม่ง.png"
                                     width="100%"
                                 >
                             </div>
@@ -691,7 +691,7 @@
                             <li>ราคาสำหรับเด็ก 100 บาท</li>
                             <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
                         </ul>
-                        <a href="?page=pkg_view&id=33" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
+                        <a href="" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
                             <b>รายละเอียดแพ็คเกจ</b>
                         </a>
                     </div>
@@ -714,7 +714,7 @@
                             <li>ราคาสำหรับเด็ก 250 บาท</li>
                             <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
                         </ul>
-                        <a href="?page=pkg_view&id=31" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
+                        <a href="img_view/pkg/31/0.3" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
                             <b>รายละเอียดแพ็คเกจ</b>
                         </a>
                     </div>
@@ -753,11 +753,11 @@
 <!-- สนับสนุนโดย -->
 <!-- <div class="pt-5 pb-5 text-center" style="background-color: #FFF;">
     <h3 class="text-premium mb-5" style="font-weight: 800;">สนับสนุนโดย</h3>
-    <img src="image/utk.png" class="mr-5" width="160px">
-    <img src="image/ททท.png" class="mr-5" width="160px">
-    <img src="image/วช.jpg" class="mr-5" width="80px">
-    <img src="image/ถ้ำสิงห์.jpg" class="mr-5" width="230px">
-    <img src="image/ลุงเหนอ.jpg" class="mr-5" width="160px">
+    <img src="../image/utk.png" class="mr-5" width="160px">
+    <img src="../image/ททท.png" class="mr-5" width="160px">
+    <img src="../image/วช.jpg" class="mr-5" width="80px">
+    <img src="../image/ถ้ำสิงห์.jpg" class="mr-5" width="230px">
+    <img src="../image/ลุงเหนอ.jpg" class="mr-5" width="160px">
 </div> -->
 
 <!-- ประชาสัมพันธ์ -->
@@ -786,7 +786,7 @@
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img src="img_view/pkg/31" width="100%">
+                            <img src="img_view/pkg/31/0.3" width="100%">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>10 พ.ค. 2564
@@ -801,7 +801,7 @@
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img src="img_view/pkg/33" width="100%">
+                            <img src="img_view/pkg/33/0.3" width="100%">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>25 มี.ค. 2564
@@ -824,7 +824,7 @@
 "@context": "http://schema.org/",
 "@type": "LocalBusiness",
 "name": "กาแฟชุมพรเกรดพรีเมียม ส่งตรงจากสวนกาแฟจังหวัดชุมพร",
-"image": "https://vchumphon.com/image/logo.png",
+"../image": "https://vchumphon.com/image/logo.png",
 "description": "กาแฟชุมพรเกรดพรีเมียม ส่งตรงจากสวนกาแฟจังหวัดชุมพร กาแฟโรบัสต้าเกรดพรีเมี่ยม ผลิตภัณฑ์โดยคนไทย พร้อมบริการนำเที่ยวชมสวนกาแฟ และท่องเที่ยวชุมพร",
 "address":"การวิจัยและพัฒนานวัตกรรมเทคโนโลยีดิจิตอลฯ มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ เลขที่ 2 ถนนนางลิ้นจี่ แขวงทุ่งมหาเมฆ เขตสาทร 10120",
 "priceRange":"0 - 9,999 THB",
