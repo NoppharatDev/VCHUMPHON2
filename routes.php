@@ -15,6 +15,7 @@ get('/robusta/$id', '/views/product_view.php'); // View Robusta By ID
 get('/product', '/views/product_partner.php'); // View Products Partner Page
 get('/product/$id', '/views/product_partner_view.php'); // View Products Partner By ID
 get('/my_packages', '/views/my_package.php'); // View My Packages Page
+get('/my_packages/$id', '/views/my_package_view.php'); // View My Packages Page By ID
 get('/my_orders', '/views/my_order.php'); // View My Orders Page
 get('/my_order/$id', '/views/my_order_view.php'); // View My Order By ID
 get('/invoice/$id', '/views/invoice.php'); // View Invoice Page
@@ -22,6 +23,8 @@ get('/invoice/print/$id', '/views/invoice_print.php'); // View Invoice Print Pag
 get('/cart', '/views/my_cart.php'); // View Carts Page
 get('/cart/confirm', '/views/cart_confirm.php'); // View Carts Confirm Page
 get('/login', '/views/login.php'); // View Login Page
+get('/register', '/views/register.php'); // View Register Page
+get('/content/$id', '/views/content.php'); // View Content Page By ID
 
 ##### POST ACTION #####
 post('/robusta/$id', '/views/product_view.php');
@@ -29,6 +32,8 @@ post('/cart', '/views/my_cart.php');
 post('/login', '/views/login.php');
 post('/product/$id', '/views/product_partner_view.php');
 post('/cart/confirm', '/views/cart_confirm.php');
+post('/travel/booking/$id', '/views/package_confirm.php');
+post('/register', '/views/register.php');
 
 /*get('/user/$id', 'user.php');
 

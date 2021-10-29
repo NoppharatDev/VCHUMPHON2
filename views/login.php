@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-lg-12 text-center">
                                 <hr>
-                                <p class="mt-4">คุณยังไม่มีบัญชีผู้ใช้ ? <b><a href="?page=register" class="text-premium">สมัครสมาชิก</a></b></p>
+                                <p class="mt-4">คุณยังไม่มีบัญชีผู้ใช้ ? <b><a href="/register" class="text-premium">สมัครสมาชิก</a></b></p>
                             </div>
                         </form>
                     </div>

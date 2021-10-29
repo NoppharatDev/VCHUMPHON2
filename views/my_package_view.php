@@ -1,19 +1,23 @@
 <?php
     if(!isset($_SESSION["cust_id"])) { header('Location: /login'); }
     if(empty($id)) {
-        echo '<script>window.location.assign("/travel")</script>';
+        // echo '<script>window.location.assign("/travel")</script>';
         exit;
     } else {
         require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
         require_once("components/Package.Class.php");
+        require_once("components/OrderPackage.Class.php");
+        require_once("libs/PromptPay/PromptPayQR.php");
+
+        $opkgObj = new OrderPackage();
         $headObj = new HeadHTML();
         $pkgObj = new Package();
-        $pkgObj->setPackageByID($id);
-        /*$pkgObj->updateViewByID($_GET['id']);
-        if(isset($_POST['add_cart'])) {
-            $prodObj->addProdToCart($_GET['id']);
-        }*/
-        $cart_count = 0;
+        $pkgObj->setPackageByID($opkgObj->getIDByPkgID($id));
+        $opkgObj->setOrderPkgByID($id);
+        $PromptPayQR = new PromptPayQR(); // new object
+        $PromptPayQR->size = 10; // Set QR code size to 8
+        $PromptPayQR->id = '1341100230128'; // PromptPay ID
+        $PromptPayQR->amount = 0; // Set amount (not necessary)
     }
 ?>
 
@@ -25,8 +29,6 @@
 <body style="overflow-x: hidden">
 <?php
     if(isset($_POST["submit"])) {
-        require_once("components/OrderPackage.Class.php");
-        $opkgObj = new OrderPackage();
         $opkgObj->addOrderPackage($id);
     }
 ?>
@@ -42,107 +44,90 @@
 <div style="background: #F5F5F5; padding: 100px 0 145px 0;">
 <div class="container mt-3">
     <div class="row" id="cafePage">
-        <div class="col-lg-12">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white shadow-sm br-20">
-                    <li class="breadcrumb-item"><a href="." class="text-premium"><i class="fa fa-home"></i> หน้าแรก</a></li>
-                    <li class="breadcrumb-item"><a href="/travel" class="text-premium"><i class="fa fa-suitcase-rolling"></i> แพ็คเกจท่องเที่ยว</a></li>
-                    <li class="breadcrumb-item"><a href="/travel/<?php echo $pkgObj->id; ?>" class="text-premium"> แพ็คเกจท่องเที่ยว (<?php echo $pkgObj->name; ?>)</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">เลือกซื้อแพ็คเกจ</li>
-                </ol>
-            </nav>
-        </div>
         <div class="col-lg-8">
             <div class="card border-0 shadow-sm mb-4 box-shadow br-20">
                 <div class="card-body">
                     <h5 class="mb-4"><b>กรุณากรอกข้อมูลของท่าน</b></h5>
                     <form class="row" action="" method="POST">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="first_name" class="mb-0">ชื่อ <b><sup class="text-danger">*</sup></b></label>
-                                <input type="text" class="form-control form-control-lg br-20" id="first_name" name="first_name" required>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="last_name" class="mb-0">นามสกุล <b><sup class="text-danger">*</sup></b></label>
-                                <input type="text" class="form-control form-control-lg br-20" id="last_name" name="last_name" required>
+                                <input type="text" class="form-control form-control-lg br-20" id="first_name" name="first_name" value="<?php echo $opkgObj->name; ?>" readonly>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="phone" class="mb-0">เบอร์โทรศัพท์ <b><sup class="text-danger">*</sup></b></label>
-                                <input type="text" class="form-control form-control-lg br-20" id="phone" name="phone" required>
+                                <input type="text" class="form-control form-control-lg br-20" id="phone" name="phone" value="<?php echo $opkgObj->zerofill($opkgObj->phone, 10); ?>" readonly>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="email" class="mb-0">อีเมล <b><sup class="text-danger">*</sup></b></label>
-                                <input type="email" class="form-control form-control-lg br-20" id="email" name="email" required>
+                                <input type="email" class="form-control form-control-lg br-20" id="email" name="email" value="<?php echo $opkgObj->email; ?>" readonly>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="province" class="mb-0">จังหวัด <b><sup class="text-danger">*</sup></b></label>
-                                <input type="text" class="form-control form-control-lg br-20" id="province" name="province" required>
+                                <input type="text" class="form-control form-control-lg br-20" id="province" name="province" value="<?php echo $opkgObj->province; ?>" readonly>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="zipcode" class="mb-0">รหัสไปรษณีย์ <b><sup class="text-danger">*</sup></b></label>
-                                <input type="number" class="form-control form-control-lg br-20" id="zipcode" name="zipcode" required>
+                                <input type="number" class="form-control form-control-lg br-20" id="zipcode" name="zipcode" value="<?php echo $opkgObj->zipcode; ?>" readonly>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="travel_date" class="mb-0">วันที่เริ่มท่องเที่ยว <b><sup class="text-danger">*</sup></b></label>
-                                <input type="date" class="form-control form-control-lg br-20" id="travel_date" name="travel_date" required>
+                                <input type="date" class="form-control form-control-lg br-20" id="travel_date" name="travel_date" value="<?php echo $opkgObj->travel_date; ?>" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="adult" class="mb-0">จำนวนผู้ใหญ่ (<?php echo $pkgObj->adult_price; ?> / คน) <b><sup class="text-danger">*</sup></b></label>
-                                <select class="form-control form-control-lg br-20" id="adult" name="adult" required>
+                                <select class="form-control form-control-lg br-20" id="adult" name="adult" readonly>
                                     <option>0</option>
                                 <?php
                                     for($i = 1; $i <= $pkgObj->adult_max; $i++) {
-                                        echo "<option>{$i}</option>";
+                                        if($i == $opkgObj->adult) { $selected = "selected"; } else { $selected = "";}
+                                        echo "<option {$selected}>{$i}</option>";
                                     }
                                 ?>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="child" class="mb-0">จำนวนเด็ก (<?php echo $pkgObj->child_price; ?> / คน)</label>
-                                <select class="form-control form-control-lg br-20" id="child" name="child">
+                                <select class="form-control form-control-lg br-20" id="child" name="child" readonly>
                                     <option>0</option>
                                 <?php
                                     for($i = 1; $i <= $pkgObj->child_max; $i++) {
-                                        echo "<option>{$i}</option>";
+                                        if($i == $opkgObj->child) { $selected = "selected"; } else { $selected = "";}
+                                        echo "<option {$selected}>{$i}</option>";
                                     }
                                 ?>
                                 </select>
                             </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label for="comment" class="mb-0">คำถาม / ความคิดเห็น</label>
-                                <textarea class="form-control form-control-lg br-20" rows="5" id="comment" name="comment"></textarea>
-                            </div>
-                            <div class="form-check mb-3">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">ท่านยอมรับ <a href="">ข้อกำหนดการใช้งาน</a> และ <a href="">นโยบายความเป็นส่วนตัว</a> ของเราเมื่อดำเนินการต่อ</label>
-                            </div>
-                            <?php
-                                if(isset($_SESSION["cust_id"])) {
-                                    echo "<button type=\"submit\" name=\"submit\" class=\"btn btn-warning btn-premium btn-lg border-0 br-20 px-5\">ยืนยันการจอง</button>";
-                                } else {
-                                    echo "<a href=\"/login\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">เข้าสู่ระบบ <span class=\"fa fa-sign-in-alt\"></span></a>";
-                                }
-                            ?>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
         <div class="col-lg-4">
+            <div class="card border-0 mb-3 shadow-sm br-20">
+                <div class="card-body px-2 py-3">
+                    <div class="text-center">
+                        <?php $PromptPayQR->amount = (((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.25); ?>
+                        <img class="mt-2" src="https://pp.js.org/img/PromptPay-logo.jpg" width="60%"><br>
+                        <img class="mt-2 mb-2" src="<?php echo $PromptPayQR->generate(); ?>" width="65%">
+                        <p class="text-info mb-2"><b>สแกน QR เพื่อจ่ายเงิน</b></p>
+                        <p class="mb-2">ชื่อบัญชี <b>นายภารดร เตชะสกลรัศมิ์</b></p>
+                        <p class="mb-1">จำนวนเงิน <b class="text-premium"><?php echo number_format($PromptPayQR->amount, 2); ?></b> บาท</p>
+                        <p class="mb-1"><b class="text-danger">*** สำคัญ ***</b></p>
+                        <p class="mb-1"><b class="text-danger">ส่งหลักฐานการชำระเงินมาที่ Line@ : @664uzmwr</b></p>
+                    </div>
+                </div>
+            </div>
             <div class="card border-0 mb-3 shadow-sm br-20">
                 <div class="card-body px-2 py-3">
                     <ul class="list-unstyled mb-0">
@@ -190,27 +175,27 @@
                     <hr />
                     <div class="d-flex">
                         <p class="mb-1">จำนวนผู้ใหญ่ (<?php echo number_format($pkgObj->adult_price, 0); ?> / คน)</p>
-                        <p class="ml-auto mb-1" id="adult_text">0</p>
+                        <p class="ml-auto mb-1" id="adult_text"><?php echo $opkgObj->adult; ?></p>
                     </div>
                     <div class="d-flex">
                         <p class="mb-1">จำนวนเด็ก (<?php echo number_format($pkgObj->child_price, 0); ?> / คน)</p>
-                        <p class="ml-auto mb-1" id="child_text">0</p>
+                        <p class="ml-auto mb-1" id="child_text"><?php echo $opkgObj->child; ?></p>
                     </div>
                     <div class="d-flex">
                         <p class="mb-1">จำนวนรวม (คน)</p>
-                        <p class="ml-auto mb-1" id="total_text">0</p>
+                        <p class="ml-auto mb-1" id="total_text"><?php echo ($opkgObj->adult+$opkgObj->child); ?></p>
                     </div>
                     <div class="d-flex">
                         <p class="mb-1">ราคารวม (บาท)</p>
-                        <p class="ml-auto mb-1" id="total_price">0</p>
+                        <p class="ml-auto mb-1" id="total_price"><?php echo (($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price)); ?></p>
                     </div>
                     <div class="d-flex">
                         <p class="mb-1">ส่วนลด (<b>บาท<?php /*echo $pkgObj->convertPromotionUnit($pkgObj->promo_unit);*/ ?></b>)</p>
-                        <p class="ml-auto mb-1" id="promo_text">0</p>
+                        <p class="ml-auto mb-1" id="promo_text"><?php echo $opkgObj->discount; ?></p>
                     </div>
                     <div class="d-flex">
                         <p class="mb-1">ราคาที่จ่าย (บาท)</p>
-                        <p class="ml-auto mb-1 text-premium" id="total_end"><b>0</b></p>
+                        <p class="ml-auto mb-1 text-premium" id="total_end"><b><?php echo ((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount); ?></b></p>
                     </div>
                 </div>
             </div>
@@ -218,44 +203,6 @@
     </div>
 </div>
 </div>
-
-<script>
-    // if($("#adult_price").val() >= 1) {  }
-    $("#adult_text").text($("#adult").val());
-    $("#adult").change(function() {
-        $("#adult_text").text($("#adult").val());
-    })
-
-    $("#child_text").text($("#child").val());
-    $("#child").change(function() {
-        $("#child_text").text($("#child").val());
-    })
-
-    $("#adult, #child").change(function() {
-        let adult = $("#adult").val();
-        let child = $("#child").val();
-        let total = parseInt(adult) + parseInt(child);
-        let total_price = parseInt(adult * <?php echo $pkgObj->adult_price; ?>) + parseInt(child * <?php echo $pkgObj->child_price; ?>);
-        let promo = 0;
-        $("#total_text").text(total);
-        $("#total_price").text(total_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
-        if(total >= <?php echo $pkgObj->start_reduce; ?>) {
-            let promo_unit = <?php echo $pkgObj->promo_unit; ?>;
-            if(promo_unit == 1) {
-                promo = (<?php echo $pkgObj->quantity ?>*total_price/100);
-                $("#promo_text").text('-' + promo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-            } else if(promo_unit == 2) {
-                promo = <?php echo $pkgObj->quantity ?>;
-                $("#promo_text").text('-' + promo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-            }
-        } else {
-            $("#promo_text").text(0);
-        }
-        let total_end = total_price - promo;
-        if(total_end <= 0) { total_end = 0; }
-        $("#total_end").text(total_end.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-    })
-</script>
 
 </body>
 </html>

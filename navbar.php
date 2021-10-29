@@ -4,9 +4,14 @@
         $cart_count = count($_SESSION['my_cart']);
     }
 ?>
+<style>
+    .nav-item {
+        font-size: 14px;
+    }
+</style>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-navbar" style="padding: 11px 0">
     <div class="container">
-        <a class="navbar-brand" href=".">
+        <a class="navbar-brand" href="/">
             <img src="/image/logo.png" class="d-inline-block align-top" alt="">
             <!-- <b><span class="fa fa-coffee mr-2"></span> VCHUMPHON</b> -->
         </a>
@@ -26,6 +31,9 @@
                 </li>
                 <li class="nav-item px-2 active">
                     <a href="/product" class="nav-link" id="aboutMenu">ผลิตภัณฑ์ชุมชน</a>
+                </li>
+                <li class="nav-item px-2 active">
+                    <a href="/content/1" class="nav-link" id="contentMenu">ประชาสัมพันธ์</a>
                 </li>
                 <!-- <li class="nav-item px-2 active">
                     <a href="about.html" class="nav-link" id="aboutMenu">ร้านค้าที่เข้าร่วมโครงการ</a>

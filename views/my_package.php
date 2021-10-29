@@ -1,13 +1,11 @@
 <?php
     if(!isset($_SESSION["cust_id"])) { header('Location: /login'); }
     require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
-    require_once('components/Product.Class.php');
-    require_once('components/OrderProduct.Class.php');
     require_once("libs/PromptPay/PromptPayQR.php");
+    require_once("components/OrderPackage.Class.php");
 
+    $opkgObj = new OrderPackage();
     $headObj = new HeadHTML();
-    $oprodObj = new OrderProduct();
-    $prodObj = new Product();
     $PromptPayQR = new PromptPayQR(); // new object
     $PromptPayQR->size = 10; // Set QR code size to 8
     $PromptPayQR->id = '1341100230128'; // PromptPay ID
@@ -51,123 +49,66 @@
 <div style="background-color: #F5F5F5; padding-top: 110px; min-height: 100vh">
     <div class="container mt-3 pb-5">
     <div class="row">
-        <div class="col-lg-12 mt-4 mb-5">
-            <h4 class="text-premium"><span class="fa fa-suitcase"></span> <b>การจองของฉัน</b></h4>
-        </div>
-        <div class="col-lg-12">
-            <div class="card border-0 shadow-sm br-20">
-                <img src="/img_view/pkg/31/0.3" class="card-img-top" alt="..." style="border-radius: 20px 0 0 20px">
-                <div class="card-body">
-                    <div class="d-flex mb-4">
-                        <div class="mr-auto">
-                            <h5 class="mb-0"><b class="text-premium">แพคเกจท่องเที่ยว (แหลมคอกวาง-เขาหัวโม่ง)</b></h5>
-                            หมายเลขการจอง : <b class="text-premium">PKG000003TH</b>
-                            (วันที่จอง 25 ก.ย. 2564 เวลา 03.30 น.)
-                        </div>
-                        <div class="ml-auto">
-                            <p class="text-right mb-0">วันที่เริ่มท่องเที่ยว</p>
-                            <h5><b class="text-premium">25 ก.ย. 2564</b></h5>
-                        </div>
-                    </div>
-                    <div class="row mb-4 ml-4">
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> ระยะเวลา</p>
-                            <h4 class="text-premium">1 วัน</h4>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> จำนวนผู้ใหญ่</p>
-                            <h4>3 คน</h4>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> จำนวนเด็ก</p>
-                            <h4>1 คน</h4>
-                        </div>
-                        <div class="col-lg-6 text-right">
-                            <p class="mb-0"> ราคารวม</p>
-                            <h4><b class="text-premium">1,700 บาท</b></h4>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-success br-20 px-5 mr-2">รายละเอียดการจอง</a>
-                    <a href="#" class="btn btn-premium br-20 px-5">เลื่อนวันนัดหมาย</a>
+        <?php
+            $result = $opkgObj->queryOrderPkg(); $i = 1;
+            if($result->num_rows > 0) {
+        ?>
+                <div class="col-lg-12 mt-4 mb-5">
+                    <h4 class="text-premium"><span class="fa fa-suitcase"></span> <b> การจองของฉัน</b></h4>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-12">
-            <div class="card border-0 shadow-sm br-20">
-                <img src="/img_view/pkg/32/0.3" class="card-img-top" alt="..." style="border-radius: 20px 0 0 20px">
-                <div class="card-body">
-                    <div class="d-flex mb-4">
-                        <div class="mr-auto">
-                            <h5 class="mb-0"><b class="text-premium">แพคเกจท่องเที่ยว (เขาถ้ำศิลางู)</b></h5>
-                            หมายเลขการจอง : <b class="text-premium">PKG000002TH</b>
-                            (วันที่จอง 25 ก.ย. 2564 เวลา 10.30 น.)
-                        </div>
-                        <div class="ml-auto">
-                            <p class="text-right mb-0">วันที่เริ่มท่องเที่ยว</p>
-                            <h5><b class="text-premium">20 ก.ย. 2564</b></h5>
+        <?php
+            while($row = $result->fetch_assoc()) {
+        ?>
+                <div class="col-lg-12">
+                    <div class="card border-0 shadow-sm br-20">
+                        <img src="<?php echo $opkgObj->getLinkImgPkg($row["pkg_id"]); ?>" class="card-img-top" alt="..." style="border-radius: 20px 0 0 20px">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <div class="mr-auto">
+                                    <h5 class="mb-0"><b class="text-premium">แพคเกจท่องเที่ยว (<?php echo $opkgObj->getPkgName($row["pkg_id"]); ?>)</b></h5>
+                                    หมายเลขการจอง : <b class="text-premium">PKG<?php echo $opkgObj->zerofill($row["opkg_id"], 6); ?>TH</b>
+                                    (วันที่จอง <?php echo $opkgObj->dateThai($row["opkg_created"], "dd-mm-yy h:i"); ?>)
+                                </div>
+                                <div class="ml-auto">
+                                    <p class="text-right mb-0">วันที่เริ่มท่องเที่ยว</p>
+                                    <h5><b class="text-premium"><?php echo $opkgObj->dateThai($row["opkg_travel_date"], "dd-mm-yy"); ?></b></h5>
+                                </div>
+                            </div>
+                            <div class="row mb-4 ml-4">
+                                <div class="col-lg-2 text-center">
+                                    <p class="mb-0"> ระยะเวลา</p>
+                                    <h4 class="text-premium"><?php echo $row["opkg_duration"]; ?></h4>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <p class="mb-0"> จำนวนผู้ใหญ่</p>
+                                    <h4><?php echo $row["opkg_adult"]; ?> คน</h4>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <p class="mb-0"> จำนวนเด็ก</p>
+                                    <h4><?php echo $row["opkg_child"]; ?> คน</h4>
+                                </div>
+                                <div class="col-lg-6 text-right">
+                                    <p class="mb-0"> ราคารวม</p>
+                                    <h4><b class="text-premium">
+                                        <?php echo number_format(((($row["opkg_adult"]*$row["opkg_adult_price"])+($row["opkg_child"]*$row["opkg_child_price"]))-$row["opkg_discount"]), 0) ; ?> บาท
+                                    </b></h4>
+                                </div>
+                            </div>
+                            <a href="/my_packages/<?php echo $opkgObj->zerofill($row["opkg_id"], 6); ?>" class="btn btn-success br-20 px-5 mr-2">รายละเอียดการจอง</a>
+                            <a href="#" class="btn btn-premium br-20 px-5">เลื่อนวันนัดหมาย</a>
                         </div>
                     </div>
-                    <div class="row mb-4 ml-4">
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> ระยะเวลา</p>
-                            <h4 class="text-premium">3 วัน</h4>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> จำนวนผู้ใหญ่</p>
-                            <h4>5 คน</h4>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> จำนวนเด็ก</p>
-                            <h4>2 คน</h4>
-                        </div>
-                        <div class="col-lg-6 text-right">
-                            <p class="mb-0"> ราคารวม</p>
-                            <h4><b class="text-premium">3,000 บาท</b></h4>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-success br-20 px-5 mr-2">รายละเอียดการจอง</a>
-                    <a href="#" class="btn btn-premium br-20 px-5">เลื่อนวันนัดหมาย</a>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-12">
-            <div class="card border-0 shadow-sm br-20">
-                <img src="/img_view/pkg/33/0.3" class="card-img-top" alt="..." style="border-radius: 20px 0 0 20px">
-                <div class="card-body">
-                    <div class="d-flex mb-4">
-                        <div class="mr-auto">
-                            <h5 class="mb-0"><b class="text-premium">แพคเกจท่องเที่ยว (เขาร้อยยอดและผาตาอู๊ด)</b></h5>
-                            หมายเลขการจอง : <b class="text-premium">PKG000001TH</b>
-                            (วันที่จอง 25 ก.ย. 2564 เวลา 13.02 น.)
-                        </div>
-                        <div class="ml-auto">
-                            <p class="text-right mb-0">วันที่เริ่มท่องเที่ยว</p>
-                            <h5><b class="text-premium">12 ก.ย. 2564</b></h5>
-                        </div>
-                    </div>
-                    <div class="row mb-4 ml-4">
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> ระยะเวลา</p>
-                            <h4 class="text-premium">2 วัน</h4>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> จำนวนผู้ใหญ่</p>
-                            <h4>2 คน</h4>
-                        </div>
-                        <div class="col-lg-2 text-center">
-                            <p class="mb-0"> จำนวนเด็ก</p>
-                            <h4>1 คน</h4>
-                        </div>
-                        <div class="col-lg-6 text-right">
-                            <p class="mb-0"> ราคารวม</p>
-                            <h4><b class="text-premium">400 บาท</b></h4>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-success br-20 px-5 mr-2">รายละเอียดการจอง</a>
-                    <a href="#" class="btn btn-premium br-20 px-5">เลื่อนวันนัดหมาย</a>
+        <?php
+            }
+            } else {
+        ?>  
+                <div class="col lg-12 mt-5">
+                    <h2 class="text-center text-premium">ไม่พบการจองแพคเกจท่องเที่ยวของคุณ</h2>
                 </div>
-            </div>
-        </div>
+        <?php
+            }
+        ?>
     </div>
     </div>
 </div>

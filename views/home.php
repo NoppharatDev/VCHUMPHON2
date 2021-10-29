@@ -7,8 +7,10 @@
 <!DOCTYPE html>
 <html lang="th">
 <?php
+    $headObj->addMeta("<meta name=\"description\" content=\"VCHUMPON ขอพาทุกท่านมาทำความรู้จักกับ “กาแฟชุมพร” หนึ่งแหล่งปลูกกาแฟคุณภาพเยี่ยมของประเทศไทย\" />");
     $headObj->addLink("<link rel=\"stylesheet\" href=\"https://unpkg.com/aos@2.3.1/dist/aos.css\">");
     $headObj->addScript("<script src=\"https://unpkg.com/aos@2.3.1/dist/aos.js\"></script>");
+    $headObj->editTitleText(" - ทำความรู้จักกาแฟชุมพร โรบัสต้าที่โดดเด่นที่สุดในเมืองไทย");
     echo $headObj->getHead();
 ?>
 <body style="overflow-x: hidden">
@@ -38,28 +40,28 @@
                             <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ1-02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ1-03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ1-04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่05.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่06.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่07.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่08.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนการคัดกาแฟ021-05.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่09.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -83,13 +85,17 @@
 <div style="background-color: #FFF;" class="pt-5">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12 mt-4 mb-5">
+                <p class="mb-2">จังหวัดชุมพรนั้นมีสินค้าประจำจังหวัดที่มีชื่อเสียงมากมาย ไม่ว่าจะเป็นผลิตภัณฑ์แปรรูปจากกล้วย สมุนไพร หรือน้ำผึ้ง และมีอีกสิ่งหนึ่งที่โดดเด่นไม่แพ้สินค้าใดๆ นั่นคือ <a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a> ที่มีชื่อเสียงโด่งดังไปถึงต่างแดน และได้รับการยอมรับจากคอกาแฟทั่วประเทศ</p>
+                <p>มาทำความรู้จัก “กาแฟชุมพร” หนึ่งในกาแฟที่โดดเด่นที่สุดในเมืองไทย ไม่แพ้ใครในโลกกัน</p>
+            </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
                 <a href="/robusta/46">
                     <div class="card border-0 shadow-sm br-20">
                         <div class="card-body p-2">
                             <div class="card-img">
-                                <img class="lazyload" data-src="img_view/prod/46/0.3" width="100%" alt="กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 250 กรัม)">
+                                <img class="lazyload" data-src="img_view/prod/46/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร - กาแฟโรบัสต้าพรีเมียมชุมพร (ขนาด 250 กรัม)">
                             </div>
                             <div class="card-title text-center" style="font-weight: 600;">
                                 <!-- -->
@@ -109,7 +115,7 @@
                     <div class="card border-0 shadow-sm br-20">
                         <div class="card-body p-2">
                             <div class="card-img">
-                                <img class="lazyload" data-src="img_view/prod/45/0.3" width="100%" alt="กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 500 กรัม)">
+                                <img class="lazyload" data-src="img_view/prod/45/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร - กาแฟโรบัสต้าพรีเมียมชุมพร (ขนาด 500 กรัม)">
                             </div>
                             <div class="card-title text-center" style="font-weight: 600;">
                                 <!-- -->
@@ -125,17 +131,26 @@
                 </a>
             </div>
             <div class="col-lg-1"></div>
+            <div class="col-lg-12 mt-5">
+                <h5><b>สวนกาแฟจังหวัดชุมพร</b></h5>
+                <p><a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ในจังหวัดชุมพร ถือเป็นหนึ่งแหล่งเพาะปลูกกาแฟสายพันธุ์โรบัสต้ามากที่สุดในประเทศไทย และเป็นผลิตภัณฑ์ทางการเกษตรที่สามารถสร้างรายได้ให้กับเกษตรกรชาวชุมพรได้ดี เนื่องจากสภาพภูมิอากาศและภูมิประเทศของจังหวัดชุมพรนั้นเหมาะสมกับการปลูกกาแฟโรบัสต้า เพราะต้นกาแฟสายพันธุ์นี้เหมาะสำหรับปลูกในพื้นที่ราบต่ำและมีความชื้น นอกจากนั้น ต้นกาแฟสายพันธุ์ยังปลูกง่าย และทนต่ออุณหภูมิสูงได้ดี ไม่ต้องพึ่งสารเคมี และใช้ต้นทุนต่ำอีกด้วย</p>
+                <h5><b>ความโดดเด่นของกาแฟโรบัสต้า</b></h5>
+                <p>กาแฟโรบัสต้านั้นมีจุดเด่นที่ไม่ซ้ำกับกาแฟสายพันธุ์อื่น เมล็ดกาแฟโรบัสต้านั้นมีลักษณะเป็นทรงกลมมนและมีเส้นผ่าตรงกลางเป็นแนวตรง มีความเข้มและขม ไม่ค่อยติดรสชาติเปรี้ยว รสชาติจึงจะค่อนข้างฝาด อีกทั้งมีระดับน้ำตาลและระดับกรดที่ต่ำ ตอบโจทย์คอกาแฟที่ชื่นชอบความเข้มข้นเป็นพิเศษ เพราะมีปริมาณคาเฟอีนอยู่ที่ 2% - 4.5% ซึ่งถือว่าสูงกว่าการกาแฟอราบิก้าเป็นเท่าตัว จึงนิยมนำมาทำเป็นกาแฟสำเร็จรูปหรือกาแฟคั่ว อย่างไรก็ตาม กว่าจะมาเป็น<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>อย่างที่เรารู้จัก ต้องผ่านกระบวนการผลิตอันพิถีพิถันหลากหลายขั้นตอน</p>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Present -->
-<div style="background-image: url('image/bg-1.jpg'); background-color: #FFF; background-size: cover; background-position: top center; background-attachment: fixed;">
+<div style="background-image: url('/image/bg-1.jpg'); background-color: #FFF; background-size: cover; background-position: top center; background-attachment: fixed;">
     <div class="container">
-        <h1 class="text-center" style="color: #CF952A; font-weight: 800; font-size: 30px; padding-top: 40px">ROBUSTA PRESENT</h1>
-        <div class="row">
+        <h1 class="text-center" style="color: #CF952A; font-weight: 800; font-size: 30px; padding-top: 40px">กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร</h1>
+        <div class="row mb-5">
             <div class="col-lg-12 pt-5 text-center">
-                <video
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FeUY-KpI0pM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>
+            </div>
+                <!-- <video
                     id="myVideo"
                     class="br-30"
                     data-aos="zoom-ins"
@@ -145,10 +160,15 @@
                     controls
                     autoplay
                 >
-                    <source data-src="assets/video/1.mp4" type="video/mp4">
-                </video>
+                    <source data-src="//assets/video/1.mp4" type="video/mp4">
+                </video> -->
             </div>
         </div>
+        <h5><b>กว่าจะมาเป็นกาแฟชุมพร</b></h5>
+        <p class="mb-2">กาแฟชุมพรไม่ได้มีจุดเด่นแค่เฉพาะสายพันธุ์กาแฟโรบัสต้าอย่างเดียว แต่เนื่องจากความละเอียดอ่อนในกระบวนการผลิต จึงทำให้<a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ประจำภาคใต้นี้เป็นที่ยอมรับไปทั่วโลก</p>
+        <p class="mb-2">เมื่อผ่านการเก็บเกี่ยวแล้ว เมล็ดกาแฟจะถูกนำมาตากแห้งเป็นเวลา 20 นาที จากนั้นจะถูกนำไปอบลมร้อนที่อุณหภูมิ 80 องศาเซลเซียส และนำมาตากในโรงอบพลังงานแสงอาทิตย์เป็นเวลา 10 วัน ต่อมาเป็นกระบวนการที่ใช้เวลานานที่สุดคือการ “บ่ม” ที่ใช้เวลา 1 ปีเพื่อดึงรสชาติที่อร่อยที่สุดออกมา หลังจากเสร็จสิ้นการบ่ม เมล็ดกาแฟจะถูกนำมาขัดสี เพื่อเอาเปลือกออก ซึ่งเปลือกเหล่านี้ยังสามารถนำไปทำเป็น ปุ๋ยหรือถ่านแท่งได้ จากนั้นจะเป็นการคัดแยกเมล็ดและนำไปคั่วในระดับต่างๆ 3 ระดับ ได้แก่ คั่วอ่อน คั่วกลาง และคั่วเข็ม สุดท้ายเมล็ดกาแฟที่ถูกคั่วจะถูกนำไปคัดแยก เพื่อค้นหาเมล็ดที่สมบูรณ์ ได้คุณภาพมากที่สุดนั่นเอง</p>
+        <p class="mb-2">แม้ในสมัยก่อนกาแฟโรบัสต้าจะไม่ได้รับความนิยมมากนัก เนื่องจากการควบคุมคุณภาพการผลิตที่เป็นได้ยาก แต่ด้วยเทคโนโลยีการคั่วในยุคนี้ที่ก้าวหน้าขึ้น จึงสามารถเข้ามาช่วยให้<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>มีรสชาติและคุณภาพที่ดีขึ้น ไม่ว่าจะชงเป็นกาแฟสด นำไปผสมกับกาแฟอราบิก้าเพื่อรสชาติใหม่ๆ แปรรูปเป็นกาแฟกึ่งสำเร็จรูป หรือผลิตเป็นกาแฟกระป๋องพร้อมทาน ก็เป็นที่นิยมมากในปัจจุบัน</p>
+        <p class="mb-0">สำหรับกาแฟ V Coffee นั้นเป็น กาแฟโรบัสต้าสูตรพรีเมียมจากชุมพร เป็นกาแฟโรบัสต้า 100% ที่ปลูก ณ พื้นที่จังหวัดชุมพร ด้วยกระบวนการที่ใส่ใจ ตั้งแต่กระบวนการเก็บ คัดเฉพาะผลที่มีความสมบูรณ์สุกเต็มที่ ผ่านกระบวนผลิตที่ได้คุณภาพและมาตรฐาน ทำให้กาแฟมีกลิ่นหอมและคงความเข้มของโรบัสต้าเป็นเอกลักษณ์</p>
     </div>
 </div>
 
@@ -185,8 +205,7 @@
         <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
             <div class="col-lg-5 mb-5">
                 <img
-                    class="lazyload"
-                    class="br-15 shadow"
+                    class="lazyload br-15 shadow"
                     data-aos="fade-down-right"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
@@ -218,8 +237,7 @@
             </div>
             <div class="col-lg-5 mb-5">
                 <img
-                    class="lazyload"
-                    class="br-15 shadow"
+                    class="lazyload br-15 shadow"
                     data-aos="fade-up-left"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
@@ -259,8 +277,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <img
-                                    class="lazyload"
-                                    class="shadow br-15"
+                                    class="lazyload shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
@@ -322,8 +339,7 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
-                        class="lazyload"
-                        class="br-15 shadow"
+                        class="lazyload br-15 shadow"
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
@@ -333,8 +349,7 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
-                        class="lazyload"
-                        class="br-15 shadow"
+                        class="lazyload br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
@@ -388,8 +403,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <img
-                                    class="lazyload"
-                                    class="shadow br-15"
+                                    class="lazyload shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
@@ -448,8 +462,7 @@
             <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
                 <div class="col-lg-5 mb-5">
                     <img
-                        class="lazyload"
-                        class="br-15 shadow"
+                        class="lazyload br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
@@ -522,8 +535,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <img
-                                    class="lazyload"
-                                    class="shadow br-15"
+                                    class="lazyload shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
@@ -557,8 +569,7 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
-                        class="lazyload"
-                        class="br-15 shadow"
+                        class="lazyload br-15 shadow"
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
@@ -568,8 +579,7 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
-                        class="lazyload"
-                        class="br-15 shadow"
+                        class="lazyload br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
@@ -601,8 +611,7 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
-                        class="lazyload"
-                        class="br-15 shadow"
+                        class="lazyload br-15 shadow"
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
@@ -612,8 +621,7 @@
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
-                        class="lazyload"
-                        class="br-15 shadow"
+                        class="lazyload br-15 shadow"
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
@@ -665,8 +673,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <img
-                                    class="lazyload"
-                                    class="shadow br-15"
+                                    class="lazyload shadow br-15"
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
@@ -694,7 +701,7 @@
                             <b>เขาร้อยยอดและผาตาอู๊ด</b>
                         </h5>
                         <div class="card-img-pkg">
-                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%" alt="เขาร้อยยอดและผาตาอู๊ด">
                         </div>
                         <h1 class="card-title pricing-card-title">150 <small class="text-muted">/ คน</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -704,7 +711,7 @@
                             <li>ราคาสำหรับเด็ก 100 บาท</li>
                             <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
                         </ul>
-                        <a href="" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
+                        <a href="/travel/33" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
                             <b>รายละเอียดแพ็คเกจ</b>
                         </a>
                     </div>
@@ -717,7 +724,7 @@
                             <b>แหลมคอกวาง-เขาหัวโม่ง</b>
                         </h5>
                         <div class="card-img-pkg">
-                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%" alt="แหลมคอกวาง-เขาหัวโม่ง">
                         </div>
                         <h1 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -727,7 +734,7 @@
                             <li>ราคาสำหรับเด็ก 250 บาท</li>
                             <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
                         </ul>
-                        <a href="img_view/pkg/31/0.3" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
+                        <a href="/travel/31" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
                             <b>รายละเอียดแพ็คเกจ</b>
                         </a>
                     </div>
@@ -740,7 +747,7 @@
                             <b>เขาถ้ำศิลางู</b>
                         </h5>
                         <div class="card-img-pkg">
-                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%" alt="เขาถ้ำศิลางู">
                         </div>
                         <h1 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -750,14 +757,14 @@
                             <li>ราคาสำหรับเด็ก 250 บาท</li>
                             <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
                         </ul>
-                        <a href="?page=pkg_view&id=32" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
+                        <a href="/travel/32" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
                             <b>รายละเอียดแพ็คเกจ</b>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 text-center mt-4 mb-4">
-                <a href="?page=pkg" class="btn btn-premium br-30 py-3 px-5">แสดงแพคเกจเพิ่มเติม <span class="fa fa-angle-double-right"></span></a>
+                <a href="/travel" class="btn btn-premium br-30 py-3 px-5">แสดงแพคเกจเพิ่มเติม <span class="fa fa-angle-double-right"></span></a>
             </div>
         </div>
     </div>
@@ -832,6 +839,9 @@
     </div>
 </div>
 
+
+<?php require_once("{$_SERVER['DOCUMENT_ROOT']}/footer.php"); ?>
+
 <script type="application/ld+json">
 {
 "@context": "http://schema.org/",
@@ -862,8 +872,8 @@ $('.carousel').carousel()
 
 AOS.init();
 
-let vid = document.getElementById("myVideo");
-vid.volume = 0.05;
+//let vid = document.getElementById("myVideo");
+//vid.volume = 0.05;
 
 $("#t1").click(function() {
     $(this).removeClass("btn-outline-warning btn-outline-tumb");

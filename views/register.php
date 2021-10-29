@@ -1,8 +1,18 @@
 <?php
+    require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
     require_once('components/Customer.Class.php');
+    $headObj = new HeadHTML();
     $custObj = new Customer();
     $custObj->registerCust();
 ?>
+
+<!DOCTYPE html>
+<html lang="th">
+<?php
+    echo $headObj->getHead();
+?>
+<body style="overflow-x: hidden">
+<?php require_once("{$_SERVER['DOCUMENT_ROOT']}/navbar.php"); ?>
 
 <link rel="stylesheet" href="assets/jquery.Thailand.js/dist/jquery.Thailand.min.css">
 <script type="text/javascript" src="assets/jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
@@ -99,7 +109,7 @@
                             </div>
                             <div class="col-lg-12 text-right">
                                 <hr />
-                                <a href="?page=login" class="btn btn-danger br-30 py-3 px-5 mr-3"><span class="fa fa-arrow-left"></span> ย้อนกลับ</a>
+                                <a href="/login" class="btn btn-danger br-30 py-3 px-5 mr-3"><span class="fa fa-arrow-left"></span> ย้อนกลับ</a>
                                 <button type="submit" class="btn btn-premium br-30 py-3 px-5" name="register"><span class="fa fa-sign-in-alt"></span> ยืนยันการสมัคร</button>
                             </div>
                         </form>
@@ -152,3 +162,6 @@ $("body").css("background-size", "cover" );
 $("body").css("background-position", "top center");
 $("body").css("background-attachment", "fixed");
 </script>
+
+</body>
+</html>

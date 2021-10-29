@@ -22,7 +22,6 @@
 ?>
 <body style="overflow-x: hidden">
 <?php
-    if(!isset($_SESSION['cust_id'])) { header('Location: /login'); }
     if(isset($_POST['submit'])) {
         $oprodObj->addOrder();
     }
