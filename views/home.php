@@ -17,7 +17,7 @@
 
 <?php require_once("{$_SERVER['DOCUMENT_ROOT']}/navbar.php"); ?>
 
-<div style="background-image: url('image/bg-1.jpg'); background-color: #FFF; background-size: cover; background-position: top center; background-attachment: fixed; padding-top: 15vh;">
+<div style="background-color: #FFF; padding-top: 15vh;">
     <div class="container">
         <div class="row">
             <div class="col-lg-2"></div>
@@ -37,31 +37,31 @@
                     </ul>
                     <div class="carousel-inner br-30s">
                         <div class="carousel-item active">
-                            <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่02.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่03.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่04.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่05.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่05.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่06.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่06.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่07.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่07.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่08.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่08.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่09.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่09.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -78,7 +78,7 @@
 </div>
 
 <div class="pt-5 text-center" style="background-color: #FFF;">
-    <img class="lazyload" data-src="../image/vlogo.png" width="350px">
+    <img class="lazyload" data-src="../image/vlogo.png" width="350px" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
 </div>
 
 <!-- แนะนำสินค้า -->
@@ -132,9 +132,9 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-12 mt-5">
-                <h5><b>สวนกาแฟจังหวัดชุมพร</b></h5>
+                <h3 style="font-size: 20px; color: #CF952A;"><b>สวนกาแฟจังหวัดชุมพร</b></h3>
                 <p><a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ในจังหวัดชุมพร ถือเป็นหนึ่งแหล่งเพาะปลูกกาแฟสายพันธุ์โรบัสต้ามากที่สุดในประเทศไทย และเป็นผลิตภัณฑ์ทางการเกษตรที่สามารถสร้างรายได้ให้กับเกษตรกรชาวชุมพรได้ดี เนื่องจากสภาพภูมิอากาศและภูมิประเทศของจังหวัดชุมพรนั้นเหมาะสมกับการปลูกกาแฟโรบัสต้า เพราะต้นกาแฟสายพันธุ์นี้เหมาะสำหรับปลูกในพื้นที่ราบต่ำและมีความชื้น นอกจากนั้น ต้นกาแฟสายพันธุ์ยังปลูกง่าย และทนต่ออุณหภูมิสูงได้ดี ไม่ต้องพึ่งสารเคมี และใช้ต้นทุนต่ำอีกด้วย</p>
-                <h5><b>ความโดดเด่นของกาแฟโรบัสต้า</b></h5>
+                <h3 style="font-size: 20px; color: #CF952A;"><b>ความโดดเด่นของกาแฟโรบัสต้า</b></h3>
                 <p>กาแฟโรบัสต้านั้นมีจุดเด่นที่ไม่ซ้ำกับกาแฟสายพันธุ์อื่น เมล็ดกาแฟโรบัสต้านั้นมีลักษณะเป็นทรงกลมมนและมีเส้นผ่าตรงกลางเป็นแนวตรง มีความเข้มและขม ไม่ค่อยติดรสชาติเปรี้ยว รสชาติจึงจะค่อนข้างฝาด อีกทั้งมีระดับน้ำตาลและระดับกรดที่ต่ำ ตอบโจทย์คอกาแฟที่ชื่นชอบความเข้มข้นเป็นพิเศษ เพราะมีปริมาณคาเฟอีนอยู่ที่ 2% - 4.5% ซึ่งถือว่าสูงกว่าการกาแฟอราบิก้าเป็นเท่าตัว จึงนิยมนำมาทำเป็นกาแฟสำเร็จรูปหรือกาแฟคั่ว อย่างไรก็ตาม กว่าจะมาเป็น<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>อย่างที่เรารู้จัก ต้องผ่านกระบวนการผลิตอันพิถีพิถันหลากหลายขั้นตอน</p>
             </div>
         </div>
@@ -142,7 +142,7 @@
 </div>
 
 <!-- Present -->
-<div style="background-image: url('/image/bg-1.jpg'); background-color: #FFF; background-size: cover; background-position: top center; background-attachment: fixed;">
+<div style="background-color: #FFF; background-size: cover; background-position: top center; background-attachment: fixed;">
     <div class="container">
         <h1 class="text-center" style="color: #CF952A; font-weight: 800; font-size: 30px; padding-top: 40px">กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร</h1>
         <div class="row mb-5">
@@ -164,7 +164,7 @@
                 </video> -->
             </div>
         </div>
-        <h5><b>กว่าจะมาเป็นกาแฟชุมพร</b></h5>
+        <h3 style="font-size: 20px; color: #CF952A;"><b>กว่าจะมาเป็นกาแฟชุมพร</b></h3>
         <p class="mb-2">กาแฟชุมพรไม่ได้มีจุดเด่นแค่เฉพาะสายพันธุ์กาแฟโรบัสต้าอย่างเดียว แต่เนื่องจากความละเอียดอ่อนในกระบวนการผลิต จึงทำให้<a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ประจำภาคใต้นี้เป็นที่ยอมรับไปทั่วโลก</p>
         <p class="mb-2">เมื่อผ่านการเก็บเกี่ยวแล้ว เมล็ดกาแฟจะถูกนำมาตากแห้งเป็นเวลา 20 นาที จากนั้นจะถูกนำไปอบลมร้อนที่อุณหภูมิ 80 องศาเซลเซียส และนำมาตากในโรงอบพลังงานแสงอาทิตย์เป็นเวลา 10 วัน ต่อมาเป็นกระบวนการที่ใช้เวลานานที่สุดคือการ “บ่ม” ที่ใช้เวลา 1 ปีเพื่อดึงรสชาติที่อร่อยที่สุดออกมา หลังจากเสร็จสิ้นการบ่ม เมล็ดกาแฟจะถูกนำมาขัดสี เพื่อเอาเปลือกออก ซึ่งเปลือกเหล่านี้ยังสามารถนำไปทำเป็น ปุ๋ยหรือถ่านแท่งได้ จากนั้นจะเป็นการคัดแยกเมล็ดและนำไปคั่วในระดับต่างๆ 3 ระดับ ได้แก่ คั่วอ่อน คั่วกลาง และคั่วเข็ม สุดท้ายเมล็ดกาแฟที่ถูกคั่วจะถูกนำไปคัดแยก เพื่อค้นหาเมล็ดที่สมบูรณ์ ได้คุณภาพมากที่สุดนั่นเอง</p>
         <p class="mb-2">แม้ในสมัยก่อนกาแฟโรบัสต้าจะไม่ได้รับความนิยมมากนัก เนื่องจากการควบคุมคุณภาพการผลิตที่เป็นได้ยาก แต่ด้วยเทคโนโลยีการคั่วในยุคนี้ที่ก้าวหน้าขึ้น จึงสามารถเข้ามาช่วยให้<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>มีรสชาติและคุณภาพที่ดีขึ้น ไม่ว่าจะชงเป็นกาแฟสด นำไปผสมกับกาแฟอราบิก้าเพื่อรสชาติใหม่ๆ แปรรูปเป็นกาแฟกึ่งสำเร็จรูป หรือผลิตเป็นกาแฟกระป๋องพร้อมทาน ก็เป็นที่นิยมมากในปัจจุบัน</p>
@@ -191,7 +191,7 @@
 <!-- แนะนำการท่องเที่ยว -->
 <div style="background-color: #FFF; padding: 10vh 0;">
     <div class="container text-center">
-        <h1 style="color: #CF952A; font-weight: 800; font-size: 30px; margin-bottom: 50px">แนะนำการท่องเที่ยว</h1>
+        <h3 style="color: #CF952A; font-weight: 800; font-size: 30px; margin-bottom: 50px">แนะนำการท่องเที่ยว</h3>
         <button class="btn btn-warning btn-lg br-20 px-4 mr-3 btn-tumb" id="t1">ตำบลถ้ำสิงห์</button>
         <button class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t2">ตำบลนาสัก</button>
         <button class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t3">ตำบลท่ามะพลา</button>
@@ -209,8 +209,9 @@
                     data-aos="fade-down-right"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
-                    data-src="../image/เขาร้อยยอด.png"
+                    data-src="../image/เขาร้อยยอด.webp"
                     width="100%"
+                    alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                 >
             </div>
             <div class="col-lg-7 mb-5">
@@ -241,21 +242,22 @@
                     data-aos="fade-up-left"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
-                    data-src="../image/ถ้ำศิลางู.png"
+                    data-src="../image/ถ้ำศิลางู.webp"
                     width="100%"
+                    alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                 >
             </div>
         </div>
     </div>
 
-    <div style="background-image: url('image/ถ้ำศิลางู.png'); background-size: cover; background-position: top center; background-attachment: fixed; min-height: 60vh;">
+    <div style="background-image: url('image/ถ้ำศิลางู.webp'); background-size: cover; background-position: top center; background-attachment: fixed; min-height: 60vh;">
         <div style="background-color: rgb(0, 0, 0, 0.5);">
             <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
                 <div style="background-color: rgba(255, 255, 255, 0.8); border-radius: 25px;">
                     <div class="p-4">
                         <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
                             <div class="col-lg-12 text-center mb-4">
-                                <h1 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลถ้ำสิงห์</h1>
+                                <h3 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลถ้ำสิงห์</h3>
                             </div>
                             <div class="col-lg-3">
                                 <h5
@@ -281,8 +283,9 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    data-src="../image/ถ้ำศิลางู.png"
+                                    data-src="../image/ถ้ำศิลางู.webp"
                                     width="100%"
+                                    alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                                 >
                             </div>
                             <div class="col-lg-3">
@@ -343,8 +346,9 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/เขาตาหมื่นนี1.png"
+                        data-src="../image/เขาตาหมื่นนี1.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
                 <div class="col-lg-5 mb-5">
@@ -353,8 +357,9 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/เขาตาหมื่นนี.png"
+                        data-src="../image/เขาตาหมื่นนี.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
@@ -374,14 +379,14 @@
         </div>
     </div>
 
-    <div style="background-image: url('image/เขาตาหมื่นนี1.png'); background-size: cover; background-position: top center; background-attachment: fixed; min-height: 60vh;">
+    <div style="background-image: url('image/เขาตาหมื่นนี1.webp'); background-size: cover; background-position: top center; background-attachment: fixed; min-height: 60vh;">
         <div style="background-color: rgb(0, 0, 0, 0.3);">
             <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
                 <div style="background-color: rgba(255, 255, 255, 0.8); border-radius: 25px;">
                     <div class="p-4">
                         <div class="row" style="overflow-x: hidden">
                             <div class="col-lg-12 text-center mb-4">
-                                <h1 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลนาสัก</h1>
+                                <h3 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลนาสัก</h3>
                             </div>
                             <div class="col-lg-3">
                                 <h5
@@ -407,8 +412,9 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    data-src="../image/เขาตาหมื่นนี.png"
+                                    data-src="../image/เขาตาหมื่นนี.webp"
                                     width="100%"
+                                    alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                                 >
                             </div>
                             <div class="col-lg-3">
@@ -466,8 +472,9 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/สวนสมเด็จพระศรีนครินทร์.png"
+                        data-src="../image/สวนสมเด็จพระศรีนครินทร์.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
@@ -498,22 +505,23 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/วัดถ้ำเขาเงิน.png"
+                        data-src="../image/วัดถ้ำเขาเงิน.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
             </div>
         </div>
     </div>
 
-    <div style="background-image: url('image/เขาตาหมื่นนี1.png'); background-size: cover; background-position: top center; background-attachment: fixed;">
+    <div style="background-image: url('image/เขาตาหมื่นนี1.webp'); background-size: cover; background-position: top center; background-attachment: fixed;">
         <div style="background-color: rgb(0, 0, 0, 0.3);">
             <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
                 <div style="background-color: rgba(255, 255, 255, 0.8); border-radius: 25px;">
                     <div class="p-4">
                         <div class="row" style="overflow-x: hidden">
                             <div class="col-lg-12 text-center mb-4">
-                                <h1 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลท่ามะพลา</h1>
+                                <h3 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลท่ามะพลา</h3>
                             </div>
                             <div class="col-lg-7">
                                 <h5
@@ -539,8 +547,9 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    data-src="../image/เขาตาหมื่นนี.png"
+                                    data-src="../image/เขาตาหมื่นนี.webp"
                                     width="100%"
+                                    alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                                 >
                             </div>
                         </div>
@@ -573,8 +582,9 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/จุดชมวิวแหลมหัวโม่ง.png"
+                        data-src="../image/จุดชมวิวแหลมหัวโม่ง.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
                 <div class="col-lg-5 mb-5">
@@ -583,8 +593,9 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/ชายทะเลปากหาด.png"
+                        data-src="../image/ชายทะเลปากหาด.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
@@ -615,8 +626,9 @@
                         data-aos="fade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/สะพานพนังตัก.png"
+                        data-src="../image/สะพานพนังตัก.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
                 <div class="col-lg-5 mb-5">
@@ -625,8 +637,9 @@
                         data-aos="fade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
-                        data-src="../image/สวนสมเด็จพระศรีนครินทร์.png"
+                        data-src="../image/สวนสมเด็จพระศรีนครินทร์.webp"
                         width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
@@ -644,14 +657,14 @@
         </div>
     </div>
 
-    <div style="background-image: url('image/จุดชมวิวแหลมหัวโม่ง.png'); background-size: cover; background-position: top center; background-attachment: fixed;">
+    <div style="background-image: url('image/จุดชมวิวแหลมหัวโม่ง.webp'); background-size: cover; background-position: top center; background-attachment: fixed;">
         <div style="background-color: rgb(0, 0, 0, 0.3);">
             <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
                 <div style="background-color: rgba(255, 255, 255, 0.8); border-radius: 25px;">
                     <div class="p-4">
                         <div class="row" style="overflow-x: hidden">
                             <div class="col-lg-12 text-center mb-4">
-                                <h1 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลนาทุ่ง</h1>
+                                <h3 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาตำบลนาทุ่ง</h3>
                             </div>
                             <div class="col-lg-7">
                                 <h5
@@ -677,8 +690,9 @@
                                     data-aos="zoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
-                                    data-src="../image/จุดชมวิวแหลมหัวโม่ง.png"
+                                    data-src="../image/จุดชมวิวแหลมหัวโม่ง.webp"
                                     width="100%"
+                                    alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
                                 >
                             </div>
                         </div>
@@ -692,7 +706,7 @@
 <!-- แพ็คเกจท่องเที่ยว -->
 <div style="background-color: #FFF" class="pt-5">
     <div class="container">
-        <h1 class="text-center" style="color: #CF952A; font-weight: 800; font-size: 30px; padding: 40px 0">จองแพ็คเกจท่องเที่ยว</h1>
+        <h3 class="text-center" style="color: #CF952A; font-weight: 800; font-size: 30px; padding: 40px 0">จองแพ็คเกจท่องเที่ยว</h3>
         <div class="row">
             <div class="col-lg-4">
                 <div class="card border-0 mb-4 shadow-sm text-center br-30">
@@ -703,7 +717,7 @@
                         <div class="card-img-pkg">
                             <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%" alt="เขาร้อยยอดและผาตาอู๊ด">
                         </div>
-                        <h1 class="card-title pricing-card-title">150 <small class="text-muted">/ คน</small></h1>
+                        <h3 class="card-title pricing-card-title">150 <small class="text-muted">/ คน</small></h3>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>ระยะเวลา 1 วัน</li>
                             <li>สูงสุด 10 คน</li>
@@ -726,7 +740,7 @@
                         <div class="card-img-pkg">
                             <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%" alt="แหลมคอกวาง-เขาหัวโม่ง">
                         </div>
-                        <h1 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h1>
+                        <h3 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h3>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>ระยะเวลา 3 วัน 2 คืน</li>
                             <li>สูงสุด 10 คน</li>
@@ -749,7 +763,7 @@
                         <div class="card-img-pkg">
                             <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%" alt="เขาถ้ำศิลางู">
                         </div>
-                        <h1 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h1>
+                        <h3 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h3>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>ระยะเวลา 2 วัน</li>
                             <li>สูงสุด 15 คน</li>
@@ -785,13 +799,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="text-premium mt-5" style="font-weight: 800; font-size: 30px; border-bottom: dotted #BEBEBE thin; padding-bottom: 15px; margin-bottom: 20px"><span class="fa fa-bullhorn mr-2"></span> ประชาสัมพันธ์</h1>
+                <h3 class="text-premium mt-5" style="font-weight: 800; font-size: 30px; border-bottom: dotted #BEBEBE thin; padding-bottom: 15px; margin-bottom: 20px"><span class="fa fa-bullhorn mr-2"></span> ประชาสัมพันธ์</h3>
             </div>
             <div class="col-lg-4">
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>14 ก.ย. 2564
@@ -806,7 +820,7 @@
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>10 พ.ค. 2564
@@ -821,7 +835,7 @@
                 <div class="card card-news shadow border-0 br-15">
                     <div class="card-body">
                         <div class="news-img">
-                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%">
+                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
                         </div>
                         <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
                             <i class="far fa-calendar-alt mr-2"></i>25 มี.ค. 2564
@@ -847,7 +861,7 @@
 "@context": "http://schema.org/",
 "@type": "LocalBusiness",
 "name": "กาแฟชุมพรเกรดพรีเมียม ส่งตรงจากสวนกาแฟจังหวัดชุมพร",
-"../image": "https://vchumphon.com/image/logo.png",
+"../image": "https://vchumphon.com/image/logo.webp",
 "description": "กาแฟชุมพรเกรดพรีเมียม ส่งตรงจากสวนกาแฟจังหวัดชุมพร กาแฟโรบัสต้าเกรดพรีเมี่ยม ผลิตภัณฑ์โดยคนไทย พร้อมบริการนำเที่ยวชมสวนกาแฟ และท่องเที่ยวชุมพร",
 "address":"การวิจัยและพัฒนานวัตกรรมเทคโนโลยีดิจิตอลฯ มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ เลขที่ 2 ถนนนางลิ้นจี่ แขวงทุ่งมหาเมฆ เขตสาทร 10120",
 "priceRange":"0 - 9,999 THB",
