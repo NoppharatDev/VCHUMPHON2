@@ -129,6 +129,21 @@ class Images extends Database {
         $conn->close();
     }
 
+    public function getBlogImg($id) {
+        header('content-type: image/webp');
+        $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT blog_img FROM blogs WHERE blog_id = ?");
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        if($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $img = $row['blog_img'];
+            echo $this->resize($img);
+        }
+        $conn->close();
+    }
+
     /* 
     public function getCustImg($id) {
         $conn = $this->connect();
@@ -161,6 +176,8 @@ class Images extends Database {
                 $this->getPkgImg2($id);
             } else if($type == 'pkg3') {
                 $this->getPkgImg3($id);
+            } else if($type == 'blog') {
+                $this->getBlogImg($id);
             }
         }
     }

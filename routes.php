@@ -24,7 +24,8 @@ get('/cart', '/views/my_cart.php'); // View Carts Page
 get('/cart/confirm', '/views/cart_confirm.php'); // View Carts Confirm Page
 get('/login', '/views/login.php'); // View Login Page
 get('/register', '/views/register.php'); // View Register Page
-get('/content/$id', '/views/content.php'); // View Content Page By ID
+get('/content', '/views/content.php'); // View Contents
+get('/content/$id', '/views/content_view.php'); // View Content Page By ID
 
 ##### POST ACTION #####
 post('/robusta/$id', '/views/product_view.php');

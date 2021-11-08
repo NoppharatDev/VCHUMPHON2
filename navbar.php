@@ -33,7 +33,7 @@
                     <a href="/product" class="nav-link" id="aboutMenu">ผลิตภัณฑ์ชุมชน</a>
                 </li>
                 <li class="nav-item px-2 active">
-                    <a href="/content/1" class="nav-link" id="contentMenu">ประชาสัมพันธ์</a>
+                    <a href="/content" class="nav-link" id="contentMenu">ประชาสัมพันธ์</a>
                 </li>
                 <!-- <li class="nav-item px-2 active">
                     <a href="about.html" class="nav-link" id="aboutMenu">ร้านค้าที่เข้าร่วมโครงการ</a>

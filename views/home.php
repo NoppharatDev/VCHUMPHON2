@@ -1,7 +1,9 @@
 <?php
     // session_start();
+    require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Blog.Class.php");
     require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
     $headObj = new HeadHTML();
+    $blogObj = new Blog();
     $cart_count = 0;
 ?>
 <!DOCTYPE html>
@@ -132,7 +134,7 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-12 mt-5">
-                <h3 style="font-size: 20px; color: #CF952A;"><b>สวนกาแฟจังหวัดชุมพร</b></h3>
+                <h2 style="font-size: 20px; color: #CF952A;"><b>สวนกาแฟจังหวัดชุมพร</b></h2>
                 <p><a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ในจังหวัดชุมพร ถือเป็นหนึ่งแหล่งเพาะปลูกกาแฟสายพันธุ์โรบัสต้ามากที่สุดในประเทศไทย และเป็นผลิตภัณฑ์ทางการเกษตรที่สามารถสร้างรายได้ให้กับเกษตรกรชาวชุมพรได้ดี เนื่องจากสภาพภูมิอากาศและภูมิประเทศของจังหวัดชุมพรนั้นเหมาะสมกับการปลูกกาแฟโรบัสต้า เพราะต้นกาแฟสายพันธุ์นี้เหมาะสำหรับปลูกในพื้นที่ราบต่ำและมีความชื้น นอกจากนั้น ต้นกาแฟสายพันธุ์ยังปลูกง่าย และทนต่ออุณหภูมิสูงได้ดี ไม่ต้องพึ่งสารเคมี และใช้ต้นทุนต่ำอีกด้วย</p>
                 <h3 style="font-size: 20px; color: #CF952A;"><b>ความโดดเด่นของกาแฟโรบัสต้า</b></h3>
                 <p>กาแฟโรบัสต้านั้นมีจุดเด่นที่ไม่ซ้ำกับกาแฟสายพันธุ์อื่น เมล็ดกาแฟโรบัสต้านั้นมีลักษณะเป็นทรงกลมมนและมีเส้นผ่าตรงกลางเป็นแนวตรง มีความเข้มและขม ไม่ค่อยติดรสชาติเปรี้ยว รสชาติจึงจะค่อนข้างฝาด อีกทั้งมีระดับน้ำตาลและระดับกรดที่ต่ำ ตอบโจทย์คอกาแฟที่ชื่นชอบความเข้มข้นเป็นพิเศษ เพราะมีปริมาณคาเฟอีนอยู่ที่ 2% - 4.5% ซึ่งถือว่าสูงกว่าการกาแฟอราบิก้าเป็นเท่าตัว จึงนิยมนำมาทำเป็นกาแฟสำเร็จรูปหรือกาแฟคั่ว อย่างไรก็ตาม กว่าจะมาเป็น<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>อย่างที่เรารู้จัก ต้องผ่านกระบวนการผลิตอันพิถีพิถันหลากหลายขั้นตอน</p>
@@ -148,7 +150,7 @@
         <div class="row mb-5">
             <div class="col-lg-12 pt-5 text-center">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FeUY-KpI0pM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FeUY-KpI0pM?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>
             </div>
                 <!-- <video
                     id="myVideo"
@@ -164,7 +166,7 @@
                 </video> -->
             </div>
         </div>
-        <h3 style="font-size: 20px; color: #CF952A;"><b>กว่าจะมาเป็นกาแฟชุมพร</b></h3>
+        <h2 style="font-size: 20px; color: #CF952A;"><b>กว่าจะมาเป็นกาแฟชุมพร</b></h2>
         <p class="mb-2">กาแฟชุมพรไม่ได้มีจุดเด่นแค่เฉพาะสายพันธุ์กาแฟโรบัสต้าอย่างเดียว แต่เนื่องจากความละเอียดอ่อนในกระบวนการผลิต จึงทำให้<a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ประจำภาคใต้นี้เป็นที่ยอมรับไปทั่วโลก</p>
         <p class="mb-2">เมื่อผ่านการเก็บเกี่ยวแล้ว เมล็ดกาแฟจะถูกนำมาตากแห้งเป็นเวลา 20 นาที จากนั้นจะถูกนำไปอบลมร้อนที่อุณหภูมิ 80 องศาเซลเซียส และนำมาตากในโรงอบพลังงานแสงอาทิตย์เป็นเวลา 10 วัน ต่อมาเป็นกระบวนการที่ใช้เวลานานที่สุดคือการ “บ่ม” ที่ใช้เวลา 1 ปีเพื่อดึงรสชาติที่อร่อยที่สุดออกมา หลังจากเสร็จสิ้นการบ่ม เมล็ดกาแฟจะถูกนำมาขัดสี เพื่อเอาเปลือกออก ซึ่งเปลือกเหล่านี้ยังสามารถนำไปทำเป็น ปุ๋ยหรือถ่านแท่งได้ จากนั้นจะเป็นการคัดแยกเมล็ดและนำไปคั่วในระดับต่างๆ 3 ระดับ ได้แก่ คั่วอ่อน คั่วกลาง และคั่วเข็ม สุดท้ายเมล็ดกาแฟที่ถูกคั่วจะถูกนำไปคัดแยก เพื่อค้นหาเมล็ดที่สมบูรณ์ ได้คุณภาพมากที่สุดนั่นเอง</p>
         <p class="mb-2">แม้ในสมัยก่อนกาแฟโรบัสต้าจะไม่ได้รับความนิยมมากนัก เนื่องจากการควบคุมคุณภาพการผลิตที่เป็นได้ยาก แต่ด้วยเทคโนโลยีการคั่วในยุคนี้ที่ก้าวหน้าขึ้น จึงสามารถเข้ามาช่วยให้<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>มีรสชาติและคุณภาพที่ดีขึ้น ไม่ว่าจะชงเป็นกาแฟสด นำไปผสมกับกาแฟอราบิก้าเพื่อรสชาติใหม่ๆ แปรรูปเป็นกาแฟกึ่งสำเร็จรูป หรือผลิตเป็นกาแฟกระป๋องพร้อมทาน ก็เป็นที่นิยมมากในปัจจุบัน</p>
@@ -801,53 +803,37 @@
             <div class="col-lg-12">
                 <h3 class="text-premium mt-5" style="font-weight: 800; font-size: 30px; border-bottom: dotted #BEBEBE thin; padding-bottom: 15px; margin-bottom: 20px"><span class="fa fa-bullhorn mr-2"></span> ประชาสัมพันธ์</h3>
             </div>
-            <div class="col-lg-4">
-                <div class="card card-news shadow border-0 br-15">
-                    <div class="card-body">
-                        <div class="news-img">
-                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
-                        </div>
-                        <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
-                            <i class="far fa-calendar-alt mr-2"></i>14 ก.ย. 2564
-                        </div>
-                        <h5 class="news-title mt-1 mx-4"><b>เปิดให้บริการเว็บ vchumphon.com แล้ววันนี้!</b></h5>
-                        <p class="news-detail mx-4">เปิดให้บริการเว็บ vchumphon.com แล้ววันนี้! สามารถสั่งซื้อผลิตภัณฑ์ชุมชนและกาแฟโรบัสต้าพรีเมียมได้แล้ว</p>
-                        <p class="mx-4 mb-4"><a href="" class="badge badge-premium px-2">อ่านต่อ...</a> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card card-news shadow border-0 br-15">
-                    <div class="card-body">
-                        <div class="news-img">
-                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
-                        </div>
-                        <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
-                            <i class="far fa-calendar-alt mr-2"></i>10 พ.ค. 2564
-                        </div>
-                        <h5 class="news-title mt-1 mx-4"><b>สถานที่เที่ยวแนะนำ "แหลมคอกวาง-เขาหัวโม่ง"</b></h5>
-                        <p class="news-detail mx-4">จุดชมพระอาทิตย์ขึ้นและพระอาทิตย์ตกที่สวยงามมากกกกกของชุมพร ตั้งอยู่ตำบลนาทุ่ง อ.เมืองชุมพร เอกลักษณ์ของที่นี่ คือ โขดหินมากมายที่วางเรียงรายอยู่บนชายหาด กลายเป็นอีกหนึ่งจุดถ่ายรูปสวยๆของทุกคนที่มาเช็คอินที่แห่งนี้</p>
-                        <p class="mx-4 mb-4"><a href="" class="badge badge-premium px-2">อ่านต่อ...</a> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card card-news shadow border-0 br-15">
-                    <div class="card-body">
-                        <div class="news-img">
-                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
-                        </div>
-                        <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
-                            <i class="far fa-calendar-alt mr-2"></i>25 มี.ค. 2564
-                        </div>
-                        <h5 class="news-title mt-1 mx-4"><b>สถานที่เที่ยวแนะนำ "เขาร้อยยอดและผาตาอู๊ด"</b></h5>
-                        <p class="news-detail mx-4">พิชิต...เขาร้อยยอด จุดชมวิวที่สูงที่สุดในตัวเมืองชุมพร ยอดเขาหินเล็กๆ รองรับประมาณ 10-20 คน สามารถมองเห็นวิวได้โดยรอบ มองเห็นยอดเขามากมายหลายร้อยยอด</p>
-                        <p class="mx-4 mb-4"><a href="" class="badge badge-premium px-2">อ่านต่อ...</a> </p>
-                    </div>
-                </div>
-            </div>
+            <?php
+                $result = $blogObj->queryBlogs(); $i = 1;
+                if($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        if($i <= 3) {
+            ?>
+                            <div class="col-lg-4">
+                                <div class="card card-news shadow border-0 br-15">
+                                    <div class="card-body">
+                                        <div class="news-img">
+                                            <img class="lazyload" data-src="img_view/blog/<?php echo $row["blog_id"]; ?>/1" width="100%" alt="<?php echo $row["blog_name"]; ?>">
+                                        </div>
+                                        <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
+                                            <i class="far fa-calendar-alt mr-2"></i><?php echo $blogObj->dateThai($row["blog_created"]); ?>
+                                        </div>
+                                        <h5 class="news-titles mt-1 mx-4" style="min-height: 45px; max-height: 45px; overflow: hidden;">
+                                            <b><a href="/content/<?php echo $row["blog_id"]; ?>" class="text-premium" style="text-decoration:none;"><?php echo $row["blog_name"]; ?></a></b>
+                                        </h5>
+                                        <p class="news-details mx-4" style="min-height: 75px; max-height: 75px; overflow: hidden;"><?php echo $row["blog_detail_short"]; ?></p>
+                                        <p class="mx-4 mb-4"><a href="/content/<?php echo $row["blog_id"]; ?>" class="badge badge-premium px-2">อ่านต่อ...</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+            <?php
+                            $i++;
+                        }
+                    }
+                }
+            ?>
             <div class="col-lg-12 text-center mb-4">
-                <a href="" class="btn btn-premium br-30 py-3 px-5">แสดงเพิ่มเติม <span class="fa fa-angle-double-right"></span></a>
+                <a href="/content" class="btn btn-premium br-30 py-3 px-5">แสดงเพิ่มเติม <span class="fa fa-angle-double-right"></span></a>
             </div>
         </div>
     </div>
