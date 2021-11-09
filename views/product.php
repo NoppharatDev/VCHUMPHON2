@@ -106,31 +106,31 @@
                     </ul>
                     <div class="carousel-inner br-30s">
                         <div class="carousel-item active">
-                            <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่02.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่02.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่03.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่03.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่04.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่04.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่05.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่05.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่06.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่06.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่07.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่07.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่08.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่08.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                         <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่09.jpg" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่09.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">

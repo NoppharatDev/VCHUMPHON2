@@ -1,4 +1,12 @@
 <?php
+    if(isset($_GET["page"])) {
+        echo 5555555555;
+        $p = $_GET["page"];
+        if($p == 'pkg') { header( "location: /travel" ); }
+        else if($p == 'prod') { header( "location: /robusta" ); }
+        else if($p == 'prodp') { header( "location: /product" ); }
+        else if($p == 'cart') { header( "location: /cart" ); }
+    }
     $cart_count = 0;
     if(isset($_SESSION['my_cart']) && count($_SESSION['my_cart']) > 0) {
         $cart_count = count($_SESSION['my_cart']);
@@ -12,7 +20,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-navbar" style="padding: 11px 0">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="/image/logo.png" class="d-inline-block align-top" alt="">
+            <img src="/image/logo.png" class="d-inline-block align-top" alt="VCHUMPON">
             <!-- <b><span class="fa fa-coffee mr-2"></span> VCHUMPHON</b> -->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

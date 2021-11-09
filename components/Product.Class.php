@@ -233,7 +233,7 @@ class Product extends Database {
     // ฟังชั่นเรียกใช้ข้อมูลจากฐานข้อมูล Products ทั้งหมด
     public function queryProducts() {
         $conn = $this->connect();
-        $stmt = $conn->prepare("SELECT * FROM products WHERE prod_type = 3 AND admin_id = 1 ORDER BY prod_id DESC");
+        $stmt = $conn->prepare("SELECT * FROM products WHERE prod_type = 3 AND admin_id = 1 AND prod_status = 1 ORDER BY prod_id DESC");
         $stmt->execute();
         $result = $stmt->get_result();
         return $result;
@@ -242,7 +242,7 @@ class Product extends Database {
     // ฟังชั่นเรียกใช้ข้อมูลจากฐานข้อมูล Partner Products ทั้งหมด
     public function queryPartnerProducts() {
         $conn = $this->connect();
-        $stmt = $conn->prepare("SELECT * FROM products WHERE prod_type = 3 AND prod_status = 1 ORDER BY prod_id DESC");
+        $stmt = $conn->prepare("SELECT * FROM products WHERE prod_type = 3 AND prod_status = 1 AND prod_status = 1 ORDER BY prod_id DESC");
         $stmt->execute();
         $result = $stmt->get_result();
         return $result;

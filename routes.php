@@ -26,6 +26,7 @@ get('/login', '/views/login.php'); // View Login Page
 get('/register', '/views/register.php'); // View Register Page
 get('/content', '/views/content.php'); // View Contents
 get('/content/$id', '/views/content_view.php'); // View Content Page By ID
+get('/test', '/views/test.php'); // View Content Page By ID
 
 ##### POST ACTION #####
 post('/robusta/$id', '/views/product_view.php');

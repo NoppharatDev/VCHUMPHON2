@@ -38,9 +38,11 @@
                                         <img class="lazyload" data-src="img_view/blog/<?php echo $row["blog_id"]; ?>/1" width="100%" alt="<?php echo $row["blog_name"]; ?>">
                                     </div>
                                     <div class="post-meta mx-4 mt-3 text-right text-premium" style="font-size: 13px;">
-                                        <i class="far fa-calendar-alt mr-2"></i><?php echo $row["blog_created"]; ?>
+                                        <i class="far fa-calendar-alt mr-2"></i><?php echo $blogObj->dateThai($row["blog_created"]); ?>
                                     </div>
-                                    <h5 class="news-titles mt-1 mx-4" style="min-height: 45px; max-height: 45px; overflow: hidden;"><b><?php echo $row["blog_name"]; ?></b></h5>
+                                    <h5 class="news-titles mt-1 mx-4" style="min-height: 45px; max-height: 45px; overflow: hidden;">
+                                        <b><a href="/content/<?php echo $row["blog_id"]; ?>" class="text-premium" style="text-decoration:none;"><?php echo $row["blog_name"]; ?></a></b>
+                                    </h5>
                                     <p class="news-details mx-4" style="min-height: 75px; max-height: 75px; overflow: hidden;"><?php echo $row["blog_detail_short"]; ?></p>
                                     <p class="mx-4 mb-4"><a href="/content/<?php echo $row["blog_id"]; ?>" class="badge badge-premium px-2">อ่านต่อ...</a> </p>
                                 </div>

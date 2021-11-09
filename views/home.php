@@ -12,6 +12,20 @@
     $headObj->addMeta("<meta name=\"description\" content=\"VCHUMPON ขอพาทุกท่านมาทำความรู้จักกับ “กาแฟชุมพร” หนึ่งแหล่งปลูกกาแฟคุณภาพเยี่ยมของประเทศไทย\" />");
     $headObj->addLink("<link rel=\"stylesheet\" href=\"https://unpkg.com/aos@2.3.1/dist/aos.css\">");
     $headObj->addScript("<script src=\"https://unpkg.com/aos@2.3.1/dist/aos.js\"></script>");
+    $headObj->addScript("<script src=\"https://www.google-analytics.com/analytics.js\"></script>");
+    $headObj->addScript("
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    ");
     $headObj->editTitleText(" - ทำความรู้จักกาแฟชุมพร โรบัสต้าที่โดดเด่นที่สุดในเมืองไทย");
     echo $headObj->getHead();
 ?>

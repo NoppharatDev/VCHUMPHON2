@@ -38,6 +38,7 @@
     <div class="container py-5">
         <h1 style="color: #CF952A; font-weight: 800; font-size: 30px;"><?php echo $blogObj->name; ?></h1>
         <hr>
+        <div class="text-right mb-5"><i class="far fa-calendar-alt mr-2"></i><?php echo $blogObj->dateThai($blogObj->created); ?> <a style="color: #CF952A;">(อัพเดทล่าสุด : <?php echo $blogObj->dateThai($blogObj->updated); ?>)</a></div>
         <?php echo $blogObj->detail; ?>
     </div>
 </div>
