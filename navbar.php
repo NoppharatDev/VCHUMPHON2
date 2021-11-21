@@ -19,6 +19,12 @@
 </style>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-navbar" style="padding: 11px 0">
     <div class="container">
+        <!--
+        <div class="d-none">
+            <script type="text/javascript" language="javascript1.1" src="https://tracker.stats.in.th/tracker.php?sid=74223"></script>
+            <noscript><a target="_blank" href="http://www.stats.in.th/">www.Stats.in.th</a></noscript>
+        </div>
+        -->
         <a class="navbar-brand" href="/">
             <img src="/image/logo.png" class="d-inline-block align-top" alt="VCHUMPON">
             <!-- <b><span class="fa fa-coffee mr-2"></span> VCHUMPHON</b> -->

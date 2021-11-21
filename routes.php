@@ -26,7 +26,7 @@ get('/login', '/views/login.php'); // View Login Page
 get('/register', '/views/register.php'); // View Register Page
 get('/content', '/views/content.php'); // View Contents
 get('/content/$id', '/views/content_view.php'); // View Content Page By ID
-get('/test', '/views/test.php'); // View Content Page By ID
+get('/generator_xml', '/views/generator_xml.php'); // View generator_xml
 
 ##### POST ACTION #####
 post('/robusta/$id', '/views/product_view.php');
@@ -36,6 +36,7 @@ post('/product/$id', '/views/product_partner_view.php');
 post('/cart/confirm', '/views/cart_confirm.php');
 post('/travel/booking/$id', '/views/package_confirm.php');
 post('/register', '/views/register.php');
+post('/my_packages/$id', '/views/my_package_view.php');
 
 /*get('/user/$id', 'user.php');
 

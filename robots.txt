@@ -1,26 +1,2 @@
-User-Agent:Googlebot
-User-Agent:Bingbot
-Sitemap: https://vchumphon.com/sitemap.xml
-Crawl-delay:0.1
-Disallow: /cart/confirm/
-Disallow: /robusta/
-Disallow: /product/
-Disallow: /content/*/
-Disallow: /product/*/
-Disallow: /robusta/*/
-Disallow: /travel/*/
-Disallow: /travel/booking/*/
-Disallow: /cart/
-
 User-Agent:*
 Sitemap: https://vchumphon.com/sitemap.xml
-Crawl-delay:1
-Disallow: /travel/
-Disallow: /robusta/
-Disallow: /product/
-Disallow: /content/*/
-Disallow: /product/*/
-Disallow: /robusta/*/
-Disallow: /travel/*/
-Disallow: /travel/booking/*/
-Disallow: /cart/
