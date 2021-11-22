@@ -52,7 +52,7 @@ $("#contactMenu").click(function() {
 });
 
 let amtText = $('#amtSQL').text();
-console.log(amtText.substr(amtText.lenght, 4));
+// console.log(amtText.substr(amtText.lenght, 4));
 
 $('#amt').change(function() {
     console.log($('#amt').val());

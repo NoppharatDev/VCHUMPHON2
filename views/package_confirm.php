@@ -242,7 +242,7 @@
         if(total >= <?php echo $pkgObj->start_reduce; ?>) {
             let promo_unit = <?php echo $pkgObj->promo_unit; ?>;
             if(promo_unit == 1) {
-                promo = (<?php echo $pkgObj->quantity ?>*total_price/100);
+                promo = (<?php echo $pkgObj->quantity ?> * total_price / 100);
                 $("#promo_text").text('-' + promo.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
             } else if(promo_unit == 2) {
                 promo = <?php echo $pkgObj->quantity ?>;

@@ -203,7 +203,7 @@ class OrderPackage extends Database {
     //
     public function setOrderPkgByID($id) {
         $conn = $this->connect();
-        $stmt = $conn->prepare("SELECT * FROM order_packages NATURAL JOIN admins WHERE opkg_id = ?");
+        $stmt = $conn->prepare("SELECT * FROM order_packages NATURAL JOIN packages NATURAL JOIN admins WHERE opkg_id = ?");
         $stmt->bind_param("i", $id);
         $stmt->execute();
         $result = $stmt->get_result();
