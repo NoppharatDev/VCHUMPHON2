@@ -148,7 +148,11 @@ class OrderProduct extends Database {
                                             $row_prod = $result_prod->fetch_assoc();
                                             $prod_name = $row_prod['prod_name'];
                                             $total_price = $price * $amount;
-                                            $message .= "{$num}.) {$prod_name} {$weight} กรัม ({$types[$type]}, {$levels[$level]}) จำนวน {$amount} ชิ้น 【 ราคารวม {$total_price} บาท 】\n";
+                                            if($type == NULL || $level == NULL) {
+                                                $message .= "{$num}.) {$prod_name} {$weight} กรัม จำนวน {$amount} ชิ้น 【 ราคารวม {$total_price} บาท 】\n";
+                                            } else {
+                                                $message .= "{$num}.) {$prod_name} {$weight} กรัม ({$types[$type]}, {$levels[$level]}) จำนวน {$amount} ชิ้น 【 ราคารวม {$total_price} บาท 】\n";
+                                            }
                                             $num += 1;
                                         } else { $insertStatus = FALSE; }
 

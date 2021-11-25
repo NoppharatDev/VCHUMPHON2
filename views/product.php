@@ -66,7 +66,7 @@
                                 <img src="/<?php echo $prodObj->getImage($row['prod_id']); ?>" width="100%" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (<?php echo "{$row['prod_name']} ขนาด {$row['prod_weight']} กรัม" ?>)">
                             </div>
                             <div class="card-title text-center mb-0 mt-5" style="font-weight: 600;">
-                                <a href="robusta/<?php echo $row['prod_id']; ?>" class="card-link text-dark"><b>กาแฟ โรบัสต้า พรีเมียม ชุมพร (250 กรัม)</b></a>
+                                <a href="robusta/<?php echo $row['prod_id']; ?>" class="card-link text-dark"><b>กาแฟ โรบัสต้า พรีเมียม ชุมพร (<?php echo $row['prod_weight']; ?> กรัม)</b></a>
                             </div>
                             <div class="text-center mb-4">
                                 <a href="/robusta/<?php echo $row['prod_id']; ?>" class="btn btn-premium py-2 px-5 mt-4 br-30 text-white" style="font-weight: 650; font-size: 18px;">สั่งซื้อสินค้า</a>

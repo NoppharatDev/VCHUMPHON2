@@ -103,8 +103,8 @@ class Customer extends Database {
             $this->pass = $_POST['password'];
             $this->pass_cf = $_POST['password_cf'];
             $this->title_name = $_POST['title_name'];
-            $this->first_name = $_POST['first_name'];
-            $this->last_name = $_POST['last_name'];
+            $this->first_name = $_POST['full_name'];
+            $this->last_name = $_POST['full_name'];
             $this->province = $_POST['province'];
             $this->zipcode = $_POST['zipcode'];
             $this->phone = $_POST['phone'];

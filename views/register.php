@@ -3,7 +3,6 @@
     require_once('components/Customer.Class.php');
     $headObj = new HeadHTML();
     $custObj = new Customer();
-    $custObj->registerCust();
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +11,7 @@
     echo $headObj->getHead();
 ?>
 <body style="overflow-x: hidden">
+<?php $custObj->registerCust(); ?>
 <?php require_once("{$_SERVER['DOCUMENT_ROOT']}/navbar.php"); ?>
 
 <link rel="stylesheet" href="assets/jquery.Thailand.js/dist/jquery.Thailand.min.css">
@@ -38,7 +38,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label for="password" class="text-premium ml-2"><b>รหัสผ่าน <sup class="text-danger">*</sup></b></label>
-                                    <input type="password" class="form-control form-control-lg br-20" id="password" name="password" value="<?php echo $custObj->pass; ?>" required>
+                                    <input type="password" class="form-control form-control-lg br-20" id="password" name="password" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -49,17 +49,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="first_name" class="text-premium ml-2"><b>ชื่อ <sup class="text-danger">*</sup></b></label>
-                                    <input type="text" class="form-control form-control-lg br-20" id="first_name" name="first_name" value="<?php echo $custObj->first_name; ?>" required>
+                                    <label for="full_name" class="text-premium ml-2"><b>ชื่อ-นามสกุล <sup class="text-danger">*</sup></b></label>
+                                    <input type="text" class="form-control form-control-lg br-20" id="full_name" name="full_name" value="<?php echo $custObj->first_name; ?>" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="last_name" class="text-premium ml-2"><b>นามสกุล <sup class="text-danger">*</sup></b></label>
-                                    <input type="text" class="form-control form-control-lg br-20" id="last_name" name="last_name" value="<?php echo $custObj->last_name; ?>" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
                                 <div class="form-group">
                                     <label for="title_name" class="text-premium ml-2"><b>เพศ <sup class="text-danger">*</sup></b></label>
                                     <br>

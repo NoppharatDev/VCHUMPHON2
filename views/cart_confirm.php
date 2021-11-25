@@ -167,7 +167,7 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="phone"><b>เบอร์โทรศัพท์ <sup class="text-danger">*</sup></b></label>
-                                            <input type="text" class="form-control br-10" id="phone" name="phone" placeholder="เบอร์โทรศัพท์" required>
+                                            <input type="text" class="form-control br-10" id="phone" name="phone" placeholder="เบอร์โทรศัพท์" onkeypress="if(this.value.length==10) return false;" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10" pattern="[0]{1}[0-9]{9}" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -191,7 +191,7 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="zipcode"><b>รหัสไปรษณีย์ <sup class="text-danger">*</sup></b></label>
-                                            <input type="text" class="form-control br-10" id="zipcode" name="zipcode" placeholder="รหัสไปรษณีย์" required>
+                                            <input type="text" class="form-control br-10" id="zipcode" name="zipcode" placeholder="รหัสไปรษณีย์" onkeypress="if(this.value.length==5) return false;" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="5" pattern="[0-9]{5}" required>
                                         </div>
                                     </div>
                                     <!-- <div class="col-lg-6">
