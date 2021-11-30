@@ -113,7 +113,7 @@
     ### Blog ###
     $url = $dom->createElement('url');
     $urlset->appendChild($url);
-    $loc = $dom->createElement('loc', "https://vchumphon.com/blog");
+    $loc = $dom->createElement('loc', "https://vchumphon.com/content");
     $lastmod = $dom->createElement('lastmod', date("Y-m-d"));
     $changefreq = $dom->createElement('changefreq', 'daily');
     $priority = $dom->createElement('priority', '0.7');
@@ -126,7 +126,7 @@
         while($row = $result->fetch_assoc()) {
             $url = $dom->createElement('url');
             $urlset->appendChild($url);
-            $loc = $dom->createElement('loc', "https://vchumphon.com/blog/{$row['blog_id']}");
+            $loc = $dom->createElement('loc', "https://vchumphon.com/content/{$row['blog_id']}");
             $lastmod = $dom->createElement('lastmod', date("Y-m-d"));
             $changefreq = $dom->createElement('changefreq', 'daily');
             $priority = $dom->createElement('priority', '0.65');

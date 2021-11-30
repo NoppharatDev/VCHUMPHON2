@@ -1,11 +1,13 @@
 <?php
     if(isset($_GET["page"])) {
-        echo 5555555555;
         $p = $_GET["page"];
         if($p == 'pkg') { header( "location: /travel" ); }
         else if($p == 'prod') { header( "location: /robusta" ); }
         else if($p == 'prodp') { header( "location: /product" ); }
         else if($p == 'cart') { header( "location: /cart" ); }
+        else if($p == 'prod_view') { header( "location: /robusta/{$_GET['id']}" ); }
+        else if($p == 'pkg_view') { header( "location: /travel/{$_GET['id']}" ); }
+        else { header( "location: /" ); }
     }
     $cart_count = 0;
     if(isset($_SESSION['my_cart']) && count($_SESSION['my_cart']) > 0) {

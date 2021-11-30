@@ -5,7 +5,7 @@
     $blogObj = new Blog();
     $blogObj->setBlogByID($id);
     $headObj->editTitleText(" - {$blogObj->name}");
-    $headObj->addMeta("<meta name=\"description\" content=\"ในช่วง 1-2 ปีที่ผ่านมากระแสกาแฟสกัดเย็นกำลังมาแรง ดังนั้นในบทความนี้จะมาแนะนำเกี่ยวกับกาแฟสกัดเย็น ว่ามีรสชาติอย่างไรบ้าง ต้องทำอย่างไรบ้าง มาทราบพร้อมกันในบทความนี้\" />");
+    $headObj->addMeta("<meta name=\"description\" content=\"{$blogObj->detail_short}\" />");
 ?>
 
 <!DOCTYPE html>
