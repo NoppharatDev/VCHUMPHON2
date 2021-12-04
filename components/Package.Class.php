@@ -237,6 +237,15 @@ class Package extends Database {
         return $result;
     }
 
+    // ฟังชั่นเรียกใช้ข้อมูลจากฐานข้อมูล Packages ทั้งหมด
+    public function queryHomePackagesd() {
+        $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT * FROM packages ORDER BY pkg_id DESC LIMIT 3");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result;
+    }
+
     // ฟังชั่นเช็คการมีอยู่ของแพคเกจท่องเที่ยว ด้วย ID
     public function checkPackageByID($id) {
         $conn = $this->connect();

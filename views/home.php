@@ -2,7 +2,9 @@
     // session_start();
     require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Blog.Class.php");
     require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
+    require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Package.Class.php");
     $headObj = new HeadHTML();
+    $pkgObj = new Package();
     $blogObj = new Blog();
     $cart_count = 0;
 ?>
@@ -160,7 +162,7 @@
                 <!-- <video
                     id="myVideo"
                     class="br-30"
-                    data-aos="zoom-ins"
+                    data-aos="szoom-ins"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="350"
                     width="100%"
@@ -242,7 +244,7 @@
             <div class="col-lg-5 mb-5">
                 <img
                     class="lazyload br-15 shadow"
-                    data-aos="fade-down-right"
+                    data-aos="sfade-down-right"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
                     data-src="../image/เขาร้อยยอด.webp"
@@ -251,9 +253,9 @@
                 >
             </div>
             <div class="col-lg-7 mb-5">
-                <h5 class="text-center text-premium my-3" data-aos="fade-up-left" data-aos-duration="500" style="font-weight: 800;">เขาร้อยยอดและผาตาอู๊ด</h5>
+                <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">เขาร้อยยอดและผาตาอู๊ด</h5>
                 <p
-                    data-aos="fade-left"
+                    data-aos="sfade-left"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="1200"
                     style="text-indent: 50px; text-align: justify;"
@@ -262,9 +264,9 @@
                 </p>
             </div>
             <div class="col-lg-7 mb-5">
-                <h5 class="text-center text-premium my-3" data-aos="fade-up-right" data-aos-duration="500" style="font-weight: 800;">เขาถ้ำศิลางู</h5>
+                <h5 class="text-center text-premium my-3" data-aos="sfade-up-right" data-aos-duration="500" style="font-weight: 800;">เขาถ้ำศิลางู</h5>
                 <p
-                    data-aos="fade-right"
+                    data-aos="sfade-right"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="1200"
                     style="text-indent: 50px; text-align: justify;"
@@ -275,7 +277,7 @@
             <div class="col-lg-5 mb-5">
                 <img
                     class="lazyload br-15 shadow"
-                    data-aos="fade-up-left"
+                    data-aos="sfade-up-left"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="500"
                     data-src="../image/ถ้ำศิลางู.webp"
@@ -297,7 +299,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <h5
-                                    data-aos="fade-up-left"
+                                    data-aos="sfade-up-left"
                                     data-aos-duration="800"
                                     class="text-center mb-3"
                                     style="font-weight: 800;"
@@ -305,7 +307,7 @@
                                     ประวัติความเป็นมา
                                 </h5>
                                 <p
-                                    data-aos="fade-left"
+                                    data-aos="sfade-left"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="1200"
                                     style="text-indent: 50px; text-align: justify;"
@@ -316,7 +318,7 @@
                             <div class="col-lg-6">
                                 <img
                                     class="lazyload shadow br-15"
-                                    data-aos="zoom-in"
+                                    data-aos="szoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
                                     data-src="../image/ถ้ำศิลางู.webp"
@@ -326,7 +328,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <h5
-                                    data-aos="fade-up-right"
+                                    data-aos="sfade-up-right"
                                     data-aos-duration="800"
                                     class="text-center mb-3"
                                     style="font-weight: 800;"
@@ -334,7 +336,7 @@
                                     เขตการปกครอง
                                 </h5>
                                 <p
-                                    data-aos="fade-right"
+                                    data-aos="sfade-right"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="1200"
                                     style="text-indent: 50px; text-align: justify;"
@@ -344,13 +346,13 @@
                             </div>
                             <!-- <div class="col-lg-12 text-center mt-3">
                                 <b 
-                                    data-aos="zoom-in"
+                                    data-aos="szoom-in"
                                     data-aos-duration="500"
                                     class="badge badge-premium py-2 px-3 br-15 mr-2"
                                 >
                                     อาชีพหลัก
                                 </b>
-                                <span data-aos="zoom-in" data-aos-duration="2000">ทำสวน/ทำไร่</span>
+                                <span data-aos="szoom-in" data-aos-duration="2000">ทำสวน/ทำไร่</span>
                             </div> -->
                         </div>
                     </div>
@@ -366,9 +368,9 @@
         <div class="container">
             <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-left" data-aos-duration="500" style="font-weight: 800;">ถ้ำน้ำลอดใหญ่</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">ถ้ำน้ำลอดใหญ่</h5>
                     <p
-                        data-aos="fade-left"
+                        data-aos="sfade-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -379,7 +381,7 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="lazyload br-15 shadow"
-                        data-aos="fade-down-left"
+                        data-aos="sfade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-src="../image/เขาตาหมื่นนี1.webp"
@@ -390,7 +392,7 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="lazyload br-15 shadow"
-                        data-aos="fade-up-right"
+                        data-aos="sfade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-src="../image/เขาตาหมื่นนี.webp"
@@ -399,9 +401,9 @@
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-right" data-aos-duration="500" style="font-weight: 800;">เขาตาหมื่นนี</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-right" data-aos-duration="500" style="font-weight: 800;">เขาตาหมื่นนี</h5>
                     <p
-                        data-aos="fade-right"
+                        data-aos="sfade-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -426,7 +428,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <h5
-                                    data-aos="fade-up-left"
+                                    data-aos="sfade-up-left"
                                     data-aos-duration="800"
                                     class="text-center mb-3"
                                     style="font-weight: 800;"
@@ -434,7 +436,7 @@
                                     ประวัติความเป็นมา
                                 </h5>
                                 <p
-                                    data-aos="fade-left"
+                                    data-aos="sfade-left"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="1200"
                                     style="text-indent: 50px; text-align: justify;"
@@ -445,7 +447,7 @@
                             <div class="col-lg-6">
                                 <img
                                     class="lazyload shadow br-15"
-                                    data-aos="zoom-in"
+                                    data-aos="szoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
                                     data-src="../image/เขาตาหมื่นนี.webp"
@@ -455,7 +457,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <h5
-                                    data-aos="fade-up-right"
+                                    data-aos="sfade-up-right"
                                     data-aos-duration="800"
                                     class="text-center mb-3"
                                     style="font-weight: 800;"
@@ -463,7 +465,7 @@
                                     เขตการปกครอง
                                 </h5>
                                 <p
-                                    data-aos="fade-right"
+                                    data-aos="sfade-right"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="1200"
                                     style="text-indent: 50px; text-align: justify;"
@@ -473,21 +475,21 @@
                             </div>
                             <!-- <div class="col-lg-12 text-center mt-3">
                                 <b 
-                                    data-aos="zoom-in"
+                                    data-aos="szoom-in"
                                     data-aos-duration="500"
                                     class="badge badge-premium py-2 px-3 br-15 mr-2"
                                 >
                                     อาชีพหลัก
                                 </b>
-                                <span data-aos="zoom-in" data-aos-duration="2000">ทำสวน/ทำไร่</span>
+                                <span data-aos="szoom-in" data-aos-duration="2000">ทำสวน/ทำไร่</span>
                                 <b 
-                                    data-aos="zoom-in"
+                                    data-aos="szoom-in"
                                     data-aos-duration="500"
                                     class="badge badge-premium py-2 px-3 br-15 mr-2 ml-4"
                                 >
                                     อาชีพเสริม
                                 </b>
-                                <span data-aos="zoom-in" data-aos-duration="2000">รับจ้าง</span>
+                                <span data-aos="szoom-in" data-aos-duration="2000">รับจ้าง</span>
                             </div> -->
                         </div>
                     </div>
@@ -505,7 +507,7 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="lazyload br-15 shadow"
-                        data-aos="fade-up-right"
+                        data-aos="sfade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-src="../image/สวนสมเด็จพระศรีนครินทร์.webp"
@@ -514,9 +516,9 @@
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-right" data-aos-duration="500" style="font-weight: 800;">สวนสมเด็จพระศรีนครินทร์ ชุมพร</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-right" data-aos-duration="500" style="font-weight: 800;">สวนสมเด็จพระศรีนครินทร์ ชุมพร</h5>
                     <p
-                        data-aos="fade-right"
+                        data-aos="sfade-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -525,9 +527,9 @@
                     </p>
                 </div>
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-left" data-aos-duration="500" style="font-weight: 800;">วัดถ้ำเขาเงิน</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">วัดถ้ำเขาเงิน</h5>
                     <p
-                        data-aos="fade-left"
+                        data-aos="sfade-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -538,9 +540,10 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="br-15 shadow"
-                        data-aos="fade-down-left"
+                        data-aos="sfade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
+                        src="../image/วัดถ้ำเขาเงิน.webp"
                         data-src="../image/วัดถ้ำเขาเงิน.webp"
                         width="100%"
                         alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
@@ -561,7 +564,7 @@
                             </div>
                             <div class="col-lg-7">
                                 <h5
-                                    data-aos="fade-up-left"
+                                    data-aos="sfade-up-left"
                                     data-aos-duration="800"
                                     class="text-center mb-3"
                                     style="font-weight: 800;"
@@ -569,7 +572,7 @@
                                     ประวัติความเป็นมา
                                 </h5>
                                 <p
-                                    data-aos="fade-left"
+                                    data-aos="sfade-left"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="1200"
                                     style="text-indent: 50px; text-align: justify;"
@@ -580,7 +583,7 @@
                             <div class="col-lg-5">
                                 <img
                                     class="lazyload shadow br-15"
-                                    data-aos="zoom-in"
+                                    data-aos="szoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
                                     data-src="../image/เขาตาหมื่นนี.webp"
@@ -602,9 +605,9 @@
         <div class="container">
             <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-left" data-aos-duration="500" style="font-weight: 800;">แหลมคอกวาง-เขาหัวโม่ง</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">แหลมคอกวาง-เขาหัวโม่ง</h5>
                     <p
-                        data-aos="fade-left"
+                        data-aos="sfade-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -615,7 +618,7 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="lazyload br-15 shadow"
-                        data-aos="fade-down-left"
+                        data-aos="sfade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-src="../image/จุดชมวิวแหลมหัวโม่ง.webp"
@@ -626,7 +629,7 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="lazyload br-15 shadow"
-                        data-aos="fade-up-right"
+                        data-aos="sfade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-src="../image/ชายทะเลปากหาด.webp"
@@ -635,9 +638,9 @@
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-right" data-aos-duration="500" style="font-weight: 800;">ชายทะเลปากหาด</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-right" data-aos-duration="500" style="font-weight: 800;">ชายทะเลปากหาด</h5>
                     <p
-                        data-aos="fade-right"
+                        data-aos="sfade-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -646,9 +649,9 @@
                     </p>
                 </div>
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-left" data-aos-duration="500" style="font-weight: 800;">สะพานพนังตัก (หมู่บ้านชาวประมง)</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">สะพานพนังตัก (หมู่บ้านชาวประมง)</h5>
                     <p
-                        data-aos="fade-left"
+                        data-aos="sfade-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -659,7 +662,7 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="lazyload br-15 shadow"
-                        data-aos="fade-down-left"
+                        data-aos="sfade-down-left"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-src="../image/สะพานพนังตัก.webp"
@@ -670,7 +673,7 @@
                 <div class="col-lg-5 mb-5">
                     <img
                         class="lazyload br-15 shadow"
-                        data-aos="fade-up-right"
+                        data-aos="sfade-up-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         data-src="../image/สวนสมเด็จพระศรีนครินทร์.webp"
@@ -679,9 +682,9 @@
                     >
                 </div>
                 <div class="col-lg-7 mb-5">
-                    <h5 class="text-center text-premium my-3" data-aos="fade-up-right" data-aos-duration="500" style="font-weight: 800;">วัดนาทุ่ง</h5>
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-right" data-aos-duration="500" style="font-weight: 800;">วัดนาทุ่ง</h5>
                     <p
-                        data-aos="fade-right"
+                        data-aos="sfade-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1200"
                         style="text-indent: 50px; text-align: justify;"
@@ -704,7 +707,7 @@
                             </div>
                             <div class="col-lg-7">
                                 <h5
-                                    data-aos="fade-up-left"
+                                    data-aos="sfade-up-left"
                                     data-aos-duration="800"
                                     class="text-center mb-3"
                                     style="font-weight: 800;"
@@ -712,7 +715,7 @@
                                     ประวัติความเป็นมา
                                 </h5>
                                 <p
-                                    data-aos="fade-left"
+                                    data-aos="sfade-left"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="1200"
                                     style="text-indent: 50px; text-align: justify;"
@@ -723,7 +726,7 @@
                             <div class="col-lg-5">
                                 <img
                                     class="lazyload shadow br-15"
-                                    data-aos="zoom-in"
+                                    data-aos="szoom-in"
                                     data-aos-easing="ease-in-sine"
                                     data-aos-duration="500"
                                     data-src="../image/จุดชมวิวแหลมหัวโม่ง.webp"
@@ -744,75 +747,41 @@
     <div class="container">
         <h3 class="text-center" style="color: #CF952A; font-weight: 800; font-size: 30px; padding: 40px 0">จองแพ็คเกจท่องเที่ยว</h3>
         <div class="row">
-            <div class="col-lg-4">
-                <div class="card border-0 mb-4 shadow-sm text-center br-30">
-                    <div class="card-body">
-                        <h5 class="my-0 mb-4 package-title">
-                            <b>เขาร้อยยอดและผาตาอู๊ด</b>
-                        </h5>
-                        <div class="card-img-pkg">
-                            <img class="lazyload" data-src="img_view/pkg/33/0.3" width="100%" alt="เขาร้อยยอดและผาตาอู๊ด">
+            <?php
+                $result = $pkgObj->queryHomePackagesd(); $i = 1;
+                if($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+            ?>
+                        <div class="col-lg-4">
+                            <div class="card border-0 mb-4 shadow-sm text-center br-30">
+                                <div class="card-body">
+                                    <h5 class="my-0 mb-4 package-title">
+                                        <b><?php echo $row['pkg_name']; ?></b>
+                                    </h5>
+                                    <div class="card-img-pkg">
+                                        <img src="img_view/pkg/<?php echo $pkgObj->getImage($row['pkg_id']); ?>/0.5" width="100%" alt="รวมสถานที่ท่องเที่ยวชุมพร <?php echo $row['pkg_name']; ?>">
+                                    </div>
+                                    <h3 style="font-size: 40px; color: #CF952A;" class="card-title pricing-card-title"><?php echo number_format($row['pkg_adult_price'], 0); ?> <small class="text-muted">/ คน</small></h3>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                        <li>ระยะเวลา <?php echo $row['pkg_duration']; ?></li>
+                                        <li>สูงสุด <?php echo $row['pkg_adult_max'] + $row['pkg_child_max']; ?> คน</li>
+                                        <li>ลดสูงสุด <?php echo $pkgObj->convertPromotion($row['pkg_promo_quantity'], $row['pkg_promo_unit']); ?></li>
+                                        <li>ราคาสำหรับเด็ก <?php echo number_format($row['pkg_child_price'], 0); ?> บาท</li>
+                                        <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
+                                    </ul>
+                                    <a href="travel/<?php echo $row['pkg_id']; ?>" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
+                                        <b>รายละเอียดแพ็คเกจ</b>
+                                    </a>
+                                    <!--<a href="?page=pkg_view&id=<?php echo $row['pkg_id']; ?>" class="btn btn-block btn-outline-info br-10">
+                                        <b>รายละเอียดแพ็คเกจ</b>
+                                    </a> -->
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="card-title pricing-card-title">150 <small class="text-muted">/ คน</small></h3>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>ระยะเวลา 1 วัน</li>
-                            <li>สูงสุด 10 คน</li>
-                            <li>ลดสูงสุด <span class="badge badge-premium">20%</span></li>
-                            <li>ราคาสำหรับเด็ก 100 บาท</li>
-                            <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
-                        </ul>
-                        <a href="/travel/33" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
-                            <b>รายละเอียดแพ็คเกจ</b>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-0 mb-4 shadow-sm text-center br-30">
-                    <div class="card-body">
-                        <h5 class="my-0 mb-4 package-title">
-                            <b>แหลมคอกวาง-เขาหัวโม่ง</b>
-                        </h5>
-                        <div class="card-img-pkg">
-                            <img class="lazyload" data-src="img_view/pkg/31/0.3" width="100%" alt="แหลมคอกวาง-เขาหัวโม่ง">
-                        </div>
-                        <h3 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h3>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>ระยะเวลา 3 วัน 2 คืน</li>
-                            <li>สูงสุด 10 คน</li>
-                            <li>ลดสูงสุด <span class="badge badge-danger">ไม่มีส่วนลด</span></li>
-                            <li>ราคาสำหรับเด็ก 250 บาท</li>
-                            <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
-                        </ul>
-                        <a href="/travel/31" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
-                            <b>รายละเอียดแพ็คเกจ</b>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card border-0 mb-4 shadow-sm text-center br-30">
-                    <div class="card-body">
-                        <h5 class="my-0 mb-4 package-title">
-                            <b>เขาถ้ำศิลางู</b>
-                        </h5>
-                        <div class="card-img-pkg">
-                            <img class="lazyload" data-src="img_view/pkg/32/0.3" width="100%" alt="เขาถ้ำศิลางู">
-                        </div>
-                        <h3 class="card-title pricing-card-title">500 <small class="text-muted">/ คน</small></h3>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>ระยะเวลา 2 วัน</li>
-                            <li>สูงสุด 15 คน</li>
-                            <li>ลดสูงสุด <span class="badge badge-premium">30%</span></li>
-                            <li>ราคาสำหรับเด็ก 250 บาท</li>
-                            <!-- <li>อัพเดทล่าสุด : 17 พ.ย. 2564</li> -->
-                        </ul>
-                        <a href="/travel/32" class="btn btn-block btn-outline-info btn-outline-tumb py-3 br-30">
-                            <b>รายละเอียดแพ็คเกจ</b>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <?php
+                    }
+                }
+            ?>
             <div class="col-lg-12 text-center mt-4 mb-4">
                 <a href="/travel" class="btn btn-premium br-30 py-3 px-5">แสดงแพคเกจเพิ่มเติม <span class="fa fa-angle-double-right"></span></a>
             </div>
