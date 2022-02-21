@@ -21,6 +21,7 @@ get('/my_order/$id', '/views/my_order_view.php'); // View My Order By ID
 get('/invoice/$id', '/views/invoice.php'); // View Invoice Page
 get('/invoice/print/$id', '/views/invoice_print.php'); // View Invoice Print Page
 get('/cart', '/views/my_cart.php'); // View Carts Page
+get('/cart/address', '/views/cart_address.php'); // View Carts Page
 get('/cart/confirm', '/views/cart_confirm.php'); // View Carts Confirm Page
 get('/login', '/views/login.php'); // View Login Page
 get('/register', '/views/register.php'); // View Register Page
@@ -34,6 +35,7 @@ post('/cart', '/views/my_cart.php');
 post('/login', '/views/login.php');
 post('/product/$id', '/views/product_partner_view.php');
 post('/cart/confirm', '/views/cart_confirm.php');
+post('/cart/address', '/views/cart_address.php'); // View Carts Page
 post('/travel/booking/$id', '/views/package_confirm.php');
 post('/register', '/views/register.php');
 post('/my_packages/$id', '/views/my_package_view.php');

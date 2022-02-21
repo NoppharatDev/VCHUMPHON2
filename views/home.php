@@ -873,7 +873,7 @@
 
 $('.carousel').carousel()
 
-AOS.init();
+// AOS.init();
 
 //let vid = document.getElementById("myVideo");
 //vid.volume = 0.05;

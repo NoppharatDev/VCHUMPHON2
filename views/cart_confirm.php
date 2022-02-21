@@ -3,16 +3,11 @@
     require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
     require_once('components/Product.Class.php');
     require_once('components/OrderProduct.Class.php');
-    require_once("libs/PromptPay/PromptPayQR.php");
 
     $headObj = new HeadHTML();
     $prodObj = new Product();
     $oprodObj = new OrderProduct();
-    $PromptPayQR = new PromptPayQR(); // new object
-    $PromptPayQR->size = 10; // Set QR code size to 8
-    $PromptPayQR->id = '1341100230128'; // PromptPay ID
-    $PromptPayQR->amount = 0; // Set amount (not necessary)
-
+    $oprodObj->getAddress();
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +17,7 @@
 ?>
 <body style="overflow-x: hidden">
 <?php
-    if(isset($_POST['submit'])) {
+    if(isset($_POST['addOrder'])) {
         $oprodObj->addOrder();
     }
 ?>
@@ -34,7 +29,26 @@
         if(isset($_SESSION['my_cart']) && count($_SESSION['my_cart']) > 0) {
     ?>
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
+                    <div class="card border-0 shodow-sm br-20">
+                        <div class="card-header d-flex border-0" style="border-radius: 20px 20px 0 0">
+                            <div class="my-auto">
+                                <h4 style="font-size: 18px;"><b><i class="fa fa-map-marked-alt mr-2"></i> ที่อยู่ในการจัดส่ง</b></h4>
+                            </div>
+                            <!-- <div class="ml-auto">
+                                <a href="?page=my_order&id=0000065" class="btn btn-premium br-30 px-3" target="_blank"><span class="fas fa-tasks mr-1"></span> แก้ไข...</a>
+                            </div> -->
+                        </div>
+                        <div class="card-body">
+                            <a>ชื่อ-นามสกุล : <b class="text-premium"><?php echo $oprodObj->name; ?></b></a> <br>
+                            <a>ที่อยู่ : <b><?php echo $oprodObj->address; ?></b></a> <br>
+                            <a>เบอร์ติดต่อ : <b><?php echo $oprodObj->zerofill($oprodObj->phone, 10); ?></b></a> <br>
+                            <a>อีเมล : <b><?php echo $oprodObj->email; ?></b></a> <br>
+                            <a>ชำระเงินโดย : <b><?php echo ($oprodObj->payment == 'pp') ? 'พร้อมเพย์' : 'ชำระเงินปลายทาง'; ?></b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
                     <?php
                         $arr_admin_id = NULL;
                         foreach($_SESSION["my_cart"] as $key => $val) {
@@ -60,8 +74,9 @@
                                         <tr>
                                             <th width="5%" class="text-center">ลำดับ</th>
                                             <th width="15%" class="text-center">ภาพสินค้า</th>
-                                            <th width="30%">ชื่อสินค้า</th>
-                                            <th width="10%" class="text-center">จำนวน</th>
+                                            <th width="35%">ชื่อสินค้า</th>
+                                            <th width="15%" class="text-center">ราคา/หน่วย</th>
+                                            <th width="15%" class="text-center">จำนวน</th>
                                             <th width="15%" class="text-center">ราคารวม</th>
                                         </tr>
                                     </thead>
@@ -83,7 +98,7 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <b class="text-premium"><?php echo $prodObj->getDataCart($obj->prodID, 'prod_name') . " (" . $prodObj->getDataCart($obj->prodID, 'prod_weight') . " กรัม)"; ?></b>
+                                                        <b class="text-premium"><?php echo $prodObj->getDataCart($obj->prodID, 'prod_name') . " (" . number_format($prodObj->getDataCart($obj->prodID, 'prod_weight'), 0) . " กรัม)"; ?></b>
                                                         <?php
                                                             if($obj->adminID == 1) {
                                                         ?>
@@ -95,6 +110,7 @@
                                                         ?>
                                                         <!-- <small class="form-text text-muted"><b>ขนาด : <?php echo $obj->weight; ?></b></small> -->
                                                     </td>
+                                                    <td class="text-center"><?php echo number_format($prodObj->getDataCart($obj->prodID, 'prod_price'), 2); ?></td>
                                                     <td class="text-center">
                                                         <?php echo $obj->amt; ?>
                                                     </td>
@@ -105,7 +121,6 @@
                                         }
                                         $shipping_cost = $prodObj->calculateShippingCost($weight);
                                         $total_price = $prices + $shipping_cost;
-                                        $PromptPayQR->amount += $total_price;
                                     ?>
                                     </tbody>
                                 </table>
@@ -125,97 +140,14 @@
                         }
                     ?>
                 </div>
-                <div class="col-lg-4 mt-4">
+                <div class="col-md-6 col-12">
+                    <a href="/cart/address" class="btn btn-danger btn-block br-30 py-3 px-5" name="send">
+                        <span class="fa fa-angle-double-left"></span> กลับไปแก้ไขที่อยู่ในการจัดส่ง
+                    </a>
+                </div>
+                <div class="col-md-6 col-12">
                     <form action="" method="POST">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <p class="text-center text-premium mb-0"><b>โปรดชำระเงินผ่าน QR CODE</b></p>
-                                <div class="form-check form-check-inline mt-3">
-                                    <input class="form-check-input" type="radio" id="pp" name="payment" value="pp" checked>
-                                    <label class="form-check-label mr-4" for="pp"><b>ชำระเงินผ่านพร้อมเพย์</b></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12" id="item_pp">
-                                <div class="text-center">
-                                    <img class="mt-2" src="https://pp.js.org/img/PromptPay-logo.jpg" width="40%"><br>
-                                    <img class="mt-2 mb-2" src="<?php echo $PromptPayQR->generate(); ?>" width="65%">
-                                    <p class="text-info mb-2"><b>สแกน QR เพื่อจ่ายเงิน</b></p>
-                                    <p class="mb-2">ชื่อบัญชี <b>นายภารดร เตชะสกลรัศมิ์</b></p>
-                                    <p class="mb-1">จำนวนเงิน <b class="text-premium"><?php echo number_format($PromptPayQR->amount, 2); ?></b> บาท</p>
-                                    <p class="mb-1"><b class="text-danger">*** สำคัญ ***</b></p>
-                                    <p class="mb-1"><b class="text-danger">ส่งหลักฐานการชำระเงินมาที่ Line@ : @664uzmwr</b></p>
-                                    <button type="button" class="btn btn-info br-20">แนบหลักฐานการชำระเงิน</button>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="cod" name="payment" value="cod">
-                                    <label class="form-check-label mr-4" for="cod"><b>ชำระเงินปลายทาง</b></label>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="col-lg-12">
-                                <p class="text-center text-premium"><b>ที่อยู่ในการจัดส่งสินค้าและหลักฐานการชำระเงิน</b></p>
-                                <div class="row mt-3">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="name"><b>ชื่อ-นามสกุล <sup class="text-danger">*</sup></b></label>
-                                            <input type="text" class="form-control br-10" id="name"name="name" placeholder="ชื่อ-นามสกุล" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="phone"><b>เบอร์โทรศัพท์ <sup class="text-danger">*</sup></b></label>
-                                            <input type="text" class="form-control br-10" id="phone" name="phone" placeholder="เบอร์โทรศัพท์" onkeypress="if(this.value.length==10) return false;" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10" pattern="[0]{1}[0-9]{9}" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="email"><b>อีเมล</b></label>
-                                            <input type="text" class="form-control br-10" id="email" name="email" placeholder="อีเมล">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="address"><b>ที่อยู่ <sup class="text-danger">*</sup></b></label>
-                                            <textarea class="form-control br-10" id="address" name="address" rows="2" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="province"><b>จังหวัด <sup class="text-danger">*</sup></b></label>
-                                            <input type="text" class="form-control br-10" id="province" name="province" placeholder="จังหวัด" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="zipcode"><b>รหัสไปรษณีย์ <sup class="text-danger">*</sup></b></label>
-                                            <input type="text" class="form-control br-10" id="zipcode" name="zipcode" placeholder="รหัสไปรษณีย์" onkeypress="if(this.value.length==5) return false;" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="5" pattern="[0-9]{5}" required>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="fullName"><b>หลักฐานการชำระเงิน</b></label>
-                                            <input type="file" class="d-none" id="file" placeholder="">
-                                            <div>
-                                                <button id="shooseFile" class="btn btn-info br-10"><i class="fa fa-file-upload"></i> เลือกไฟล์</button> 
-                                                <small id="fileName" class="form-text text-muted">ยังไม่ได้เลือกไฟล์</small>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                </div>
-                                <hr />
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <a href="/my_cart" class="btn btn-danger btn-block mt-3 br-10 text-white">
-                                    <span class="fa fa-angle-double-left"></span> กลับไปตะกร้าสินค้า
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <button type="submit" class="btn btn-success btn-block mt-3 br-10" name="submit">สั่งซื้อสินค้า <span class="fa fa-angle-double-right"></span></button>
-                            </div>
-                        </div>
+                        <button type="submit" class="btn btn-success btn-block br-30 py-3" name="addOrder">ยืนยันการสั่งซื้อ <span class="fa fa-check"></span></button>
                     </form>
                 </div>
             </div>

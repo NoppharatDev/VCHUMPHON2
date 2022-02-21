@@ -9,8 +9,44 @@ class OrderProduct extends Database {
     public $phone;
     public $email;
     public $address;
+    public $zipcode;
+    public $province;
     public $cust_id;
     public $admin_id;
+
+    public function createAddress() {
+        if(isset($_POST["createAddress"])) {
+            $this->payment = $_POST['payment'];
+            $this->name = $_POST['name'];
+            $this->phone = $_POST['phone'];
+            $this->email = $_POST['email'];
+            $this->address = $_POST['address'];
+            $this->province = $_POST['province'];
+            $this->zipcode = $_POST['zipcode'];
+
+            $_SESSION["payment"] = $_POST['payment'];
+            $_SESSION["name"] = $_POST['name'];
+            $_SESSION["phone"] = $_POST['phone'];
+            $_SESSION["email"] = $_POST['email'];
+            $_SESSION["address"] = $_POST['address'];
+            $_SESSION["province"] = $_POST['province'];
+            $_SESSION["zipcode"] = $_POST['zipcode'];
+            
+            echo "<script>window.location.assign('/cart/confirm')</script>";
+        }
+    }
+
+    public function getAddress() {
+        if(isset($_SESSION["payment"])) {
+            $this->payment = $_SESSION['payment'];
+            $this->name = $_SESSION['name'];
+            $this->phone = $_SESSION['phone'];
+            $this->email = $_SESSION['email'];
+            $this->address = $_SESSION['address'];
+            $this->province = $_SESSION['province'];
+            $this->zipcode = $_SESSION['zipcode'];
+        }
+    }
 
     // ฟังชั่นเช็คอีเมลซ้ำ
     public function checkID($id) {
@@ -48,13 +84,13 @@ class OrderProduct extends Database {
     // ฟังชั่นเพิ่มรายการสั่งซื้อ (Order)
     public function addOrder() {
         if($this->checkID($_SESSION["cust_id"])) {
-            $this->payment = $_POST["payment"];
-            $this->name = $_POST["name"];
-            $this->phone = $_POST["phone"];
-            $this->email = $_POST["email"];
-            $this->address = $_POST["address"];
-            $this->province = $_POST["province"];
-            $this->zipcode = $_POST["zipcode"];
+            $this->payment = $_SESSION["payment"];
+            $this->name = $_SESSION["name"];
+            $this->phone = $_SESSION["phone"];
+            $this->email = $_SESSION["email"];
+            $this->address = $_SESSION["address"];
+            $this->province = $_SESSION["province"];
+            $this->zipcode = $_SESSION["zipcode"];
             $this->cust_id = $_SESSION["cust_id"];
             $arr = $this->sumProdAmt();
             $statusAmt = TRUE;
@@ -213,11 +249,16 @@ class OrderProduct extends Database {
                     unset($_SESSION["my_cart"]);
                     if(empty($_SESSION["my_cart"])) {
                         echo "<script>
+                                setTimeout(() => {
+                                    window.location.assign('/my_orders')
+                                }, 2500);
                                 Swal.fire({
                                     icon: 'success',
                                     title: 'สำเร็จ!',
-                                    text: 'สั่งซื้อสินค้าสำเร็จ คุณสามารถดูรายการสั่งซื้อที่ได้เมนู รายการสั่งซื้อ',
-                                    confirmButtonText: 'ยืนยัน'
+                                    text: 'สั่งซื้อสินค้าสำเร็จ ระบบกำลังพาคุณไปยังเมนูรายการสั่งซื้อเพื่อดำเนินการต่อ...',
+                                    confirmButtonText: 'ยืนยัน',
+                                    timerProgressBar: true,
+                                    timer: 2500,
                                 })
                             </script>";
                     }
@@ -294,7 +335,7 @@ class OrderProduct extends Database {
     // ฟังชั่นเรียกใช้ข้อมูลรายการสินค้าจากฐานข้อมูล
     public function queryOrderProd() {
         $conn = $this->connect();
-        $stmt = $conn->prepare("SELECT * FROM order_products WHERE customer_id = ? ORDER BY oprod_created DESC");
+        $stmt = $conn->prepare("SELECT * FROM order_products NATURAL JOIN admins WHERE customer_id = ? ORDER BY oprod_created DESC");
         $stmt->bind_param("i", $cust_id);
         $cust_id = $_SESSION['cust_id'];
         $stmt->execute();

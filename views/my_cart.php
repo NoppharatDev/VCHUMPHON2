@@ -153,7 +153,7 @@
                         <div class="col-md-6 col-12">
                         <?php
                             if(isset($_SESSION["cust_id"])){
-                                echo "<a href=\"/cart/confirm\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">สั่งซื้อสินค้า <span class=\"fa fa-angle-double-right\"></span></a>";
+                                echo "<a href=\"/cart/address\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">ดำเนินการต่อ <span class=\"fa fa-angle-double-right\"></span></a>";
                             } else {
                                 echo "<a href=\"/login\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">เข้าสู่ระบบ <span class=\"fa fa-sign-in-alt\"></span></a>";
                             }
@@ -244,7 +244,7 @@
                                 <div class="col-md-6 col-12">
                                 <?php
                                     if(isset($_SESSION["cust_id"])){
-                                        echo "<a href=\"?page=cart_confirm\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">สั่งซื้อสินค้า <span class=\"fa fa-angle-double-right\"></span></a>";
+                                        echo "<a href=\"?page=cart_confirm\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">ดำเนินการต่อ <span class=\"fa fa-angle-double-right\"></span></a>";
                                     } else {
                                         echo "<a href=\"?page=login\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">เข้าสู่ระบบ <span class=\"fa fa-sign-in-alt\"></span></a>";
                                     }
@@ -260,7 +260,7 @@
         } else {
             unset($_SESSION["my_cart"]);
     ?>
-            <div class="text-center" style="margin: 20vh; auto">
+            <div class="text-center" style="margin: 20vh auto">
                 <h1 class="text-danger mb-5" style="font-size: 100px"><b><span class="fa fa-tired"></span></b></h1>
                 <h3 class="text-danger"><b>ไม่พบสินค้าในตะกร้า</b></h3>
             </div>
