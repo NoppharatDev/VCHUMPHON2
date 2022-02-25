@@ -13,7 +13,7 @@ class HeadHTML extends Database {
     public $titleText = "VCHUMPHON";
 
     function __construct() {
-        ob_start("xxxRunxxx");
+        // ob_start("xxxRunxxx");
         /*$offset = 60 * 60 * 24 * 1; // 1 Day 
         $ExpStr = "Expires: " . gmdate("D, d M Y H:i:s", time() + $offset) . " GMT";
         header($ExpStr);

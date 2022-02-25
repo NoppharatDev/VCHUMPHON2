@@ -102,41 +102,41 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="first_name" class="mb-0">ชื่อ <b><sup class="text-danger">*</sup></b></label>
-                                <input type="text" class="form-control form-control-lg br-20" id="first_name" name="first_name" value="<?php echo $opkgObj->name; ?>" readonly>
+                                <input type="text" class="form-control form-control-lg br-20" id="first_name" name="first_name" value="<?php echo $opkgObj->name; ?>" disabled>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="phone" class="mb-0">เบอร์โทรศัพท์ <b><sup class="text-danger">*</sup></b></label>
-                                <input type="text" class="form-control form-control-lg br-20" id="phone" name="phone" value="<?php echo $opkgObj->zerofill($opkgObj->phone, 10); ?>" readonly>
+                                <input type="text" class="form-control form-control-lg br-20" id="phone" name="phone" value="<?php echo $opkgObj->zerofill($opkgObj->phone, 10); ?>" disabled>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="email" class="mb-0">อีเมล <b><sup class="text-danger">*</sup></b></label>
-                                <input type="email" class="form-control form-control-lg br-20" id="email" name="email" value="<?php echo $opkgObj->email; ?>" readonly>
+                                <input type="email" class="form-control form-control-lg br-20" id="email" name="email" value="<?php echo $opkgObj->email; ?>" disabled>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="province" class="mb-0">จังหวัด <b><sup class="text-danger">*</sup></b></label>
-                                <input type="text" class="form-control form-control-lg br-20" id="province" name="province" value="<?php echo $opkgObj->province; ?>" readonly>
+                                <input type="text" class="form-control form-control-lg br-20" id="province" name="province" value="<?php echo $opkgObj->province; ?>" disabled>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label for="zipcode" class="mb-0">รหัสไปรษณีย์ <b><sup class="text-danger">*</sup></b></label>
-                                <input type="number" class="form-control form-control-lg br-20" id="zipcode" name="zipcode" value="<?php echo $opkgObj->zipcode; ?>" readonly>
+                                <input type="number" class="form-control form-control-lg br-20" id="zipcode" name="zipcode" value="<?php echo $opkgObj->zipcode; ?>" disabled>
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label for="travel_date" class="mb-0">วันที่เริ่มท่องเที่ยว <b><sup class="text-danger">*</sup></b></label>
-                                <input type="date" class="form-control form-control-lg br-20" id="travel_date" name="travel_date" value="<?php echo $opkgObj->travel_date; ?>" readonly>
+                                <input type="date" class="form-control form-control-lg br-20" id="travel_date" name="travel_date" value="<?php echo $opkgObj->travel_date; ?>" disabled>
                             </div>
                             <div class="form-group">
                                 <label for="adult" class="mb-0">จำนวนผู้ใหญ่ (<?php echo $pkgObj->adult_price; ?> / คน) <b><sup class="text-danger">*</sup></b></label>
-                                <select class="form-control form-control-lg br-20" id="adult" name="adult" readonly>
+                                <select class="form-control form-control-lg br-20" id="adult" name="adult" disabled>
                                     <option>0</option>
                                 <?php
                                     for($i = 1; $i <= $pkgObj->adult_max; $i++) {
@@ -148,7 +148,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="child" class="mb-0">จำนวนเด็ก (<?php echo $pkgObj->child_price; ?> / คน)</label>
-                                <select class="form-control form-control-lg br-20" id="child" name="child" readonly>
+                                <select class="form-control form-control-lg br-20" id="child" name="child" disabled>
                                     <option>0</option>
                                 <?php
                                     for($i = 1; $i <= $pkgObj->child_max; $i++) {
@@ -170,13 +170,13 @@
                 <div class="card border-0 mb-3 shadow-sm br-20">
                     <div class="card-body px-2 py-3">
                         <div class="text-center">
-                            <?php $PromptPayQR->amount = (((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.25); ?>
+                            <?php $PromptPayQR->amount = (((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.50); ?>
                             <img class="mt-2" src="https://pp.js.org/img/PromptPay-logo.jpg" width="60%"><br>
                             <img class="mt-2 mb-2" src="<?php echo $PromptPayQR->generate(); ?>" width="65%">
                             <p class="text-info mb-2"><b>สแกน QR เพื่อจ่ายเงิน</b></p>
-                            <p class="mb-2">ชื่อบัญชี <b><?php echo $opkgObj->admin_promptpay_name ?></b></p>
+                            <p class="mb-2">ชื่อบัญชี <b><?php echo $pkgObj->promptpay_name ?></b></p>
                             <p class="mb-1">จำนวนเงิน <b class="text-premium"><?php echo number_format($PromptPayQR->amount, 2); ?></b> บาท</p>
-                            <p class="mb-1"><b class="text-danger">*** และชำระเงินเมื่อถึง 2,625.00 บาท ***</b></p>
+                            <p class="mb-1"><b class="text-danger">*** และชำระเงินเมื่อถึง <?php echo number_format((((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.50), 2) ; ?> บาท ***</b></p>
                             <?php
                                 if($opkgObj->status == 1 && $opkgObj->evidence == NULL) {
                             ?>
@@ -198,9 +198,9 @@
                 <div class="card border-0 mb-3 shadow-sm br-20">
                     <div class="card-body px-2 py-3">
                         <div class="text-center">
-                            <?php $PromptPayQR->amount = (((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.25); ?>
+                            <?php $PromptPayQR->amount = (((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.50); ?>
                             <p class="mb-1">ชำระแล้ว <b class="text-success"><?php echo number_format($PromptPayQR->amount, 2); ?></b> บาท</p>
-                            <p class="mb-1"><b class="text-danger" style="font-size: 14px;">*** และชำระเงินเมื่อถึง <?php echo number_format((((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.75), 2) ; ?> บาท ***</b></p>
+                            <p class="mb-1"><b class="text-danger" style="font-size: 14px;">*** และชำระเงินเมื่อถึง <?php echo number_format((((($opkgObj->adult*$opkgObj->adult_price)+($opkgObj->child*$opkgObj->child_price))-$opkgObj->discount)*0.50), 2) ; ?> บาท ***</b></p>
                         </div>
                     </div>
                 </div>

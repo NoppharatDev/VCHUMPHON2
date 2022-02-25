@@ -26,6 +26,14 @@ class OrderPackage extends Database {
     public $admin_promptpay;
     public $admin_promptpay_name;
 
+    // ฟังชั่นเรียกใช้ข้อมูลจากฐานข้อมูล Order Package ทั้งหมด
+    public function querySumOrderPackageDate() {
+        $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT opkg_travel_date, (SUM(opkg_adult) + SUM(opkg_child)) AS sum_people FROM order_packages GROUP BY opkg_travel_date");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result;
+    }
     
     public function setDefaultVal() {
         $this->first_name = "";

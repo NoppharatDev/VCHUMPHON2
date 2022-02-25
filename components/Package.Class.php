@@ -28,6 +28,7 @@ class Package extends Database {
     public $slide3_detail = NULL;
     public $img = NULL;
     public $default_img = "https://s.isanook.com/tr/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3RyLzAvdWQvMjgzLzE0MTc0MTUvYWhyMGNobTZseTl6bG1senl3NXZiMnN1eTI5dGxfOS5qcGc=.jpg";
+    public $promptpay_name;
 
     // ฟังชั่นแปลงไฟล์ภาพเป็น binary
     public function toBinary($file) {
@@ -376,7 +377,7 @@ class Package extends Database {
     public function setPackageByID($id) {
         if($this->checkPackageByID($id)) {
             $conn = $this->connect();
-            $stmt = $conn->prepare("SELECT * FROM packages WHERE pkg_id = ?");
+            $stmt = $conn->prepare("SELECT * FROM packages NATURAL JOIN admins WHERE pkg_id = ?");
             $stmt->bind_param('i', $id);
             $stmt->execute();
             $result = $stmt->get_result();
@@ -404,6 +405,7 @@ class Package extends Database {
             $this->img = $row['pkg_img'];
             $this->promo_quantity = $row['pkg_promo_quantity'];
             $this->promo_unit = $row['pkg_promo_unit'];
+            $this->promptpay_name = $row['admin_promptpay_name'];
         } else {
             echo '<script>window.location.assign("/travel")</script>';
             exit;

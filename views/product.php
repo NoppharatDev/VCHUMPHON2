@@ -53,7 +53,7 @@
     <div class="container">
         <div class="row py-5">
             <div class="col-lg-1"></div>
-        <?php
+        <!--<?php
             $result = $prodObj->queryProducts(); $i = 1;
             if($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
@@ -79,7 +79,7 @@
                     $i++;
                 }
             }
-        ?>
+        ?> -->
             <div class="col-lg-1"></div>
         </div>
     </div>

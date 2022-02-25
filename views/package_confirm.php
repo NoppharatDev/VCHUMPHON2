@@ -6,10 +6,12 @@ if (empty($id)) {
     echo '<script>window.location.assign("/travel")</script>';
     exit;
 } else {
+    require_once("{$_SERVER['DOCUMENT_ROOT']}/components/OrderPackage.Class.php");
     require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
     require_once("components/Package.Class.php");
     $headObj = new HeadHTML();
     $pkgObj = new Package();
+    $opkgObj = new OrderPackage();
     $pkgObj->setPackageByID($id);
     /*$pkgObj->updateViewByID($_GET['id']);
         if(isset($_POST['add_cart'])) {
@@ -154,11 +156,14 @@ echo $headObj->getHead();
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label for="travel_date" class="mb-0">วันที่เริ่มท่องเที่ยว (วัน/เดือน/ปี) <b><sup class="text-danger">*</sup></b></label>
-                                        <input type="date" class="form-control form-control-lg br-20" id="travel_date" name="travel_date" required>
+                                        <input type="date" class="form-control form-control-lg br-20" id="travel_date" name="travel_date" value="<?php echo date("Y-m-d"); ?>" required>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-3" id="dateStatus"></div>
                                     </div>
                                     <div class="form-group">
                                         <label for="adult" class="mb-0">จำนวนผู้ใหญ่ (<?php echo $pkgObj->adult_price; ?> / คน) <b><sup class="text-danger">*</sup></b></label>
-                                        <select class="form-control form-control-lg br-20" id="adult" name="adult" required>
+                                        <select class="form-control form-control-lg br-20" id="adult" name="adult" disabled required>
                                             <option>0</option>
                                             <?php
                                             for ($i = 1; $i <= $pkgObj->adult_max; $i++) {
@@ -169,7 +174,7 @@ echo $headObj->getHead();
                                     </div>
                                     <div class="form-group">
                                         <label for="child" class="mb-0">จำนวนเด็ก (<?php echo $pkgObj->child_price; ?> / คน)</label>
-                                        <select class="form-control form-control-lg br-20" id="child" name="child">
+                                        <select class="form-control form-control-lg br-20" id="child" name="child" disabled>
                                             <option>0</option>
                                             <?php
                                             for ($i = 1; $i <= $pkgObj->child_max; $i++) {
@@ -181,7 +186,7 @@ echo $headObj->getHead();
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label for="comment" class="mb-0">หมายเหตุ</label>
+                                        <label for="comment" class="mb-0">รายละเอียดเพิ่มเติม</label>
                                         <textarea class="form-control form-control-lg br-20" rows="5" id="comment" name="comment"></textarea>
                                     </div>
                                     <div class="form-check mb-3">
@@ -190,7 +195,7 @@ echo $headObj->getHead();
                                     </div>
                                     <?php
                                     if (isset($_SESSION["cust_id"])) {
-                                        echo "<button type=\"submit\" name=\"submit\" class=\"btn btn-warning btn-premium btn-lg border-0 br-20 px-5\">ยืนยันการจอง</button>";
+                                        echo "<button type=\"submit\" name=\"submit\" id=\"submit\" class=\"btn btn-warning btn-premium btn-lg border-0 br-20 px-5\" disabled>ยืนยันการจอง</button>";
                                     } else {
                                         echo "<a href=\"/login\" class=\"btn btn-premium btn-block br-30 py-3\" name=\"send\">เข้าสู่ระบบ <span class=\"fa fa-sign-in-alt\"></span></a>";
                                     }
@@ -280,7 +285,7 @@ echo $headObj->getHead();
 
     <script>
         $.Thailand({
-            database: '/assets/jquery.Thailand.js/database/db.json',
+            database: '//<?php echo $_SERVER['HTTP_HOST']; ?>/assets/jquery.Thailand.js/database/db.json',
 
             $district: $('#demo1 [name="district"]'),
             $amphoe: $('#demo1 [name="amphoe"]'),
@@ -348,8 +353,58 @@ echo $headObj->getHead();
             }
             $("#total_end").text(total_end.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
         })
-    </script>
 
+        
+        <?php
+            $result = $opkgObj->querySumOrderPackageDate();
+            $jsonSumOrderPackageDate = array();
+            if($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    $arrSumOrderPackage = array(
+                        "date" => $row['opkg_travel_date'],
+                        "sum" => $row["sum_people"]
+                    );
+                    array_push($jsonSumOrderPackageDate, $arrSumOrderPackage);
+                }
+            }
+        ?>
+
+        let sumDate = <?php echo json_encode($jsonSumOrderPackageDate); ?>;
+        
+        let statusText = '';
+        const checkDateSum = () => {
+            dateSelect = $('#travel_date').val();
+            statusText = `<small class="form-text text-right text-success mt-3">วันนี้ คุณเลือกจองวันที่ ${dateSelect} <b> สามารถจองได้</b></small>`;
+            $("#submit").prop('disabled', false);
+            $("#adult").prop('disabled', false);
+            $("#child").prop('disabled', false);
+            sumDate.map((r, k) => {
+                if(r.date == dateSelect) {
+                    if(r.sum >= 30) {
+                        statusText = `<small class="form-text text-right text-danger mt-3">คุณเลือกจองวันที่ ${dateSelect} <b>ครบกำหนด 30 คน/วันแล้ว</b></small>`;
+                        $("#submit").prop('disabled', true);
+                        $("#adult").prop('disabled', true);
+                        $("#child").prop('disabled', true);
+                    } else {
+                        $("#submit").prop('disabled', false);
+                        $("#adult").prop('disabled', false);
+                        if(r.sum >= <?php echo $pkgObj->adult_max; ?>) {
+                            $("#child").prop('disabled', true);
+                        }
+                        statusText = `<small class="form-text text-right text-info mt-3">คุณเลือกจองวันที่ ${dateSelect} <b>สามารถจองได้ ${(30 - r.sum)} จาก 30 คน/วัน</b></small>`;
+                    }
+                }
+            })
+            $('#dateStatus').html(statusText);
+            console.log(dateSelect);
+        }
+
+        checkDateSum();
+        $('#travel_date').change(() => {
+            checkDateSum();
+        });
+        
+    </script>
 </body>
 
 </html>
