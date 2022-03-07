@@ -44,172 +44,6 @@
 
 <?php require_once("{$_SERVER['DOCUMENT_ROOT']}/navbar.php"); ?>
 
-<div style="background-color: #FFF; padding-top: 15vh;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <div id="demo" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                        <li data-target="#demo" data-slide-to="3"></li>
-                        <li data-target="#demo" data-slide-to="4"></li>
-                        <li data-target="#demo" data-slide-to="5"></li>
-                        <li data-target="#demo" data-slide-to="6"></li>
-                        <li data-target="#demo" data-slide-to="7"></li>
-                        <li data-target="#demo" data-slide-to="8"></li>
-                        <li data-target="#demo" data-slide-to="9"></li>
-                    </ul>
-                    <div class="carousel-inner br-30s">
-                        <div class="carousel-item active">
-                            <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่02.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่03.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่04.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่05.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่06.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่07.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่08.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
-                        </div>
-                        <div class="carousel-item">
-                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่09.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="fa fa-chevron-left text-dark" style="font-size: 50px"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="fa fa-chevron-right text-dark" style="font-size: 50px"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-    </div>
-</div>
-
-<div class="pt-5 text-center" style="background-color: #FFF;">
-    <img class="lazyload" data-src="../image/vlogo.png" width="350px" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
-</div>
-
-<!-- แนะนำสินค้า -->
-<div style="background-color: #FFF;" class="pt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <a href="/robusta/46">
-                    <div class="card border-0 shadow-sm br-20">
-                        <div class="card-body p-2">
-                            <div class="card-img">
-                                <img class="lazyload" data-src="img_view/prod/46/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร - กาแฟโรบัสต้าพรีเมียมชุมพร (ขนาด 250 กรัม)">
-                            </div>
-                            <div class="card-title text-center" style="font-weight: 600;">
-                                <!-- -->
-                                <a href="/robusta/46" class="card-link text-dark">
-                                    <b>กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 250 กรัม)</b>
-                                </a>
-                            </div>
-                            <div class="text-center mb-4">
-                                <a href="/robusta/46" class="btn btn-premium py-2 px-5 mt-4 br-30 text-white" style="font-weight: 650; font-size: 18px;">สั่งซื้อสินค้า</a>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-5">
-                <a href="/robusta/45">
-                    <div class="card border-0 shadow-sm br-20">
-                        <div class="card-body p-2">
-                            <div class="card-img">
-                                <img class="lazyload" data-src="img_view/prod/45/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร - กาแฟโรบัสต้าพรีเมียมชุมพร (ขนาด 500 กรัม)">
-                            </div>
-                            <div class="card-title text-center" style="font-weight: 600;">
-                                <!-- -->
-                                <a href="/robusta/45" class="card-link text-dark">
-                                    <b>กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 500 กรัม)</b>
-                                </a>
-                            </div>
-                            <div class="text-center mb-4">
-                                <a href="/robusta/45" class="btn btn-premium py-2 px-5 mt-4 br-30 text-white" style="font-weight: 650; font-size: 18px;">สั่งซื้อสินค้า</a>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="col-lg-12 pt-5 text-center">
-            <h1 class="mb-5" style="color: #CF952A; font-weight: 800; font-size: 30px; padding-top: 40px">กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร</h1>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FeUY-KpI0pM?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>
-            </div>
-                <!-- <video
-                    id="myVideo"
-                    class="br-30"
-                    data-aos="szoom-ins"
-                    data-aos-easing="ease-in-sine"
-                    data-aos-duration="350"
-                    width="100%"
-                    controls
-                    autoplay
-                >
-                    <source data-src="//assets/video/1.mp4" type="video/mp4">
-                </video> -->
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-12 mt-4 mt-5">
-                <p class="mb-2">จังหวัดชุมพรนั้นมีสินค้าประจำจังหวัดที่มีชื่อเสียงมากมาย ไม่ว่าจะเป็นผลิตภัณฑ์แปรรูปจากกล้วย สมุนไพร หรือน้ำผึ้ง และมีอีกสิ่งหนึ่งที่โดดเด่นไม่แพ้สินค้าใดๆ นั่นคือ <a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a> ที่มีชื่อเสียงโด่งดังไปถึงต่างแดน และได้รับการยอมรับจากคอกาแฟทั่วประเทศ</p>
-                <p>มาทำความรู้จัก “กาแฟชุมพร” หนึ่งในกาแฟที่โดดเด่นที่สุดในเมืองไทย ไม่แพ้ใครในโลกกัน</p>
-            </div>
-            <div class="col-lg-12 d-none mb-4" id="more">
-                <h2 style="font-size: 20px; color: #CF952A;"><b>สวนกาแฟจังหวัดชุมพร</b></h2>
-                <p><a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ในจังหวัดชุมพร ถือเป็นหนึ่งแหล่งเพาะปลูกกาแฟสายพันธุ์โรบัสต้ามากที่สุดในประเทศไทย และเป็นผลิตภัณฑ์ทางการเกษตรที่สามารถสร้างรายได้ให้กับเกษตรกรชาวชุมพรได้ดี เนื่องจากสภาพภูมิอากาศและภูมิประเทศของจังหวัดชุมพรนั้นเหมาะสมกับการปลูกกาแฟโรบัสต้า เพราะต้นกาแฟสายพันธุ์นี้เหมาะสำหรับปลูกในพื้นที่ราบต่ำและมีความชื้น นอกจากนั้น ต้นกาแฟสายพันธุ์ยังปลูกง่าย และทนต่ออุณหภูมิสูงได้ดี ไม่ต้องพึ่งสารเคมี และใช้ต้นทุนต่ำอีกด้วย</p>
-                <h3 style="font-size: 20px; color: #CF952A;"><b>ความโดดเด่นของกาแฟโรบัสต้า</b></h3>
-                <p>กาแฟโรบัสต้านั้นมีจุดเด่นที่ไม่ซ้ำกับกาแฟสายพันธุ์อื่น เมล็ดกาแฟโรบัสต้านั้นมีลักษณะเป็นทรงกลมมนและมีเส้นผ่าตรงกลางเป็นแนวตรง มีความเข้มและขม ไม่ค่อยติดรสชาติเปรี้ยว รสชาติจึงจะค่อนข้างฝาด อีกทั้งมีระดับน้ำตาลและระดับกรดที่ต่ำ ตอบโจทย์คอกาแฟที่ชื่นชอบความเข้มข้นเป็นพิเศษ เพราะมีปริมาณคาเฟอีนอยู่ที่ 2% - 4.5% ซึ่งถือว่าสูงกว่าการกาแฟอราบิก้าเป็นเท่าตัว จึงนิยมนำมาทำเป็นกาแฟสำเร็จรูปหรือกาแฟคั่ว อย่างไรก็ตาม กว่าจะมาเป็น<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>อย่างที่เรารู้จัก ต้องผ่านกระบวนการผลิตอันพิถีพิถันหลากหลายขั้นตอน</p>
-                <h2 style="font-size: 20px; color: #CF952A;"><b>กว่าจะมาเป็นกาแฟชุมพร</b></h2>
-                <p class="mb-2">กาแฟชุมพรไม่ได้มีจุดเด่นแค่เฉพาะสายพันธุ์กาแฟโรบัสต้าอย่างเดียว แต่เนื่องจากความละเอียดอ่อนในกระบวนการผลิต จึงทำให้<a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ประจำภาคใต้นี้เป็นที่ยอมรับไปทั่วโลก</p>
-                <p class="mb-2">เมื่อผ่านการเก็บเกี่ยวแล้ว เมล็ดกาแฟจะถูกนำมาตากแห้งเป็นเวลา 20 นาที จากนั้นจะถูกนำไปอบลมร้อนที่อุณหภูมิ 80 องศาเซลเซียส และนำมาตากในโรงอบพลังงานแสงอาทิตย์เป็นเวลา 10 วัน ต่อมาเป็นกระบวนการที่ใช้เวลานานที่สุดคือการ “บ่ม” ที่ใช้เวลา 1 ปีเพื่อดึงรสชาติที่อร่อยที่สุดออกมา หลังจากเสร็จสิ้นการบ่ม เมล็ดกาแฟจะถูกนำมาขัดสี เพื่อเอาเปลือกออก ซึ่งเปลือกเหล่านี้ยังสามารถนำไปทำเป็น ปุ๋ยหรือถ่านแท่งได้ จากนั้นจะเป็นการคัดแยกเมล็ดและนำไปคั่วในระดับต่างๆ 3 ระดับ ได้แก่ คั่วอ่อน คั่วกลาง และคั่วเข็ม สุดท้ายเมล็ดกาแฟที่ถูกคั่วจะถูกนำไปคัดแยก เพื่อค้นหาเมล็ดที่สมบูรณ์ ได้คุณภาพมากที่สุดนั่นเอง</p>
-                <p class="mb-2">แม้ในสมัยก่อนกาแฟโรบัสต้าจะไม่ได้รับความนิยมมากนัก เนื่องจากการควบคุมคุณภาพการผลิตที่เป็นได้ยาก แต่ด้วยเทคโนโลยีการคั่วในยุคนี้ที่ก้าวหน้าขึ้น จึงสามารถเข้ามาช่วยให้<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>มีรสชาติและคุณภาพที่ดีขึ้น ไม่ว่าจะชงเป็นกาแฟสด นำไปผสมกับกาแฟอราบิก้าเพื่อรสชาติใหม่ๆ แปรรูปเป็นกาแฟกึ่งสำเร็จรูป หรือผลิตเป็นกาแฟกระป๋องพร้อมทาน ก็เป็นที่นิยมมากในปัจจุบัน</p>
-                <p class="mb-0">สำหรับกาแฟ V Coffee นั้นเป็น กาแฟโรบัสต้าสูตรพรีเมียมจากชุมพร เป็นกาแฟโรบัสต้า 100% ที่ปลูก ณ พื้นที่จังหวัดชุมพร ด้วยกระบวนการที่ใส่ใจ ตั้งแต่กระบวนการเก็บ คัดเฉพาะผลที่มีความสมบูรณ์สุกเต็มที่ ผ่านกระบวนผลิตที่ได้คุณภาพและมาตรฐาน ทำให้กาแฟมีกลิ่นหอมและคงความเข้มของโรบัสต้าเป็นเอกลักษณ์</p>
-            </div>
-            <div class="col-lg-12 text-center">
-                <button class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="myBtn">แสดงข้อมูลเพิ่มเติม <span class="fa fa-chevron-down"></span></button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    let s = 0;
-    $("#myBtn").click(function () {
-        $("#more").toggleClass("d-none");
-        if(s == 0) {
-            $(this).html('ย่อการแสดงข้อมูล <span class="fa fa-chevron-up"></span>');
-            s = 1;
-        } else {
-            $(this).html('แสดงข้อมูลเพิ่มเติม <span class="fa fa-chevron-down"></span>');
-            s = 0;
-        }
-        console.log(555);
-    })
-</script>
-
 <style>
 .btn-tumb {
     background-color: #CF952A;
@@ -226,6 +60,118 @@
     color: #FFF;
 }
 </style>
+
+<!-- สไลด์ท่องเที่ยว -->
+<div style="background-color: #FFF; padding-bottom: 45px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4 text-center">
+                <h1 style="color: #CF952A; font-weight: 800; font-size: 30px; padding-top: 135px;">ท่องเที่ยวชุมชนถ้ำสิงห์</h1>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
+                        <li data-target="#demo" data-slide-to="5"></li>
+                        <li data-target="#demo" data-slide-to="6"></li>
+                        <li data-target="#demo" data-slide-to="7"></li>
+                        <li data-target="#demo" data-slide-to="8"></li>
+                        <li data-target="#demo" data-slide-to="9"></li>
+                        <li data-target="#demo" data-slide-to="10"></li>
+                        <li data-target="#demo" data-slide-to="11"></li>
+                        <li data-target="#demo" data-slide-to="12"></li>
+                        <li data-target="#demo" data-slide-to="13"></li>
+                        <li data-target="#demo" data-slide-to="14"></li>
+                        <li data-target="#demo" data-slide-to="15"></li>
+                        <li data-target="#demo" data-slide-to="16"></li>
+                        <li data-target="#demo" data-slide-to="17"></li>
+                    </ul>
+                    <div class="carousel-inner br-30s" style="max-height: 45vh; border-radius: 25px; overflow: hidden; display: flex; align-items: center;">
+                        <div class="carousel-item active">
+                            <img class="lazyload" data-src="../image/travel/tv0.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv1.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv2.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv2.5.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv3.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv4.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv5.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv5.5.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv6.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv7.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv8.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv9.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv9.5.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv10.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv11.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv12.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv13.jpeg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/travel/tv14.jpg" alt="ท่องเที่ยวชุมชนถ้ำสิงห์" width="100%" height="100%"> 
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="fa fa-chevron-left text-dark" style="font-size: 50px"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="fa fa-chevron-right text-dark" style="font-size: 50px"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</div>
+
+<!-- แผนที่แสดงจุดท่องเที่ยว -->
+<div style="background-color: #FFF; padding-top: 25px">
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10" style="border-radius: 25px; overflow: hidden">
+                <img src="../image/map.jpg" width="100%" style="border-radius: 65px">
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- แนะนำการท่องเที่ยว -->
 <div style="background-color: #FFF; padding: 10vh 0;">
     <div class="container text-center">
@@ -741,6 +687,172 @@
         </div>
     </div>
 </div>
+
+<div class="pt-5 text-center" style="background-color: #FFF;">
+    <img class="lazyload" data-src="../image/vlogo.png" width="350px" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร">
+</div>
+
+<!-- สไลด์กาแฟ -->
+<div style="background-color: #FFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            <h1 class="mb-5" style="color: #CF952A; font-weight: 800; font-size: 30px; padding-top: 40px">กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร</h1>
+                <!-- <video
+                    id="myVideo"
+                    class="br-30"
+                    data-aos="szoom-ins"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="350"
+                    width="100%"
+                    controls
+                    autoplay
+                >
+                    <source data-src="//assets/video/1.mp4" type="video/mp4">
+                </video> -->
+            </div>
+            <div class="embed-responsive embed-responsive-16by9 mb-5">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FeUY-KpI0pM?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
+                        <li data-target="#demo" data-slide-to="5"></li>
+                        <li data-target="#demo" data-slide-to="6"></li>
+                        <li data-target="#demo" data-slide-to="7"></li>
+                        <li data-target="#demo" data-slide-to="8"></li>
+                        <li data-target="#demo" data-slide-to="9"></li>
+                    </ul>
+                    <div class="carousel-inner br-30s">
+                        <div class="carousel-item active">
+                            <img class="lazyload" data-src="../image/slide/ปกขั้นตอนการคัดกาแฟ-01.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการผลิตกาแฟโรบัสต้า)" width="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่02.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการตากกาแฟโรบัสต้า)" width="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่03.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการอบลมร้อนกาแฟโรบัสต้า)" width="100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่04.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการบ่มกาแฟโรบัสต้า)" width="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่05.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการสีแห้งกาแฟโรบัสต้า)" width="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่06.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนกาคัดแยกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่07.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการคั่วกาแฟโรบัสต้า)" width="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่08.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดกาแฟโรบัสต้า)" width="100%"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img class="lazyload" data-src="../image/slide/ขั้นตอนที่09.webp" alt="กาแฟโรบัสต้าเกรดพรีเมี่ยม (กระบวนการเลือกเมล็ดหลังคั่วกาแฟโรบัสต้า)" width="100%"> 
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="fa fa-chevron-left text-dark" style="font-size: 50px"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="fa fa-chevron-right text-dark" style="font-size: 50px"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</div>
+
+<!-- แนะนำสินค้า -->
+<div style="background-color: #FFF;" class="pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <a href="/robusta/46">
+                    <div class="card border-0 shadow-sm br-20">
+                        <div class="card-body p-2">
+                            <div class="card-img">
+                                <img class="lazyload" data-src="img_view/prod/46/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร - กาแฟโรบัสต้าพรีเมียมชุมพร (ขนาด 250 กรัม)">
+                            </div>
+                            <div class="card-title text-center" style="font-weight: 600;">
+                                <!-- -->
+                                <a href="/robusta/46" class="card-link text-dark">
+                                    <b>กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 250 กรัม)</b>
+                                </a>
+                            </div>
+                            <div class="text-center mb-4">
+                                <a href="/robusta/46" class="btn btn-premium py-2 px-5 mt-4 br-30 text-white" style="font-weight: 650; font-size: 18px;">สั่งซื้อสินค้า</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-5">
+                <a href="/robusta/45">
+                    <div class="card border-0 shadow-sm br-20">
+                        <div class="card-body p-2">
+                            <div class="card-img">
+                                <img class="lazyload" data-src="img_view/prod/45/0.3" width="100%" alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร - กาแฟโรบัสต้าพรีเมียมชุมพร (ขนาด 500 กรัม)">
+                            </div>
+                            <div class="card-title text-center" style="font-weight: 600;">
+                                <!-- -->
+                                <a href="/robusta/45" class="card-link text-dark">
+                                    <b>กาแฟ โรบัสต้า พรีเมียม ชุมพร (ขนาด 500 กรัม)</b>
+                                </a>
+                            </div>
+                            <div class="text-center mb-4">
+                                <a href="/robusta/45" class="btn btn-premium py-2 px-5 mt-4 br-30 text-white" style="font-weight: 650; font-size: 18px;">สั่งซื้อสินค้า</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-12 mt-4 mt-5">
+                <p class="mb-2">จังหวัดชุมพรนั้นมีสินค้าประจำจังหวัดที่มีชื่อเสียงมากมาย ไม่ว่าจะเป็นผลิตภัณฑ์แปรรูปจากกล้วย สมุนไพร หรือน้ำผึ้ง และมีอีกสิ่งหนึ่งที่โดดเด่นไม่แพ้สินค้าใดๆ นั่นคือ <a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a> ที่มีชื่อเสียงโด่งดังไปถึงต่างแดน และได้รับการยอมรับจากคอกาแฟทั่วประเทศ</p>
+                <p>มาทำความรู้จัก “กาแฟชุมพร” หนึ่งในกาแฟที่โดดเด่นที่สุดในเมืองไทย ไม่แพ้ใครในโลกกัน</p>
+            </div>
+            <div class="col-lg-12 d-none mb-4" id="more">
+                <h2 style="font-size: 20px; color: #CF952A;"><b>สวนกาแฟจังหวัดชุมพร</b></h2>
+                <p><a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ในจังหวัดชุมพร ถือเป็นหนึ่งแหล่งเพาะปลูกกาแฟสายพันธุ์โรบัสต้ามากที่สุดในประเทศไทย และเป็นผลิตภัณฑ์ทางการเกษตรที่สามารถสร้างรายได้ให้กับเกษตรกรชาวชุมพรได้ดี เนื่องจากสภาพภูมิอากาศและภูมิประเทศของจังหวัดชุมพรนั้นเหมาะสมกับการปลูกกาแฟโรบัสต้า เพราะต้นกาแฟสายพันธุ์นี้เหมาะสำหรับปลูกในพื้นที่ราบต่ำและมีความชื้น นอกจากนั้น ต้นกาแฟสายพันธุ์ยังปลูกง่าย และทนต่ออุณหภูมิสูงได้ดี ไม่ต้องพึ่งสารเคมี และใช้ต้นทุนต่ำอีกด้วย</p>
+                <h3 style="font-size: 20px; color: #CF952A;"><b>ความโดดเด่นของกาแฟโรบัสต้า</b></h3>
+                <p>กาแฟโรบัสต้านั้นมีจุดเด่นที่ไม่ซ้ำกับกาแฟสายพันธุ์อื่น เมล็ดกาแฟโรบัสต้านั้นมีลักษณะเป็นทรงกลมมนและมีเส้นผ่าตรงกลางเป็นแนวตรง มีความเข้มและขม ไม่ค่อยติดรสชาติเปรี้ยว รสชาติจึงจะค่อนข้างฝาด อีกทั้งมีระดับน้ำตาลและระดับกรดที่ต่ำ ตอบโจทย์คอกาแฟที่ชื่นชอบความเข้มข้นเป็นพิเศษ เพราะมีปริมาณคาเฟอีนอยู่ที่ 2% - 4.5% ซึ่งถือว่าสูงกว่าการกาแฟอราบิก้าเป็นเท่าตัว จึงนิยมนำมาทำเป็นกาแฟสำเร็จรูปหรือกาแฟคั่ว อย่างไรก็ตาม กว่าจะมาเป็น<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>อย่างที่เรารู้จัก ต้องผ่านกระบวนการผลิตอันพิถีพิถันหลากหลายขั้นตอน</p>
+                <h2 style="font-size: 20px; color: #CF952A;"><b>กว่าจะมาเป็นกาแฟชุมพร</b></h2>
+                <p class="mb-2">กาแฟชุมพรไม่ได้มีจุดเด่นแค่เฉพาะสายพันธุ์กาแฟโรบัสต้าอย่างเดียว แต่เนื่องจากความละเอียดอ่อนในกระบวนการผลิต จึงทำให้<a class="text-premium" href="https://vchumphon.com/">สวนกาแฟ</a>ประจำภาคใต้นี้เป็นที่ยอมรับไปทั่วโลก</p>
+                <p class="mb-2">เมื่อผ่านการเก็บเกี่ยวแล้ว เมล็ดกาแฟจะถูกนำมาตากแห้งเป็นเวลา 20 นาที จากนั้นจะถูกนำไปอบลมร้อนที่อุณหภูมิ 80 องศาเซลเซียส และนำมาตากในโรงอบพลังงานแสงอาทิตย์เป็นเวลา 10 วัน ต่อมาเป็นกระบวนการที่ใช้เวลานานที่สุดคือการ “บ่ม” ที่ใช้เวลา 1 ปีเพื่อดึงรสชาติที่อร่อยที่สุดออกมา หลังจากเสร็จสิ้นการบ่ม เมล็ดกาแฟจะถูกนำมาขัดสี เพื่อเอาเปลือกออก ซึ่งเปลือกเหล่านี้ยังสามารถนำไปทำเป็น ปุ๋ยหรือถ่านแท่งได้ จากนั้นจะเป็นการคัดแยกเมล็ดและนำไปคั่วในระดับต่างๆ 3 ระดับ ได้แก่ คั่วอ่อน คั่วกลาง และคั่วเข็ม สุดท้ายเมล็ดกาแฟที่ถูกคั่วจะถูกนำไปคัดแยก เพื่อค้นหาเมล็ดที่สมบูรณ์ ได้คุณภาพมากที่สุดนั่นเอง</p>
+                <p class="mb-2">แม้ในสมัยก่อนกาแฟโรบัสต้าจะไม่ได้รับความนิยมมากนัก เนื่องจากการควบคุมคุณภาพการผลิตที่เป็นได้ยาก แต่ด้วยเทคโนโลยีการคั่วในยุคนี้ที่ก้าวหน้าขึ้น จึงสามารถเข้ามาช่วยให้<a class="text-premium" href="https://vchumphon.com/">กาแฟชุมพร</a>มีรสชาติและคุณภาพที่ดีขึ้น ไม่ว่าจะชงเป็นกาแฟสด นำไปผสมกับกาแฟอราบิก้าเพื่อรสชาติใหม่ๆ แปรรูปเป็นกาแฟกึ่งสำเร็จรูป หรือผลิตเป็นกาแฟกระป๋องพร้อมทาน ก็เป็นที่นิยมมากในปัจจุบัน</p>
+                <p class="mb-0">สำหรับกาแฟ V Coffee นั้นเป็น กาแฟโรบัสต้าสูตรพรีเมียมจากชุมพร เป็นกาแฟโรบัสต้า 100% ที่ปลูก ณ พื้นที่จังหวัดชุมพร ด้วยกระบวนการที่ใส่ใจ ตั้งแต่กระบวนการเก็บ คัดเฉพาะผลที่มีความสมบูรณ์สุกเต็มที่ ผ่านกระบวนผลิตที่ได้คุณภาพและมาตรฐาน ทำให้กาแฟมีกลิ่นหอมและคงความเข้มของโรบัสต้าเป็นเอกลักษณ์</p>
+            </div>
+            <div class="col-lg-12 text-center">
+                <button class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="myBtn">แสดงข้อมูลเพิ่มเติม <span class="fa fa-chevron-down"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let s = 0;
+    $("#myBtn").click(function () {
+        $("#more").toggleClass("d-none");
+        if(s == 0) {
+            $(this).html('ย่อการแสดงข้อมูล <span class="fa fa-chevron-up"></span>');
+            s = 1;
+        } else {
+            $(this).html('แสดงข้อมูลเพิ่มเติม <span class="fa fa-chevron-down"></span>');
+            s = 0;
+        }
+        console.log(555);
+    })
+</script>
 
 <!-- แพ็คเกจท่องเที่ยว -->
 <div style="background-color: #FFF" class="pt-5">
