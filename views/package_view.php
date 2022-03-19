@@ -129,6 +129,12 @@
                                 <hr />
                                 <?php echo $pkgObj->detail; ?>
                             </div>
+                            <div class="col-lg-12">
+                                <hr />
+                                <h5><b>แผนที่นำทางท่องเที่ยว " แพ็คเกจท่องเที่ยว : <?php echo $pkgObj->name; ?> "</b></h5>
+                                <hr />
+                                <iframe src="<?php echo $pkgObj->src_map; ?>" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>

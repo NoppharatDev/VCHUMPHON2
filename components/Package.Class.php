@@ -26,6 +26,7 @@ class Package extends Database {
     public $slide3_name = NULL;
     public $slide3_img = NULL;
     public $slide3_detail = NULL;
+    public $src_map = NULL;
     public $img = NULL;
     public $default_img = "https://s.isanook.com/tr/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3RyLzAvdWQvMjgzLzE0MTc0MTUvYWhyMGNobTZseTl6bG1senl3NXZiMnN1eTI5dGxfOS5qcGc=.jpg";
     public $promptpay_name;
@@ -61,6 +62,7 @@ class Package extends Database {
         $this->slide3_name = NULL;
         $this->slide3_img = NULL;
         $this->slide3_detail = NULL;
+        $this->src_map = NULL;
         $this->img = NULL;
     }
 
@@ -402,6 +404,7 @@ class Package extends Database {
             $this->slide3_name = $row['pkg_slide3_name'];
             $this->slide3_img = $row['pkg_slide3_img'];
             $this->slide3_detail = $row['pkg_slide3_detail'];
+            $this->src_map = $row['pkg_src_map'];
             $this->img = $row['pkg_img'];
             $this->promo_quantity = $row['pkg_promo_quantity'];
             $this->promo_unit = $row['pkg_promo_unit'];
