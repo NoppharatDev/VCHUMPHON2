@@ -35,7 +35,7 @@
         width: 30%;
     }
     .card {
-        // align-items: center;
+        /*align-items: center;*/
     }
     .card-title {
         font-weight: bold;
@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                             <a href="/my_packages/<?php echo $opkgObj->zerofill($row["opkg_id"], 6); ?>" class="btn btn-success br-20 px-5 mr-2">รายละเอียดการจอง</a>
-                            <a href="#" class="btn btn-premium br-20 px-5">เลื่อนวันนัดหมาย</a>
+                            <!-- <a href="#" class="btn btn-premium br-20 px-5">เลื่อนวันนัดหมาย</a> -->
                         </div>
                     </div>
                 </div>

@@ -1,31 +1,34 @@
 <?php
-if (!isset($_SESSION["cust_id"])) {
-    header('Location: /login');
-}
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
-require_once('components/Product.Class.php');
-require_once('components/OrderProduct.Class.php');
-require_once("libs/PromptPay/PromptPayQR.php");
+    if (!isset($_SESSION["cust_id"])) {
+        header('Location: /login');
+    }
+    require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HeadHTML.Class.php");
+    require_once('components/Product.Class.php');
+    require_once('components/OrderProduct.Class.php');
+    require_once("libs/PromptPay/PromptPayQR.php");
 
-$headObj = new HeadHTML();
-$oprodObj = new OrderProduct();
-$prodObj = new Product();
-$PromptPayQR = new PromptPayQR(); // new object
-$PromptPayQR->size = 10; // Set QR code size to 8
-$PromptPayQR->id = '0'; // PromptPay ID
-$PromptPayQR->amount = 0; // Set amount (not necessary)
+    $headObj = new HeadHTML();
+    $oprodObj = new OrderProduct();
+    $prodObj = new Product();
+    $PromptPayQR = new PromptPayQR(); // new object
+    $PromptPayQR->size = 10; // Set QR code size to 8
+    $PromptPayQR->id = '0'; // PromptPay ID
+    $PromptPayQR->amount = 0; // Set amount (not necessary)
 ?>
 
 <!DOCTYPE html>
 <html lang="th">
 <?php
-echo $headObj->getHead();
+    echo $headObj->getHead();
 ?>
 
 <body style="overflow-x: hidden">
     <?php
     if (!isset($_SESSION['cust_id'])) {
         header('Location: /login');
+    }
+    if(isset($_POST['evidence_id'])) {
+        $oprodObj->uploadEvidence($_POST['evidence_id']);
     }
     ?>
     <?php require_once("{$_SERVER['DOCUMENT_ROOT']}/navbar.php"); ?>
@@ -71,12 +74,14 @@ echo $headObj->getHead();
                                     <div class="ml-auto">
                                         <?php
                                         if ($row["oprod_payment"] == 'pp' && $row["oprod_status"] <= 1) {
+                                            if($row["oprod_evidence"] == null) {
                                         ?>
                                             <button type="button" class="btn btn-danger br-30 px-3 mr-2" data-toggle="modal" data-target="#evidence_<?php echo $row["oprod_id"]; ?>">
                                                 <span class="fas fa-file-upload mr-1"></span> ส่งหลักฐาน
                                             </button>
                                             <div class="modal fade" id="evidence_<?php echo $row["oprod_id"]; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered br-20" role="document">
+                                                    <form action="" method="POST" enctype="multipart/form-data">
                                                     <div class="modal-content br-20">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title" id="exampleModalLongTitle"><b>ส่งหลักฐาน (คำสั่งซื้อหมายเลข : <b>INV<?php echo $oprodObj->zerofill($row["oprod_id"], 7); ?>TH)</b></h5>
@@ -93,10 +98,11 @@ echo $headObj->getHead();
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="submit" class="btn btn-success px-3 br-30 mr-2"><span class="fas fa-paper-plane"></span> ส่งหลักฐาน</button>
+                                                            <button type="submit" name="evidence_id" id="evidence_id" value="<?php echo $row["oprod_id"]; ?>" class="btn btn-success px-3 br-30 mr-2"><span class="fas fa-paper-plane"></span> ส่งหลักฐาน</button>
                                                             <button type="button" class="btn btn-secondary px-3 br-30" data-dismiss="modal">ปิด</button>
                                                         </div>
                                                     </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                             <button type="button" class="btn btn-info br-30 px-3 mr-2" data-toggle="modal" data-target="#pay_<?php echo $row["oprod_id"]; ?>"><span class="fas fa-credit-card mr-1"></span> ชำระเงิน</button>
@@ -127,6 +133,7 @@ echo $headObj->getHead();
                                                 </div>
                                             </div>
                                         <?php
+                                            }
                                         } else {
                                         ?>
                                             <a href="/invoice/<?php echo $oprodObj->zerofill($row["oprod_id"], 7); ?>" class="btn btn-success br-30 px-3 mr-2" target="_blank"><span class="fas fa-file-invoice mr-1"></span> ใบเสร็จ</a>
@@ -266,6 +273,22 @@ echo $headObj->getHead();
                 $("#item_pp").removeClass("d-block");
                 $("#item_pp").addClass("d-none");
             }
+        })
+
+        $("#chooseFile").click(function() {
+            $("#file").click();
+        });
+
+        $("#file").change(function() {
+            let fileName = document.querySelector('#file').files[0].name;
+            const lastDot = fileName.lastIndexOf('.');
+            const typeName = fileName.substring(lastDot + 1);
+            if(fileName.length <= 10) {
+                $("#chooseFile").html('<span class="fas fa-file-image"></span> ' + fileName.substring(0, 15));
+            } else {
+                $("#chooseFile").html('<span class="fas fa-file-image"></span> ' + fileName.substring(0, 15));
+            }
+            console.log(fileName);
         })
     </script>
 

@@ -35,10 +35,11 @@ post('/cart', '/views/my_cart.php');
 post('/login', '/views/login.php');
 post('/product/$id', '/views/product_partner_view.php');
 post('/cart/confirm', '/views/cart_confirm.php');
-post('/cart/address', '/views/cart_address.php'); // View Carts Page
+post('/cart/address', '/views/cart_address.php');
 post('/travel/booking/$id', '/views/package_confirm.php');
 post('/register', '/views/register.php');
 post('/my_packages/$id', '/views/my_package_view.php');
+post('/my_orders', '/views/my_order.php');
 
 /*get('/user/$id', 'user.php');
 

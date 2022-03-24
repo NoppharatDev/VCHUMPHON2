@@ -76,13 +76,19 @@
                                         <td class="text-center"><?php echo $i; ?></td>
                                         <td>
                                             <div class="cart-img">
-                                                <img src="/img_view/prod/46/0.2" width="100%">
+                                                <img src="/img_view/prod/<?php echo $row['prod_id']; ?>/0.2" width="100%">
                                             </div>
                                         </td>
                                         <td>
                                             <b class="text-premium"><?php echo "{$row['prod_name']} ({$row['prod_weight']} กรัม)"; ?></b>
-                                            <small class="form-text text-muted"><b>ชนิด : <?php echo $type; ?></b></small>
-                                            <small class="form-text text-muted"><b>ระดับการคั่ว : <?php echo $level; ?></b></small>
+                                            <?php
+                                                if($row['prod_id'] == 45 || $row['prod_id'] == 46) {
+                                            ?>
+                                                <small class="form-text text-muted"><b>ชนิด : <?php echo $type; ?></b></small>
+                                                <small class="form-text text-muted"><b>ระดับการคั่ว : <?php echo $level; ?></b></small>
+                                            <?php
+                                                }
+                                            ?>
                                         </td>
                                         <td class="text-center"><?php echo number_format($row["prodlist_price"], 2); ?></td>
                                         <td class="text-center"><?php echo $row["prodlist_amount"]; ?></td>

@@ -290,6 +290,97 @@ class OrderProduct extends Database {
         }
     }
 
+    // ฟังชั่นอัพโหลดข้อมูลหลักฐานการชำระเงิน
+    public function uploadEvidence($id) {
+        if(!empty($_FILES["file"]["name"])) {
+            $file_size = ($_FILES["file"]["size"] / 1024);
+            if($file_size > 512) {
+                echo "<script>
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'อัพโหลดไฟล์ไม่สำเร็จ!',
+                            text: 'ขนาดไฟล์ใหญ่เกินกว่า 500 KB',
+                            confirmButtonText: 'ยืนยัน'
+                        })
+                      </script>";
+            } else {
+                $size = 1;
+                if($file_size <= 102.4) { $size = 1; }
+                else if($file_size > 102.4 && $file_size < 204.8) { $size = 8; }
+                else if($file_size > 204.8 && $file_size < 307.2) { $size = 7; }
+                else if($file_size > 307.2 && $file_size < 409.6) { $size = 6; }
+                else if($file_size > 409.6 && $file_size < 512) { $size = 5; }
+                $img_str = $this->toBinary($_FILES["file"]);
+                $size_og = (mb_strlen($img_str, '8bit') / 1024);
+                $img_str_new = $this->resize($_FILES["file"], 400);
+                $size_new = (mb_strlen($img_str_new, '8bit') / 1024);
+                //echo "OG : {$size_og}<br> NEW : {$size_new}";
+                //echo "ใช้ไฟล์นี้ได้";
+                $conn = $this->connect();
+                $stmt = $conn->prepare("UPDATE order_products SET oprod_evidence = ? WHERE oprod_id = ?");
+                $stmt->bind_param("si", $evidence_file, $id);
+                $evidence_file = $img_str_new;
+                if($stmt->execute()) {
+                    echo "<script>
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'สำเร็จ!',
+                                text: 'อัพโหลดหลักฐานการชำระเงินเรียบร้อย',
+                                confirmButtonText: 'ยืนยัน'
+                            })
+                          </script>";
+                    // echo "<script>window.location.assign(\"/my_packages/{$getID}\")</script>";
+                } else {
+                    echo "<script>
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'ไม่สำเร็จ!',
+                                text: 'ไม่สามารถอัพโหลดหลักฐานการชำระเงินได้ โปรดลองใหม่อีกครั้ง',
+                                confirmButtonText: 'ยืนยัน'
+                            })
+                          </script>";
+                    die ('prepare() failed: ' . $conn->error);
+                }
+            }
+        }
+    }
+
+    public function toBinary($file) {
+        if(!empty($file['tmp_name'])) {
+            return file_get_contents($file['tmp_name']);
+        } else {
+            return false;
+        }
+        /*$fp = fopen($file["tmp_name"], "r");
+        $ReadBinary = fread($fp, filesize($file["tmp_name"]));
+        fclose($fp);
+        return $FileData = addslashes($ReadBinary);*/
+        //$imageProperties = getimageSize($_FILES['GRAD_PHOTO']['tmp_name']);
+    }
+
+    public function resize($imageFile, $widthIn = 100) {
+        $images = $imageFile["tmp_name"];
+        $filename = $imageFile['name'];
+        $type = pathinfo($filename, PATHINFO_EXTENSION);
+		$new_images = "resize.tmp";
+		// copy($imageFile["tmp_name"],"MyResize/".$imageFile["name"]);
+		$width = $widthIn; ## Fix Width & Heigh (Autu caculate)
+		$size = GetimageSize($images);
+		$height = round($width*$size[1]/$size[0]);
+        if($type == 'jpg' || $type == 'jpeg') { $images_orig = ImageCreateFromJPEG($images); }
+		else if($type == 'png') { $images_orig = ImageCreateFromPNG($images); }
+		$photoX = ImagesX($images_orig);
+		$photoY = ImagesY($images_orig);
+		$images_fin = ImageCreateTrueColor($width, $height);
+		ImageCopyResampled($images_fin, $images_orig, 0, 0, 0, 0, $width+1, $height+1, $photoX, $photoY);
+		ImageJPEG($images_fin, "MyResize/".$new_images);
+        ImageDestroy($images_orig);
+        ImageDestroy($images_fin);
+        $data = file_get_contents("MyResize/".$new_images);
+        return $data;
+        //echo 'data:image/jpg;base64,' . base64_encode($data);
+    }
+
     // รวมยอดสินค้าแต่ละ ID
     public function sumProdAmt() {
         $arr = []; $status = TRUE;

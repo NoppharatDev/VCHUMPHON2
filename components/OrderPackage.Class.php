@@ -111,7 +111,51 @@ class OrderPackage extends Database {
         $cust_id = $_SESSION["cust_id"];
         
         if($stmt->execute()) {
+            
+            //** Send Line */
+            $stmt = $conn->prepare("SELECT opkg_id FROM order_packages ORDER BY opkg_id DESC LIMIT 1");
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $row = $result->fetch_assoc();
+            $opkg_id = $row['opkg_id'];
+
+            date_default_timezone_set("Asia/Bangkok");
+            $date_now = date("d/m/Y H:i น.");
+            $message = "\n***การจองแพคเกจท่องเที่ยวใหม่***\nหมายเลขการจอง #PKG{$this->zerofill($opkg_id, 6)}TH \nจองเมื่อ {$date_now}\n\n";
+            $message .= "ชื่อ-นามสกุล : {$name}\n";
+            $message .= "เบอร์โทรศัพท์ : {$this->phone}\n";
+            $message .= "อีเมล : {$this->email}\n";
+            $message .= "จังหวัด : {$this->province} ({$this->zipcode})\n";
+            $message .= "วันที่เริ่มท่องเที่ยว : {$this->travel_date}\n";
+            $message .= "ระยะเวลา : {$this->duration}\n";
+            $message .= "ผู้ใหญ่ : {$this->adult} คน\n";
+            $message .= "เด็ก : {$this->child} คน\n";
+            $sum_people = ($this->adult + $this->child);
+            $message .= "รวม : {$sum_people} คน\n";
+            $sum_price = (($this->adult_price * $this->adult) + ($this->child_price * $this->child));
+            $message .= "ราคารวม : {$sum_price} บาท\n";
+            $message .= "ส่วนลด : {$this->discount} บาท\n";
+            $end_price = ($sum_price - $this->discount);
+            $message .= "ราคารวมหลังใช้ส่วนลด : {$end_price} บาท\n";
+            $paynow_price = ($end_price * 0.5);
+            $message .= "ต้องจ่ายตอนนี้ : {$paynow_price} บาท\n";
+            $message .= "จ่ายก่อนเช็คอิน : {$paynow_price} บาท\n";
+            $message .= "หมายเหตุ : {$this->comment}\n\n";
+            $message .= "**จองผ่านหน้าเว็บไซต์**";
+            $stmt = $conn->prepare("SELECT admin_token FROM admins WHERE admin_id = (SELECT admin_id FROM packages WHERE pkg_id = ?) LIMIT 1");
+            $stmt->bind_param("i", $this->pkg_id);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $row = $result->fetch_assoc();
+            // echo $row['admin_token'];
+            $lineToken = $row['admin_token'];
+            if($lineToken != NULL) { $this->sendLineNotify($lineToken, $message); }
+            //** Send Line */
+
+            
             $this->setDefaultVal();
+
+
             echo "<script>
                     Swal.fire({
                         icon: 'success',
@@ -328,6 +372,34 @@ class OrderPackage extends Database {
         $data = file_get_contents("MyResize/".$new_images);
         return $data;
         //echo 'data:image/jpg;base64,' . base64_encode($data);
+    }
+
+    // /// // / / / // / 
+    public function sendLineNotify($sToken, $sMessage) {
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
+        date_default_timezone_set("Asia/Bangkok");
+
+        $chOne = curl_init(); 
+        curl_setopt( $chOne, CURLOPT_URL, "https://notify-api.line.me/api/notify"); 
+        curl_setopt( $chOne, CURLOPT_SSL_VERIFYHOST, 0); 
+        curl_setopt( $chOne, CURLOPT_SSL_VERIFYPEER, 0); 
+        curl_setopt( $chOne, CURLOPT_POST, 1); 
+        curl_setopt( $chOne, CURLOPT_POSTFIELDS, "message=".$sMessage); 
+        $headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer '.$sToken.'', );
+        curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers); 
+        curl_setopt( $chOne, CURLOPT_RETURNTRANSFER, 1); 
+        $result = curl_exec( $chOne ); 
+
+        //Result error 
+        if(curl_error($chOne)) { 
+            echo 'error:' . curl_error($chOne); 
+        } else { 
+            $result_ = json_decode($result, true); 
+            // echo "status : ".$result_['status']; echo "message : ". $result_['message'];
+        } 
+        curl_close( $chOne );
     }
 
 }
