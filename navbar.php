@@ -1,4 +1,6 @@
 <?php
+    require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Customer.Class.php");
+    $custObj = new Customer();
     if(isset($_GET["page"])) {
         $p = $_GET["page"];
         if($p == 'pkg') { header( "location: /travel" ); }
@@ -7,6 +9,7 @@
         else if($p == 'cart') { header( "location: /cart" ); }
         else if($p == 'prod_view') { header( "location: /robusta/{$_GET['id']}" ); }
         else if($p == 'pkg_view') { header( "location: /travel/{$_GET['id']}" ); }
+        else if($p == 'logout') { unset($_SESSION['cust_id']); header( "location: /" ); }
         else { header( "location: /" ); }
     }
     $cart_count = 0;
@@ -65,7 +68,7 @@
                 ?>
                         <li class="nav-item px-2 active dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: 800; color: #CF952A;">
-                                ชื่อผู้ใช้งาน
+                                <?php echo $custObj->getCustomerName($_SESSION["cust_id"]); ?>
                             </a>
                             <div class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="/my_packages"><span class="fa fa-suitcase"></span> การจองของฉัน</a>

@@ -173,6 +173,16 @@ class Customer extends Database {
         return $result;
     }
 
+    public function getCustomerName($id) {
+        $conn = $this->connect();
+        $stmt = $conn->prepare("SELECT customer_first_name, customer_last_name FROM customers WHERE customer_id = ?");
+        $stmt->bind_param('i', $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+        return "{$row['customer_first_name']} {$row['customer_last_name']}";
+    }
+
     // ฟังชั่นแปลง key customer_sex เป็น title_name
     public function convertTitleName($key) {
         if($key == 1) { return 'นาย'; }

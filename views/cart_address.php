@@ -19,6 +19,12 @@
 ?>
 <?php require_once("{$_SERVER['DOCUMENT_ROOT']}/navbar.php"); ?>
 
+<link rel="stylesheet" href="/assets/jquery.Thailand.js/dist/jquery.Thailand.min.css">
+<script type="text/javascript" src="/assets/jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
+<script type="text/javascript" src="/assets/jquery.Thailand.js/dependencies/zip.js/zip.js"></script>
+<script type="text/javascript" src="/assets/jquery.Thailand.js/dependencies/JQL.min.js"></script>
+<script type="text/javascript" src="/assets/jquery.Thailand.js/dependencies/typeahead.bundle.js"></script>
+
 <div style="background-color: #F5F5F5; padding-top: 110px; min-height: 100vh">
     <div class="container mt-3 pb-5">
     <?php
@@ -28,7 +34,7 @@
             <div class="col-lg-12">
                 <div class="card border-0 shadow br-15">
                     <div class="card-body">
-                        <form action="" method="POST">
+                        <form action="" method="POST" id="demo1" class="demo" autocomplete="on">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h4 class="text-center text-premium mb-0"><b>วิธีการชำระเงิน</b></h4>
@@ -173,6 +179,21 @@
 </div>
 
 <script>
+$.Thailand({
+    database: '//<?php echo $_SERVER['HTTP_HOST']; ?>/assets/jquery.Thailand.js/database/db.json',
+    $district: $('#demo1 [name="district"]'),
+    $amphoe: $('#demo1 [name="amphoe"]'),
+    $province: $('#demo1 [name="province"]'),
+    $zipcode: $('#demo1 [name="zipcode"]'),
+    onDataFill: function(data) {
+        // console.info('Data Filled', data);
+    },
+    onLoad: function() {
+        // console.info('Autocomplete is ready!');
+        // $('#loader, .demo').toggle();
+    }
+});
+
 $(".form-check-input").change(function() {
     if($(".form-check-input")[0].checked) {
         $("#item_pp").removeClass("d-none");

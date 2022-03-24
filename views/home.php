@@ -208,6 +208,8 @@
                 >
                     พิชิต...เขาร้อยยอด จุดชมวิวที่สูงที่สุดในตัวเมืองชุมพร ยอดเขาหินเล็กๆ รองรับประมาณ 10-20 คน สามารถมองเห็นวิวได้โดยรอบ มองเห็นยอดเขามากมายหลายร้อยยอด
                 </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.1203348334816!2d99.06597811479759!3d10.41201639256943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305603386ed914ad%3A0x219143dcc76e4d03!2z4Lic4Liy4LiV4Liy4Lit4Li54LmK4LiU!5e0!3m2!1sth!2sth!4v1648025327544!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://goo.gl/maps/rk3Uwbe4rHRQJVi6A" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
             </div>
             <div class="col-lg-7 mb-5">
                 <h5 class="text-center text-premium my-3" data-aos="sfade-up-right" data-aos-duration="500" style="font-weight: 800;">เขาถ้ำศิลางู</h5>
@@ -219,6 +221,8 @@
                 >
                     เขาถ้ำศิลางู ธรรมชาติที่มีเรื่องเล่า ท่านนายกก้อย นายก อบต.ถ้ำสิงห์ให้เกียรติเล่าให้ฟังว่ามีชาวบ้านฝันเห็นงูใหญ่ ณ ที่แห่งนี้ จึงมีประเพณีประจำปีเพื่อสักการะพ่อท่านพญานาคราช ทุกวันที่ 13 เมษายน ของทุกปี หน้าถ้ำจะมีแท่นหินที่ธรรมชาติปั้นแต่งได้เหมือนพญานาคราชและมีบริวารงูตัวเล็กๆที่เกิดจากหินย้อยมากมายหลายตัว ที่เที่ยวอีกที่ที่ต้องไปใน จ.ชุมพร
                 </p>
+                <a href="https://goo.gl/maps/8bABhSmabJqsnAi3A" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.056962269918!2d99.04488071479764!3d10.417050792566013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30560379cb2a7241%3A0xe6d5c6ae6167a070!2z4LiW4LmJ4Liz4Lio4Li04Lil4Liy4LiH4Li5!5e0!3m2!1sth!2sth!4v1648024671598!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="col-lg-5 mb-5">
                 <img
@@ -290,16 +294,65 @@
                                     ตำบลถ้ำสิงห์ อำเภอเมืองชุมพร จังหวัดชุมพร ตั้งอยู่ทางตอนใต้ของอำเภอ ห่างจากที่ว่าการอำเภอเมืองชุมพร ระยะทาง 24 กิโลเมตร
                                 </p>
                             </div>
-                            <!-- <div class="col-lg-12 text-center mt-3">
-                                <b 
-                                    data-aos="szoom-in"
-                                    data-aos-duration="500"
-                                    class="badge badge-premium py-2 px-3 br-15 mr-2"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-image: url('image/tum.png'); background-size: cover; background-position: top center; background-attachment: fixed; min-height: 60vh;">
+        <div style="background-color: rgb(0, 0, 0, 0.5);">
+            <div class="container" style="padding-bottom: 60px;">
+                <div style="background-color: rgba(255, 255, 255, 0.8); border-radius: 25px;">
+                    <div class="p-4">
+                        <div class="row" style="overflow-x: hidden; overflow-y: hidden;">
+                            <div class="col-lg-12 text-center mb-4">
+                                <h3 class="text-premium" style="font-weight: 800; font-size: 30px;">ประวัติความเป็นมาของกาแฟถ้ำสิงห์</h3>
+                            </div>
+                            <div class="col-lg-6">
+                                <h5
+                                    data-aos="sfade-up-left"
+                                    data-aos-duration="800"
+                                    class="text-center mb-3"
+                                    style="font-weight: 800;"
                                 >
-                                    อาชีพหลัก
-                                </b>
-                                <span data-aos="szoom-in" data-aos-duration="2000">ทำสวน/ทำไร่</span>
-                            </div> -->
+                                    ประวัติความเป็นมา
+                                </h5>
+                                <p
+                                    data-aos="sfade-left"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="1200"
+                                    style="text-indent: 50px; text-align: justify;"
+                                >
+                                ตำบลถ้ำสิงห์ อำเภอเมืองชุมพร จังหวัดชุมพร เมื่อสมัยก่อนมีลักษณะภูมิประเทศเป็นป่าทึบประกอบไปด้วยภูเขา ที่บ้านถ้ำสิงห์ หมู่ที่ 1 ตำบลถ้ำสิงห์ ในปัจจุบันมีภูเขาอยู่ลูกหนึ่งซึ่งใหญ่โตมาก มองดูจากที่ไกลคล้ายรูปสิงห์โตกำลังหมอบอยู่ลักษณะอ้าปาก ปากที่อ้าก็คือถ้ำภายในถ้ำมีหินงอกตามธรรมชาติ มีลักษณะคล้ายสิงห์โตอยู่อีกตัวหนึ่ง ซึ่งเป็นที่รู้จักและเคารพนับถือของชาวบ้าน เลยเรียกกันว่า ถ้ำสิงห์
+                                </p>
+                                <p>ต่อมาเมื่อมีผลผลิตเพิ่มมากขึ้นจึงได้รวมกลุ่มกันไปขายให้กับบริษัทผงไทยหรือเนสเล่ห์ในปัจจุบัน ที่กรุงเทพมหานคร สร้างความร่ำรวยให้กับเกษตรกรเป็นอย่างมากจนเป็นที่รู้จักของพ่อค้า แม่ค้าในตลาดชุมพรว่าคนถ้ำสิงห์ซื้อของง่าย ใช้เงินคล่อง</p>
+                                <div class="d-none" id="moreTumText">
+                                    <p>ปี พ.ศ  2522 ราคากาแฟขึ้นสูงสุดถึง 120 บาท/กิโลกรัมเป็นประวัติการณ์ เกษตรกรมีเงินเก็บและฝากไว้กับธนาคารเป็นจำนวนมากและเริ่มมองหาพื้นที่ปลูกกาแฟเพิ่มจึงได้ไปจับจอง ซื้อที่ดิน ที่ปากจั่น อำเภอกระบุรี ที่เขาค่าย เขาทะลุ ที่รับร่อ สลุย อำเภอท่าแซะ ทำให้พื้นที่ปลูกกาแฟขยายเพิ่มขึ้นอย่างรวดเร็วของจังหวัดชุมพร</p>
+                                    <p>ปี พ.ศ 2530 ราคากาแฟเริ่มตกต่ำ ผลผลิตต่อไร่เริ่มลดลงราคาไม่จูงใจต่อการมีอาชีพปลูกกาแฟ เกษตรกรเริ่มมีปัญหาเรื่องราคาผลิตแล้วไม่คุ้มทุน เริ่มมีการประท้วงให้รัฐบาลเข้ามาประกันราคาขั้นต่ำ</p>
+                                    <p>ปี พ.ศ 2530 รัฐบาลสมัยนั้นจึงเริ่มโครงการลดพื้นที่ปลูกกาแฟเพื่อมิให้กาแฟล้นตลาดโดยให้เงินสนับสนุนไร่ละ 6,800 บาท เกษตรกรจึงเข้าร่วมโครงการลดพื้นที่ปลูกกาแฟ ทำให้กาแฟถ้ำสิงห์ลดลงเหลือประมาณ 10 %ของพื้นที่ปลูกกาแฟทั้งหมด</p>
+                                    <p>เมื่อตัดต้นกาแฟหมดจึงเหลือเพียง ทุเรียน มังคุด กล้วยหอม เกษตรกรจึงเริ่มมาทำทุเรียนนอกฤดู ผลผลิตที่ได้จึงมีราคาสูง สร้างความร่ำรวยให้กับเกษตรกรอีกครั้งหนึ่ง แต่เมื่อมีการทำทุเรียนนอกฤดูเพิ่มขึ้นอย่างไม่มีการควบคุมสุดท้ายก็ทำให้ราคาผลผลิตทุเรียนนอกฤดูใกล้เคียงกับราคาทุเรียนในฤดูกาล ทำให้เกษตรกรผลิตแล้วไม่คุ้มทุน ประกอบกับเมื่อมีการปลูกพืชเชิงเดี่ยวกันมากทำให้โรคแมลงระบาดอย่างรวดเร็ว ทุเรียนล้มตายเป็นจำนวนมาก  เงินทองที่เก็บไว้เริ่มหมดจึงได้ไปกู้เงินจากสถาบันการเงินของรัฐ และเอกชนรวมทั้งเงินกู้นอกระบบเพื่อที่จะเอามาลงทุนในสวนทุเรียนนอกฤดูแต่ก็ล้มเหลวเนื่องจากพืชมีความต้านทานต่อสารเคมี ผลผลิตจึงไม่ออกตามที่ต้องการ จำเป็นต้องใช้สารเคมีอย่างเข้มข้นเพิ่มขึ้น ทำให้เพิ่มต้นทุนการผลิตเมื่อได้ระยะเวลาเก็บเกี่ยวก็มาประสบกับปัญหาราคาต่ำเงินที่ได้มามีไม่เพียงพอต่อการนำไปชำระหนี้ เมื่อเป็นเช่นนี้ก็ต้องมีการค้างชำระหนี้ เรื่อยมา</p>
+                                    <p>จากอดีตที่เคยเฟื่องฟูกับอับเฉาในวันนี้ อันเนื่องมาจากเกษตรกรนิยมปลูกพืชเชิงเดี่ยว ซึ่งให้ผลผลิตครั้งเดียวในรอบปีผิดกับเมื่อก่อนปลูกพืชผสมผสานคือมีกาแฟเป็นพืชหลัก ทุเรียน มังคุด กล้วยหอมเป็นพืชรอง จึงทำให้มีรายได้ตลอดปี ความเป็นอยู่ของเกษตรกรจึงไม่เดือดร้อน พึ่งพาตนเองได้อย่างสบาย กาแฟถ้ำสิงห์จึงถือกำเนิดขึ้นจากเหตุปัจจัยดังกล่าว</p>
+                                </div>
+                                <button class="btn btn-outline-warning br-20 px-4 mr-3 btn-outline-tumb" id="moreTum">อ่านต่อ...</button>
+                                <button class="btn btn-outline-warning br-20 px-4 mr-3 btn-outline-tumb d-none" id="moreTum">ย่อข้อความ</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <img
+                                    class="lazyload shadow br-15"
+                                    data-aos="szoom-in"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="500"
+                                    data-src="../image/tum.png"
+                                    width="100%"
+                                    alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
+                                >
+                            </div>
+                            <div class="col-12 mt-3 text-center">
+                                <iframe class="mb-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.866027311514!2d99.06182481479777!3d10.432204392555654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3056032e0989d781%3A0x878f3fc91c7e64da!2z4Lin4Li04Liq4Liy4Lir4LiB4Li04LiI4LiK4Li44Lih4LiK4LiZ4LiB4Lil4Li44LmI4Lih4LiB4Liy4LmB4Lif4Lia4LmJ4Liy4LiZ4LiW4LmJ4Liz4Liq4Li04LiH4Lir4LmM!5e0!3m2!1sth!2sth!4v1648025995051!5m2!1sth!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <a href="https://goo.gl/maps/jAr4JZFu1qMY6sDL7" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,6 +376,8 @@
                     >
                         ถ้ำธารลอดตั้งอยู่ที่ หมู่ที่ ๑๘ ตำบลนาสัก อำเภอสวี จังหวัดชุมพร เป็นแหล่งท่องเที่ยวเชิงอนุรักษ์ มีหินงอกหินย้อยภายในถ้ำ ที่สำคัญมีน้ำไหลผ่านถ้ำทั้งปี สามารถเข้าชมได้เฉพาะช่วงฤดูแล้งประมาณเดือนกุมภาพันธ์ถึงเดือนพฤษภาคมของทุกปี และจะมีกิจกรรมเปิดถ้ำกินฟรีช่วงเทศการสงกรานต์ของทุกปี ซึ่งดำเนินการโดยองค์การบริหารส่วนตำบลนาสักร่วมกับประชาชนในพื้นที่และหน่วยงานราชการห้างร้านต่างๆให้การสนับสนุนกิจกรรม
                     </p>
+                    <a href="https://goo.gl/maps/BnEPxHCpETELqdec7" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3904664.121823996!2d96.5309263!3d17.1142514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d06fd91af19d1d%3A0x6a19224c76e57e7a!2z4LiW4LmJ4Liz4LiZ4LmJ4Liz4Lil4Lit4LiU!5e0!3m2!1sth!2sth!4v1648025750156!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
@@ -358,6 +413,8 @@
                         เหมาะกับทุกเพศทุกวัย นักท่องเที่ยว สามารถขับรถยนต์ขึ้นบนเขาได้ ส่วนการเดิน เดินประมาณ ๒๐๐ เมตร ขึ้นไปยังชมจุดชมวิว
                         การกางเต็นท์นอน ให้ประสานไปที่ เบอร์โทรของ อบต. ทาง อบต.จะประสานไห้ ผู้ใหญ่บ้านในพื้นที่ หรือเจ้าหน้าที่ผู้เกี่ยวข้อง นำพาไป
                     </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.77289849013!2d99.02385836479581!3d10.199089192714867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30560d06cf5111b7%3A0x833a4b5424979b30!2z4LmA4LiC4Liy4LiV4Liy4Lir4Lih4Li34LmI4LiZ4LiZ4Li1!5e0!3m2!1sth!2sth!4v1648026654247!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <a href="https://goo.gl/maps/z5c1dAWY8fc6wD7F6" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
                 </div>
             </div>
         </div>
@@ -471,6 +528,8 @@
                     >
                         ใครที่จะมาอำเภอหลังสวน จังหวัดชุมพร ขอแนะนำสถานที่ท่องเที่ยวอีกหนึ่งจุดที่มีนักท่องเที่ยวแวะมาสัมผัสกับบรรยากาศร่มรื่นเย็นสบาย มีพรรณไม้นานาพันธุ์ มีการจัดสวนได้อย่างสวยงาม ที่สำคัญเป็นที่ประทับของรูปปั้นสมเด็จพระศรีนครินทราบรมราชนนี ด้านหลังเป็นภูเขา มีทางเดินขึ้นถ้ำด้วยการตกแต่งราวบันไดเป็นพญานาคยาวไปถึงหน้าถ้ำ และบนถ้ำมีพระพุทธรูปให้ได้กราบไหว้ มีหินงอกหินย้อยให้ได้ชื่นชมมองลงมาจากด้านล่างจะเห็นวิวทิวทัศน์ที่สวยงามส่วนอีกด้านหนึ่งของถ้ำจะมีลิงนับร้อยตัวและมีศาลาให้นั่งพักผ่อนริมแม่น้ำ
                     </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.8396231332777!2d99.03716001479378!3d9.947298492887299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30567a99e5296d2d%3A0xa49dba0ca34a5099!2z4Liq4Lin4LiZ4Liq4Lih4LmA4LiU4LmH4LiI4Lie4Lij4Liw4Lio4Lij4Li14LiZ4LiE4Lij4Li04LiZ4LiX4Lij4LmMIOC4iuC4uOC4oeC4nuC4ow!5e0!3m2!1sth!2sth!4v1648025668240!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <a href="https://goo.gl/maps/GPD3o1SeCt7MccS8A" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
                 </div>
                 <div class="col-lg-7 mb-5">
                     <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">วัดถ้ำเขาเงิน</h5>
@@ -482,6 +541,8 @@
                     >
                         อีกหนึ่งวัดดังในพื้นที่อำเภอหลังสวน ที่มีนักท่องเที่ยวแวะเวียนเข้าไปชื่นชมความสวยงามของตัวโบสถ์ที่สร้างเป็นเรือสุพรรณหงษ์ มีความสวยงามโดดเด่นมาก โดยบริเวณรอบเรือมีน้ำและดอกบัวล้อมรอบ เมื่อจะเข้าโบสถ์ต้องผ่านบันไดพญานาค ซึ่งมีลวดลายวิจิตรศิลป์น่าชวนให้หลงไหลยิ่งนัก สำหรับนักท่องเที่ยวที่แวะเวียนมาจะเข้ามาสักการะร่างของพ่อหลวงคล้อยที่ไม่เน่าไม่เปื่อย ซึ่งเป็นที่เคารพและศรัทธาของประชาชนทั่วไป
                     </p>
+                    <a href="https://goo.gl/maps/zHLqJZ5umSB5Uv9t7" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.565918598162!2d99.04210739848364!3d9.949486364018652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30567a9bac1e12df%3A0xed87ae136ae2c5be!2z4Lin4Lix4LiU4LiW4LmJ4Liz4LmA4LiC4Liy4LmA4LiH4Li04LiZ!5e0!3m2!1sth!2sth!4v1648025572955!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
@@ -560,6 +621,8 @@
                     >
                         จุดชมพระอาทิตย์ขึ้นและพระอาทิตย์ตกที่สวยงามมากกกกกของชุมพร ตั้งอยู่ตำบลนาทุ่ง อ.เมืองชุมพร เอกลักษณ์ของที่นี่ คือ โขดหินมากมายที่วางเรียงรายอยู่บนชายหาด กลายเป็นอีกหนึ่งจุดถ่ายรูปสวยๆของทุกคนที่มาเช็คอินที่แห่งนี้
                     </p>
+                    <a href="https://goo.gl/maps/TXSTAV7XrJjvq8Vz9" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3922.8290521037134!2d99.2631777!3d10.514127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ff55c2337363d1%3A0x858f60523c266144!2z4LiI4Li44LiU4LiK4Lih4Lin4Li04Lin4LmB4Lir4Lil4Lih4Lir4Lix4Lin4LmC4Lih4LmI4LiHLeC4hOC4reC4geC4p-C4suC4hw!5e0!3m2!1sth!2sth!4v1648026920577!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
@@ -593,6 +656,8 @@
                     >
                         มีทิวทัศน์ที่สวยงาม มีทรัพยากรธรรมชาติที่สวยงาม คงสภาพที่หาที่ไหนไม่ได้ มีชาวประมงที่หาปลา และจำหน่ายอาหารทะเลสดๆ
                     </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62774.050599646136!2d99.1792773!3d10.4708254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ff557952b0d6e3%3A0x9df2eccb1a3edf9a!2z4Lij4Li04Lih4LiX4Liw4LmA4LilIOC4m-C4suC4geC4q-C4suC4lA!5e0!3m2!1sth!2sth!4v1648027031289!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <a href="https://goo.gl/maps/74S7uf8B47A2nF3L9" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
                 </div>
                 <div class="col-lg-7 mb-5">
                     <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">สะพานพนังตัก (หมู่บ้านชาวประมง)</h5>
@@ -604,6 +669,8 @@
                     >
                         จากสะพานพนังตัก ซึ่งเป็นสะพานสูง สามารถชมวิวของหมู่บ้านชาวประมงของตำบลนาทุ่ง เป็นจุดที่แม่น้ำท่าตะเภาไหลลงสู่ทะเล ด้านล่างของสะพาน หรือบนสะพานสามารถตกปลาได้ เช่น ปลากระบอก, ปลากะพง
                     </p>
+                    <a href="https://goo.gl/maps/9sRuTfBvb661ketx7" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62764.70663226379!2d99.1870564!3d10.5168722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30f8ab47d5e3361f%3A0xf237e41e16846c8!2z4Liq4Liw4Lie4Liy4LiZ4LiE4Lil4Lit4LiH4Lir4Lix4Lin4Lin4Lix4LiHLeC4nuC4meC4seC4h-C4leC4seC4gQ!5e0!3m2!1sth!2sth!4v1648028655753!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="col-lg-5 mb-5">
                     <img
@@ -637,6 +704,8 @@
                     >
                     วัดนาทุ่ง ก่อตั้งขึ้นเมื่อปี พ.ศ. 2363 เป็นวัดราษฎร์ สังกัดคณะสงฆ์มหานิกาย วัดนาทุ่งมีชื่อเสียงลำดับต้น ๆ ของจังหวัดชุมพร วัดมีความเก่าแก่มากกว่า 200 ปี ด้วยสถาปัตยกรรมของโบสถ์มีการออกแบบร่วมสมัย ภายในบริเวณวัดนาทุ่งเงียบสงบ ผู้คนไม่พลุกพล่านในวันธรรมดาทั่วไป แต่เมื่อถึงวันพระ พุทธศาสนิกชนในตำบลนาทุ่งและพื้นที่ใกล้เคียงจะหลั่งไหลเข้ามาจนสร้างความคึกคักภายในวัด ที่นี่ยังเป็นศูนย์รวมจิตใจของชาวบ้านตำบลนาทุ่ง อีกทั้งยังเป็นแหล่งเรียนรู้วิถีชุมชน แหล่งรวบรวมสิ่งของเครื่องใช้และวัตถุโบราณของชาวบ้านตำบลนาทุ่งในอดีตเพื่อให้เยาวชนรุ่นหลังได้เรียนรู้
                     </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3922.9741381796825!2d99.2001022!3d10.502703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ff5545dd828ca1%3A0xca383a538be06c39!2z4Lin4Lix4LiU4LiZ4Liy4LiX4Li44LmI4LiH!5e0!3m2!1sth!2sth!4v1648028705378!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <a href="https://goo.gl/maps/X9HKrYVb17f5FeRi8" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
                 </div>
             </div>
         </div>
@@ -1070,12 +1139,24 @@ $("#t4").click(function() {
     $("#item_t4").addClass("d-block");
 })
 
+
+
+let xy = 0;
+$("#moreTum").click(function() {
+    $("#moreTumText").toggleClass("d-none");
+    if(xy == 0) {
+        $(this).html('ย่อการแสดงข้อมูล');
+        xy = 1;
+    } else {
+        $(this).html('อ่านต่อ...');
+        xy = 0;
+    }
+})
+
 </script>
 
-<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NSH6S6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 </body>
 </html>
