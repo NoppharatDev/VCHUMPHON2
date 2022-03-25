@@ -416,6 +416,30 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.77289849013!2d99.02385836479581!3d10.199089192714867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30560d06cf5111b7%3A0x833a4b5424979b30!2z4LmA4LiC4Liy4LiV4Liy4Lir4Lih4Li34LmI4LiZ4LiZ4Li1!5e0!3m2!1sth!2sth!4v1648026654247!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     <a href="https://goo.gl/maps/z5c1dAWY8fc6wD7F6" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
                 </div>
+                <div class="col-lg-7 mb-5">
+                    <h5 class="text-center text-premium my-3" data-aos="sfade-up-left" data-aos-duration="500" style="font-weight: 800;">กลุ่มหม่อนไหมวิสาหกิจชุมชนบ้านป่ากล้วย</h5>
+                    <p
+                        data-aos="sfade-left"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="1200"
+                        style="text-indent: 50px; text-align: justify;"
+                    >
+                    กลุ่มหม่อนไหมวิสาหกิจชุมชนบ้านสมัยตั้งแต่ก่อนปี 2549 ได้มี หนึ่งในสมาชิกกลุ่มหม่อนไหมวิสาหกิจชุมชนบ้านป่ากล้วยได้ย้ายถิ่นฐานมาจากจังหวัดนครราชสีมา เป็นคนที่รู้วิธีการปลูกหม่อนไหมเป็นอย่างดีจึงมีความคิดที่อยากตั้งกลุ่มขึ้นมาด้วยเหตุผลว่าทำคนเดียวไม่ไหว จึงเริ่มจากการปลูก มาทอให้เป็นลวดลายต่าง ๆ เช่น ลายใบกล้วย ลายอัตลักษณ์ ลายดอกกาแฟ ลายนกนางแอ่น ลายสมอพร ลายพุทธรักษา ลายเขาทะลุ ล้วนเป็นลายผ้าไหมที่สามารถสร้างรายได้เป็นอย่างดี นอกจากนี้สีที่ใช้ย้อมผ้าส่วนจะใช้สีธรรมชาติที่ได้จากวัตถุดิบในพื้นที่ เช่น สีแดงจากแก่นฝาง สีน้ำตาลจากใบกาแฟ ซึ่งเป็นจุดเน้น ให้มีความน่าสนใจเป็นจำนวนมาก และได้ตราพระราชทานสีเงินและสีน้ำเงิน สืบสานให้ลูกหลานและคนอื่น ๆ ได้สืบทอดด้วยความหวงแหนและมีคุณค่าตลอดไปตราบนานเท่านาน
+                    </p>
+                    <a href="https://goo.gl/maps/BnEPxHCpETELqdec7" class="btn btn-outline-warning btn-lg br-20 px-4 mr-3 btn-outline-tumb" id="t4">เส้นทางนำเที่ยว <span class="fa fa-map"></span></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3904664.121823996!2d96.5309263!3d17.1142514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d06fd91af19d1d%3A0x6a19224c76e57e7a!2z4LiW4LmJ4Liz4LiZ4LmJ4Liz4Lil4Lit4LiU!5e0!3m2!1sth!2sth!4v1648025750156!5m2!1sth!2sth" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-lg-5 mb-5">
+                    <img
+                        class="lazyload br-15 shadow"
+                        data-aos="sfade-down-left"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="500"
+                        data-src="../image/กลุ่มหม่อนไหมวิสาหกิจชุมชนบ้านป่ากล้วย.jpg"
+                        width="100%"
+                        alt="กาแฟเกรดพรีเมียมจากสวนกาแฟชุมพร"
+                    >
+                </div>
             </div>
         </div>
     </div>
